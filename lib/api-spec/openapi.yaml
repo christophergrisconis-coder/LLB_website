@@ -1,0 +1,87 @@
+openapi: 3.1.0
+info:
+  # Do not change the title, if the title changes, the import paths will be broken
+  title: Api
+  version: 0.1.0
+  description: API specification
+servers:
+  - url: /api
+    description: Base API path
+tags:
+  - name: health
+    description: Health operations
+  - name: workspace
+    description: Legal team workspace operations
+paths:
+  /healthz:
+    get:
+      operationId: healthCheck
+      tags: [health]
+      summary: Health check
+      description: Returns server health status
+      responses:
+        "200":
+          description: Healthy
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+  /workspace:
+    get:
+      operationId: getWorkspace
+      tags: [workspace]
+      summary: Get the signed-in team's workspace
+      responses:
+        "200": { description: Workspace and active cases }
+        "401": { description: Not signed in }
+    post:
+      operationId: createWorkspace
+      tags: [workspace]
+      summary: Create or reopen a legal team workspace
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CreateWorkspaceRequest"
+      responses:
+        "201": { description: Workspace created }
+        "200": { description: Existing workspace reopened }
+        "400": { description: Invalid onboarding details }
+  /workspace/cases:
+    post:
+      operationId: createCase
+      tags: [workspace]
+      summary: Add a case to the signed-in workspace
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CreateCaseRequest"
+      responses:
+        "201": { description: Case created }
+        "401": { description: Not signed in }
+components:
+  schemas:
+    HealthStatus:
+      type: object
+      properties:
+        status:
+          type: string
+      required:
+        - status
+    CreateWorkspaceRequest:
+      type: object
+      required: [name, email, workspaceName]
+      properties:
+        name: { type: string, minLength: 1 }
+        email: { type: string, format: email }
+        workspaceName: { type: string, minLength: 1 }
+    CreateCaseRequest:
+      type: object
+      required: [title, client]
+      properties:
+        title: { type: string, minLength: 1 }
+        client: { type: string, minLength: 1 }
+

@@ -1,0 +1,31 @@
+Please architect the "Pricing & Packaging" section using a robust CSS Grid and Flexbox system, writing clean, semantic HTML. Please follow this exact structural blueprint:
+
+### 1. HTML DOM Architecture
+Create a new `<section class="pricing-section">` wrapper. Inside it, build the following:
+*   A `<div class="pricing-header">` containing the eyebrow text ("PRICING & PACKAGING") and the `<h2>` headline ("Simple Plans for Every Law Practice").
+*   A `<div class="pricing-toggle">` that contains two span buttons: "Monthly" and "Annually (Save 20%)".
+*   A `<div class="pricing-grid">` that will act as the parent container for the two pricing tiers.
+*   Inside `.pricing-grid`, create two cards: `<div class="pricing-card pro-plan">` and `<div class="pricing-card premium-plan highlight">`.
+
+### 2. Pricing Card Structure (For Both Cards)
+Inside each pricing card, explicitly structure the content as follows:
+*   `<div class="plan-name">` (e.g., PRO PLAN)
+*   `<p class="plan-ideal">` (e.g., Ideal for solo attorneys & growing legal practices)
+*   `<div class="plan-price">` (e.g., $89.99 /monthly)
+*   `<p class="plan-promo">` (e.g., New users: 10% OFF)
+*   `<ul class="plan-features">` (List out the specific features with clean `<li>` elements)
+*   `<a href="#" class="btn-pricing">` (e.g., Get Pro Plan)
+
+### 3. CSS Layout & Responsive Rules
+*   **Grid Container (`.pricing-grid`):** Apply `display: grid;`.
+*   **Desktop Breakpoint (`@media (min-width: 992px)`):** Set `grid-template-columns: repeat(2, 1fr);` with a `gap: 40px;` and a `max-width: 1000px;` so it stays centered and balanced.
+*   **Tablet/Mobile Breakpoint (`@media (max-width: 991px)`):** Set `grid-template-columns: 1fr;` so the pricing cards stack vertically.
+
+### 4. Component Styling & Visual Hierarchy
+*   **Base Card (`.pricing-card`):** Give both cards a white background (`#FFFFFF`), `padding: 50px;`, `border-radius: 16px;`, and `display: flex; flex-direction: column;`. 
+*   **Feature Lists (`.plan-features`):** Strip default list styling (`list-style: none; padding: 0;`). Add `border-top: 1px solid #E2DEC6; padding-top: 20px; margin-top: 20px;`. Space out the `<li>` items with `margin-bottom: 15px;`.
+*   **The Premium Highlight (`.premium-plan.highlight`):** To make the $169.99 Premium plan stand out, apply a slightly darker border (`border: 2px solid #723C2A;`) and give its button a solid background (`background-color: #723C2A; color: white;`), while the Pro plan gets a lighter button or outline style.
+
+### 5. Content Injection
+*   **Pro Plan Data:** $89.99/monthly. Features: Complete Case & Docket Management, Offline Courtroom Document Sync, Integrated Time Tracking & Client Billing.
+*   **Premium Plan Data:** $169.99/monthly. Features: Everything in Pro Plan, AI Legal Research & Motion Drafting, Unlimited Automated Legal Templates, Priority 24/7 Litigation Tech Support, Advanced Firm Financial Analytics.

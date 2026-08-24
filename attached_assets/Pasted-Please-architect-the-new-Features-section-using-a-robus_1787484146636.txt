@@ -1,0 +1,27 @@
+Please architect the new "Features" section using a robust, responsive CSS Grid system and semantic HTML. I want the build process to be explicit, scalable, and structured exactly as follows:
+
+### 1. HTML DOM Architecture
+Create a new `<section class="features-section">` wrapper. Inside it, build the following hierarchy:
+*   A `<div class="features-header">` for the section eyebrow ("THE PLATFORM"), main `<h2>` headline ("One App That Does It All for Law Practices"), and subtext paragraph.
+*   A `<div class="features-grid">` that will act as the parent container for the grid items.
+*   Inside the `.features-grid`, create 6 individual `<div class="feature-card">` elements.
+
+### 2. CSS Grid & Responsive Layout Rules
+*   **Grid Container (`.features-grid`):** Apply `display: grid;`.
+*   **Desktop Breakpoint (`@media (min-width: 992px)`):** Set `grid-template-columns: repeat(2, 1fr);` to create a perfectly balanced two-column layout. Apply a `gap: 40px;` to space the cards evenly.
+*   **Tablet/Mobile Breakpoint (`@media (max-width: 991px)`):** Default the grid to `grid-template-columns: 1fr;` so the cards stack sequentially into a single column.
+
+### 3. Feature Card Styling (`.feature-card`)
+Make the cards look like premium SaaS components:
+*   **Background & Borders:** Give each card a solid background color (`#FFFFFF` or `#FCFBF7`) to stand out from the main beige page background. Add `padding: 40px;`, a subtle border (`1px solid #E2DEC6`), and rounded corners (`border-radius: 12px;`).
+*   **Micro-interactions (Hover State):** Add a smooth transition (`transition: all 0.3s ease;`). On hover, the card should slightly lift (`transform: translateY(-5px);`) and project a soft, dark drop shadow to indicate interactivity.
+
+### 4. Content Injection
+Populate the 6 `.feature-card` elements with the following content. Structure each card with an `<h3>` for the feature title and a `<p>` for the description text. Ensure the text colors inherit the global dark espresso (`#332B26`):
+
+1. **Customizable Legal Brief Creation:** Generate precision-crafted legal briefs in minutes. Access a massive library of customizable templates for pleadings, motions, and discovery demands that automatically format to your jurisdiction's standards.
+2. **Searchable Case Law Database:** Never lose a precedent again. Access a comprehensive, built-in Case Law Database. Search across millions of records, highlight critical findings, and save specific case laws directly to your active client folders for rapid retrieval.
+3. **Real-Time Call Transcription:** Connect your Google Voice or business number directly to the PWA. Automatically record and transcribe client calls in real-time. Hands-free, worry-free documentation that instantly syncs to the client's billing and case file.
+4. **Courtroom & Offline PWA Sync:** Access case files, evidence binders, and schedules offline. Changes and drafted notes sync automatically to the cloud the moment you reconnect to the internet.
+5. **Secure Client Portal & E-Signatures:** Provide a white-labeled, encrypted portal for your clients. Securely request documents, share case updates, and collect legally binding e-signatures without relying on third-party software.
+6. **Time Tracking & Automated Billing:** Log billable hours passively while you work in the app. Manage trust accounts and send itemized invoices directly through the unified PWA portal.

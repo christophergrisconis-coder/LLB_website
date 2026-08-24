@@ -1,0 +1,59 @@
+Please create or update my `index.html` and `style.css` files with the code below to build a custom Hero section. 
+
+The design features a transparent top navigation bar and a split-column hero section. The left column contains oversized, tightly stacked typography with exact line breaks, and the right column contains a featured image with rounded corners. The background should be a warm beige (#F6F4E8).
+
+### index.html
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lawyers Legal Beef</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">✦</span> L.L.B
+            </a>
+            
+            <nav class="nav-links">
+                <a href="#">Solutions ⌄</a>
+                <a href="#">About</a>
+                <a href="#">Blog</a>
+                <a href="#">Support ⌄</a>
+            </nav>
+            
+            <a href="#" class="btn-primary">Get started</a>
+        </div>
+    </header>
+
+    <!-- Main Hero Section -->
+    <section class="hero-section">
+        <div class="hero-container">
+            
+            <div class="hero-text">
+                <h1 class="giant-headline">
+                    Lawyer<br>
+                    s Legal<br>
+                    Beef
+                </h1>
+                <p class="hero-subtext">
+                    The all-in-one Progressive Web App (PWA) built specifically for lawyers and legal teams. Streamline case management, legal research, document drafting, client billing, and trial prep in one unified platform.
+                </p>
+            </div>
+
+            <div class="hero-image-wrapper">
+                <!-- Replit: please ensure there is a placeholder image here if the local asset is missing -->
+                <img src="[https://via.placeholder.com/700x500](https://via.placeholder.com/700x500)" alt="Professional lawyer sitting at desk" class="hero-image">
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>

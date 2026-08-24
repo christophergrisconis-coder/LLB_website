@@ -1,0 +1,24 @@
+Please update the `index.html` and `style.css` to fix a layout bug with long text and significantly expand the "Features" section to include new core product capabilities.
+
+### 1. CSS Fix: Overflowing Email Text
+The contact email (admnowner@advancedcreationstudio.com) is currently too long and runs off the screen on smaller devices. 
+*   Please update the CSS for the contact card and footer links to include `word-break: break-word;` and `overflow-wrap: break-word;`. 
+*   Ensure the email link is constrained within its parent container's maximum width so it stacks neatly on mobile instead of breaking the page layout.
+
+### 2. HTML Update: Expanded Features Section
+Please completely update the "One App That Does It All for Law Practices" section to include the following 6 core features. Use professional, SaaS-style copywriting for each:
+
+1.  **Customizable Legal Brief Creation:** 
+    "Generate precision-crafted legal briefs in minutes. Access a massive library of customizable templates for pleadings, motions, and discovery demands that automatically format to your jurisdiction's standards."
+2.  **Searchable Case Law Database:** 
+    "Never lose a precedent again. Access a comprehensive, built-in Case Law Database. Search across millions of records, highlight critical findings, and save specific case laws directly to your active client folders for rapid retrieval."
+3.  **Real-Time Call Transcription (VoIP Integration):** 
+    "Connect your Google Voice or business number directly to the PWA. Automatically record and transcribe client calls in real-time. Hands-free, worry-free documentation that instantly syncs to the client's billing and case file."
+4.  **Courtroom & Offline PWA Sync:** 
+    "Access case files, evidence binders, and schedules offline. Changes and drafted notes sync automatically to the cloud the moment you reconnect to the internet."
+5.  **Secure Client Portal & E-Signatures:** 
+    "Provide a white-labeled, encrypted portal for your clients. Securely request documents, share case updates, and collect legally binding e-signatures without relying on third-party software."
+6.  **Time Tracking & Automated Billing:** 
+    "Log billable hours passively while you work in the app. Manage trust accounts and send itemized invoices directly through the unified PWA portal."
+
+Please ensure the grid layout dynamically adjusts so these 6 features look clean and balanced on both desktop and mobile views.

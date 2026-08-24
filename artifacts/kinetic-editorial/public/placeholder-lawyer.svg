@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500" role="img" aria-labelledby="title">
+  <title>Professional lawyer sitting at desk</title>
+  <rect width="700" height="500" rx="24" fill="#d7cfc0"/>
+  <path d="M0 390h700v110H0z" fill="#c7bca9"/>
+  <circle cx="350" cy="190" r="74" fill="#b09a84"/>
+  <path d="M227 420c8-96 57-143 123-143s115 47 123 143z" fill="#723c2a"/>
+  <path d="M285 181c5-52 35-84 66-84 39 0 66 35 66 84-20-24-48-35-78-32-17 2-35 13-54 32z" fill="#332b26"/>
+  <rect x="104" y="410" width="492" height="12" rx="6" fill="#8f7c68"/>
+</svg>

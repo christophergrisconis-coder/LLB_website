@@ -1,0 +1,18 @@
+{
+  "name": "Lawyers Legal Beef",
+  "short_name": "L.L.B",
+  "description": "The all-in-one Progressive Web App (PWA) built specifically for lawyers and legal teams. Streamline case management, legal research, document drafting, client billing, and trial prep in one unified platform.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f1ecdf",
+  "theme_color": "#25231f",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
