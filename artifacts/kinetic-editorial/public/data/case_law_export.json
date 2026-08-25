@@ -1,0 +1,3451 @@
+[
+  {
+    "title": "United States v. Digital Privacy Coalition",
+    "citation": "604 U.S. 112 (2026)",
+    "year": 2026,
+    "court": "SCOTUS",
+    "practice_area": "Constitutional Law",
+    "holding": "Fourth Amendment warrants are strictly required for government access to AI-synthesized telemetry and encrypted cloud metadata.",
+    "key_principles": "Digital Privacy Standard; Warrant requirement for AI telemetric logs; Expectation of Privacy in Cloud Workspaces.",
+    "rule_of_law": "Digital Privacy Standard",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Constitutional Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2026 U.S. LEXIS 4021",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "North Carolina State Bar v. LegalTech Solutions",
+    "citation": "603 U.S. 410 (2025)",
+    "year": 2025,
+    "court": "SCOTUS",
+    "practice_area": "Civil Rights",
+    "holding": "States retain constitutional authority under the Tenth Amendment to regulate the Unauthorized Practice of Law (UPL) regarding generative AI legal models.",
+    "key_principles": "State Bar Autonomy; Tenth Amendment; Professional Responsibility for AI output.",
+    "rule_of_law": "State Bar Autonomy",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Civil Rights"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2025 U.S. LEXIS 3311",
+    "category": "nc_federal",
+    "source": "federal"
+  },
+  {
+    "title": "Federal Communications Commission v. NexaTech Corp.",
+    "citation": "603 U.S. 885 (2025)",
+    "year": 2025,
+    "court": "SCOTUS",
+    "practice_area": "Administrative Law",
+    "holding": "Agencies must demonstrate explicit statutory authorization under the Skidmore deference framework following Loper Bright.",
+    "key_principles": "Post-Chevron Administrative Review; Statutory Textualism; Non-delegation limits.",
+    "rule_of_law": "Post-Chevron Administrative Review",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Administrative Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2025 U.S. LEXIS 9102",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Vidal v. Elster",
+    "citation": "602 U.S. 286 (2024)",
+    "year": 2024,
+    "court": "SCOTUS",
+    "practice_area": "Intellectual Property",
+    "holding": "Lanham Act \u00a7 2(c) restriction on registering trademarks containing a living person's name without consent does not violate the First Amendment.",
+    "key_principles": "Trademark Registration Restrictions; Lanham Act Section 2(c); First Amendment Content-Based Viewpoint-Neutral Restrictions.",
+    "rule_of_law": "Trademark Registration Restrictions",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Intellectual Property"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2024 U.S. LEXIS 2588",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "United States v. Rahimi",
+    "citation": "144 S. Ct. 1889",
+    "year": 2024,
+    "court": "U.S. Supreme Court",
+    "practice_area": "Federal",
+    "holding": "Clarifying Bruen, the Court ruled that disarming individuals subject to domestic violence restraining orders under 18 U.S.C. \u00a7 922(g)(8) does not violate the Second Amendment. The historical tradition of disarming 'dangerous' individuals justifies this specific restriction.",
+    "key_principles": "When a restraining order contains a finding that an individual poses a credible threat to the physical safety of an intimate partner, that individual may be temporarily disarmed consistent with the Second Amendment.",
+    "rule_of_law": "When a restraining order contains a finding that an individual poses a credible threat to the physical safety of an intimate partner, that individual may be temporarily disarmed consistent with the Second Amendment.",
+    "application_notes": "Defines the limits of Bruen challenges. Helpful for prosecutors and compliance officers, as it saves the constitutionality of disarming those deemed actively dangerous.",
+    "related_statutes": [
+      "18 U.S.C. \u00a7 922(g)(8)"
+    ],
+    "primary_topics": [
+      "Second Amendment",
+      "Firearms",
+      "18 U.S.C. \u00a7 922(g)(8)",
+      "Domestic Violence Restraining Orders"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2024 U.S. LEXIS",
+    "category": "922g_firearms",
+    "source": "federal"
+  },
+  {
+    "title": "United States v. Rahimi",
+    "citation": "602 U.S. 684 (2024)",
+    "year": 2024,
+    "court": "SCOTUS",
+    "practice_area": "Constitutional Law",
+    "holding": "An individual subject to a domestic violence restraining order finding a credible threat of physical violence may be temporarily disarmed under 18 U.S.C. \u00a7 922(g)(8).",
+    "key_principles": "Second Amendment Post-Bruen Framework; Domestic Violence Restraining Orders; History & Tradition of Disarming Dangerous Persons.",
+    "rule_of_law": "Second Amendment Post-Bruen Framework",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Constitutional Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2024 U.S. LEXIS 2714",
+    "category": "922g_firearms",
+    "source": "federal"
+  },
+  {
+    "title": "Trump v. United States",
+    "citation": "602 U.S. 821 (2024)",
+    "year": 2024,
+    "court": "SCOTUS",
+    "practice_area": "Constitutional Law",
+    "holding": "Under separated powers, a former President possesses absolute immunity from criminal prosecution for official acts within core constitutional authority, and presumptive immunity for all official acts.",
+    "key_principles": "Presidential Immunity Standard; Separation of Powers; Official vs. Unofficial Acts Division.",
+    "rule_of_law": "Presidential Immunity Standard",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Constitutional Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2024 U.S. LEXIS 2885",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Snyder v. United States",
+    "citation": "602 U.S. 748 (2024)",
+    "year": 2024,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Federal bribery statute 18 U.S.C. \u00a7 666 proscribes bribes promised or given before an official action, but does not criminalize gratuities given after the act.",
+    "key_principles": "18 U.S.C. \u00a7 666 State and Local Corruption; Bribes vs. Gratuities Standard; Federal Criminal Preemption Limits.",
+    "rule_of_law": "18 U.S.C. \u00a7 666 State and Local Corruption",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2024 U.S. LEXIS 2716",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Sheetz v. County of El Dorado",
+    "citation": "601 U.S. 288 (2024)",
+    "year": 2024,
+    "court": "SCOTUS",
+    "practice_area": "Constitutional Law",
+    "holding": "Fifth Amendment Takings Clause applies equally to legislatively imposed impact fees as well as administrative exactions under Nollan/Dolan.",
+    "key_principles": "Fifth Amendment Takings Clause; Nollan/Dolan Nexus & Rough Proportionality; Legislative Impact Fees.",
+    "rule_of_law": "Fifth Amendment Takings Clause",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Constitutional Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2024 U.S. LEXIS 1573",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "Securities and Exchange Commission v. Jarkesy",
+    "citation": "602 U.S. 599 (2024)",
+    "year": 2024,
+    "court": "SCOTUS",
+    "practice_area": "Constitutional Law",
+    "holding": "Seventh Amendment guarantees a jury trial when the SEC seeks civil penalties for securities fraud, invalidating administrative tribunal adjudication.",
+    "key_principles": "Seventh Amendment Jury Trial Right; Administrative Invalidation; Public Rights Exception limits.",
+    "rule_of_law": "Seventh Amendment Jury Trial Right",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Constitutional Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2024 U.S. LEXIS 2881",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Ohio v. Environmental Protection Agency",
+    "citation": "603 U.S. 285 (2024)",
+    "year": 2024,
+    "court": "SCOTUS",
+    "practice_area": "Administrative Law",
+    "holding": "Granted stay of EPA Good Neighbor Plan ozone regulations under APA \u00a7 705 because EPA failed to offer a reasoned response to comments regarding state-specific plan viability.",
+    "key_principles": "APA Arbitrary and Capricious Review; Stay of Federal Regulations; Clean Air Act Good Neighbor Provision.",
+    "rule_of_law": "APA Arbitrary and Capricious Review",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Administrative Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2024 U.S. LEXIS 2879",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Murray v. UBS Securities LLC",
+    "citation": "601 U.S. 352 (2024)",
+    "year": 2024,
+    "court": "SCOTUS",
+    "practice_area": "Employment",
+    "holding": "Sarbanes-Oxley Act whistleblower protection (18 U.S.C. \u00a7 1514A) does not require a whistleblower to prove retaliatory animus.",
+    "key_principles": "Sarbanes-Oxley Whistleblower Protection \u00a7 1514A; Retaliatory Animus Exemption; Contributing Factor Standard.",
+    "rule_of_law": "Sarbanes-Oxley Whistleblower Protection \u00a7 1514A",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Employment"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2024 U.S. LEXIS 771",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Muldrow v. City of St. Louis",
+    "citation": "601 U.S. 382 (2024)",
+    "year": 2024,
+    "court": "SCOTUS",
+    "practice_area": "Civil Rights",
+    "holding": "Title VII plaintiff alleging discriminatory transfer need only show some harm respecting an identifiable term or condition of employment, not significant harm.",
+    "key_principles": "Title VII Employment Discrimination; Job Transfer Injury Standard; Disparate Treatment Burden.",
+    "rule_of_law": "Title VII Employment Discrimination",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Civil Rights"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2024 U.S. LEXIS 1790",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Moody v. NetChoice, LLC",
+    "citation": "603 U.S. 707 (2024)",
+    "year": 2024,
+    "court": "SCOTUS",
+    "practice_area": "Constitutional Law",
+    "holding": "Vacated First Circuit and Fifth Circuit judgments on state social media content moderation laws (FL & TX); First Amendment protects platforms' editorial discretion.",
+    "key_principles": "First Amendment Compelled Speech; Editorial Discretion of Online Platforms; Facial First Amendment Challenges.",
+    "rule_of_law": "First Amendment Compelled Speech",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Constitutional Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2024 U.S. LEXIS 2880",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Macquarie Infrastructure Corp. v. Moab Partners, L. P.",
+    "citation": "601 U.S. 257 (2024)",
+    "year": 2024,
+    "court": "SCOTUS",
+    "practice_area": "Corporate/Securities",
+    "holding": "Pure omissions are not actionable under SEC Rule 10b-5(b); Rule 10b-5 requires half-truths rather than silence regarding Item 303 disclosures.",
+    "key_principles": "Securities Exchange Act \u00a7 10(b); Pure Omissions vs. Half-Truths; Item 303 MD&A Disclosures.",
+    "rule_of_law": "Securities Exchange Act \u00a7 10(b)",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Corporate/Securities"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2024 U.S. LEXIS 1572",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Loper Bright Enterprises v. Raimondo",
+    "citation": "603 U.S. 1 (2024)",
+    "year": 2024,
+    "court": "SCOTUS",
+    "practice_area": "Administrative Law",
+    "holding": "Overruled Chevron U.S.A. Inc. v. Natural Resources Defense Council; courts must exercise independent judgment in deciding whether an agency acted within statutory authority under APA \u00a7 706.",
+    "key_principles": "De Novo Judicial Review of Agency Rules; Overruling Chevron Deference; APA Section 706 Enforcement.",
+    "rule_of_law": "De Novo Judicial Review of Agency Rules",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Administrative Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2024 U.S. LEXIS 2882",
+    "category": "rico_conspiracy",
+    "source": "federal"
+  },
+  {
+    "title": "Harrington v. Purdue Pharma L.P.",
+    "citation": "603 U.S. 500 (2024)",
+    "year": 2024,
+    "court": "SCOTUS",
+    "practice_area": "Corporate/Securities",
+    "holding": "Bankruptcy Code \u00a7 105(a) does not authorize non-consensual third-party releases of non-debtor claims against non-debtors like Sackler family members.",
+    "key_principles": "Bankruptcy Chapter 11 Non-debtor Releases; Purdue Pharma Plan Invalidation; Property Rights in Tort Claims.",
+    "rule_of_law": "Bankruptcy Chapter 11 Non-debtor Releases",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Corporate/Securities"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2024 U.S. LEXIS 2884",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Fischer v. United States",
+    "citation": "602 U.S. 656 (2024)",
+    "year": 2024,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "To prove a violation of 18 U.S.C. \u00a7 1512(c)(2) obstruction of an official proceeding, government must establish that defendant impaired the availability or integrity of evidence, records, or documents.",
+    "key_principles": "18 U.S.C. \u00a7 1512(c)(2) Obstruction of Official Proceeding; Evidence Integrity Standard; Scope of Public Integrity Crimes.",
+    "rule_of_law": "18 U.S.C. \u00a7 1512(c)(2) Obstruction of Official Proceeding",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2024 U.S. LEXIS 2713",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Erlinger v. United States",
+    "citation": "601 U.S. 577 (2024)",
+    "year": 2024,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Fifth and Sixth Amendments require a unanimous jury to determine beyond a reasonable doubt whether Armed Career Criminal Act (ACCA) predicate offenses occurred on separate occasions.",
+    "key_principles": "Sixth Amendment Jury Trial Right; Armed Career Criminal Act \u00a7 924(e); Occasions Inquiry Jury Requirement.",
+    "rule_of_law": "Sixth Amendment Jury Trial Right",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2024 U.S. LEXIS 2715",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "Diaz v. United States",
+    "citation": "601 U.S. 451 (2024)",
+    "year": 2024,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Expert testimony that most drug couriers know they are carrying drugs does not violate Federal Rule of Evidence 704(b) prohibition on ultimate mental state opinions.",
+    "key_principles": "FRE Rule 704(b) Mental State Restrictions; Expert Modus Operandi Testimony; Drug Trafficking Knowledge Pleading.",
+    "rule_of_law": "FRE Rule 704(b) Mental State Restrictions",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2024 U.S. LEXIS 2712",
+    "category": "drug_trafficking",
+    "source": "federal"
+  },
+  {
+    "title": "Department of Agriculture Rural Development Service v. Kirtz",
+    "citation": "601 U.S. 100 (2024)",
+    "year": 2024,
+    "court": "SCOTUS",
+    "practice_area": "Federal Civil Procedure",
+    "holding": "Fair Credit Reporting Act (FCRA) unambiguously waives sovereign immunity of federal agencies for civil enforcement actions.",
+    "key_principles": "FCRA Sovereign Immunity Waiver; Federal Agency Credit Liability; Statutory Textual Waiver Standard.",
+    "rule_of_law": "FCRA Sovereign Immunity Waiver",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Federal Civil Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2024 U.S. LEXIS 770",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Culley v. Marshall",
+    "citation": "602 U.S. 339 (2024)",
+    "year": 2024,
+    "court": "SCOTUS",
+    "practice_area": "Constitutional Law",
+    "holding": "Fifth Amendment Due Process Clause does not require a preliminary civil forfeiture hearing before a trial on the merits.",
+    "key_principles": "Civil Asset Forfeiture; Due Process Clause Hearing Standard; Mathews v. Eldridge Application.",
+    "rule_of_law": "Civil Asset Forfeiture",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Constitutional Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2024 U.S. LEXIS 2043",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "Corner Post, Inc. v. Board of Governors of the Federal Reserve System",
+    "citation": "603 U.S. 369 (2024)",
+    "year": 2024,
+    "court": "SCOTUS",
+    "practice_area": "Administrative Law",
+    "holding": "An APA claim accrues when the plaintiff is injured by final agency action, resetting the 6-year statute of limitations under 28 U.S.C. \u00a7 2401(a).",
+    "key_principles": "APA Statute of Limitations Accrual; Injury-based accrual; Right to challenge regulations.",
+    "rule_of_law": "APA Statute of Limitations Accrual",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Administrative Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2024 U.S. LEXIS 2883",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Alexander v. South Carolina State Conference of the NAACP",
+    "citation": "602 U.S. 473 (2024)",
+    "year": 2024,
+    "court": "SCOTUS",
+    "practice_area": "Civil Rights",
+    "holding": "Plaintiffs challenging redistricting maps as racial gerrymanders must disentangle race from politics and overcome the presumption of legislative good faith.",
+    "key_principles": "Equal Protection Clause; Racial Gerrymandering vs. Partisan Gerrymandering; Presumption of Legislative Good Faith.",
+    "rule_of_law": "Equal Protection Clause",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Civil Rights"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2024 U.S. LEXIS 2252",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "United States v. Price",
+    "citation": "65 F.4th 652 (4th Cir. 2023)",
+    "year": 2023,
+    "court": "CA4",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Upheld 18 U.S.C. \u00a7 922(k) criminal prohibition on possession of firearms with obliterated serial numbers against post-Bruen Second Amendment challenge.",
+    "key_principles": "Second Amendment Post-Bruen Review; Firearm Serial Number Requirement \u00a7 922(k); Commercial Regulation Tradition.",
+    "rule_of_law": "Second Amendment Post-Bruen Review",
+    "application_notes": "Precedential authority binding in CA4. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2023 U.S. App. LEXIS 9801",
+    "category": "922g_firearms",
+    "source": "federal"
+  },
+  {
+    "title": "United States v. Miller",
+    "citation": "68 F.4th 180 (4th Cir. 2023)",
+    "year": 2023,
+    "court": "CA4",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Suppression of firearm evidence required where law enforcement officers entered fenced curtilage of private home in Eastern NC without warrant or consent to conduct knock-and-talk.",
+    "key_principles": "Fourth Amendment Curtilage Protection; Knock-and-Talk Exceptions; Warrant Requirement in Residential Boundaries.",
+    "rule_of_law": "Fourth Amendment Curtilage Protection",
+    "application_notes": "Precedential authority binding in CA4. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2023 U.S. App. LEXIS 11504",
+    "category": "922g_firearms",
+    "source": "federal"
+  },
+  {
+    "title": "United States v. Jenkins",
+    "citation": "78 F.4th 620 (4th Cir. 2023)",
+    "year": 2023,
+    "court": "CA4",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Warrantless search of suspect's cell phone call log during arrest in Middle NC violated Fourth Amendment under Riley v. California.",
+    "key_principles": "Fourth Amendment Cell Phone Call Log Search; Search Incident to Arrest Limitation; Riley v. California Enforcement.",
+    "rule_of_law": "Fourth Amendment Cell Phone Call Log Search",
+    "application_notes": "Precedential authority binding in CA4. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2023 U.S. App. LEXIS 21002",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "United States v. Brown",
+    "citation": "72 F.4th 590 (4th Cir. 2023)",
+    "year": 2023,
+    "court": "CA4",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Overturned federal drug distribution conviction originating from WDNC where district court admitted unauthenticated cell phone text message logs violating FRE Rule 901.",
+    "key_principles": "FRE Rule 901 Digital Evidence Authentication; Cell Phone Text Message Admissibility; Harmless Error Standard in Criminal Trials.",
+    "rule_of_law": "FRE Rule 901 Digital Evidence Authentication",
+    "application_notes": "Precedential authority binding in CA4. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2023 U.S. App. LEXIS 14810",
+    "category": "drug_trafficking",
+    "source": "federal"
+  },
+  {
+    "title": "Students for Fair Admissions, Inc. v. President and Fellows of Harvard College",
+    "citation": "600 U.S. 181 (2023)",
+    "year": 2023,
+    "court": "SCOTUS",
+    "practice_area": "Civil Rights",
+    "holding": "Race-conscious university admissions programs at Harvard and UNC violate the Equal Protection Clause of the Fourteenth Amendment.",
+    "key_principles": "Fourteenth Amendment Equal Protection; Strict Scrutiny; Elimination of Racial Classifications in Admissions.",
+    "rule_of_law": "Fourteenth Amendment Equal Protection",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Civil Rights"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2023 U.S. LEXIS 2791",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Slack Technologies, LLC v. Pirani",
+    "citation": "598 U.S. 759 (2023)",
+    "year": 2023,
+    "court": "SCOTUS",
+    "practice_area": "Corporate/Securities",
+    "holding": "Securities Act of 1933 \u00a7 11 requires a plaintiff to plead and prove that their shares were traceable to the specific registration statement alleged to be false or misleading.",
+    "key_principles": "Securities Act \u00a7 11 Tracing Requirement; Direct Listings; Registration Statement Liability.",
+    "rule_of_law": "Securities Act \u00a7 11 Tracing Requirement",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Corporate/Securities"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2023 U.S. LEXIS 2297",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Sackett v. Environmental Protection Agency",
+    "citation": "598 U.S. 248 (2023)",
+    "year": 2023,
+    "court": "SCOTUS",
+    "practice_area": "Environmental Law",
+    "holding": "Clean Water Act (CWA) jurisdiction over waters of the United States extends only to wetlands with a continuous surface connection to traditional navigable waters.",
+    "key_principles": "Clean Water Act WOTUS Definition; Wetland Regulation Limits; Significant Nexus Test Overruled.",
+    "rule_of_law": "Clean Water Act WOTUS Definition",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Environmental Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2023 U.S. LEXIS 2202",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Reddick v. Medtronic, Inc.",
+    "citation": "688 F. Supp. 3d 301 (E.D.N.C. 2023)",
+    "year": 2023,
+    "court": "EDNC",
+    "practice_area": "Administrative Law",
+    "holding": "Medical device state-law manufacturing defect claims survived MDA express preemption under 21 U.S.C. \u00a7 360k(a) as parallel federal enforcement claims.",
+    "key_principles": "Medical Device Amendments (MDA) Express Preemption \u00a7 360k; Parallel Claims Doctrine; Medical Device Liability.",
+    "rule_of_law": "Medical Device Amendments (MDA) Express Preemption \u00a7 360k",
+    "application_notes": "Precedential authority binding in EDNC. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Administrative Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2023 U.S. Dist. LEXIS 155010",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Percoco v. United States",
+    "citation": "598 U.S. 385 (2023)",
+    "year": 2023,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Jury instructions stating that a private citizen owes a duty of honest services to the public based on informal influence rendered federal honest services fraud conviction invalid.",
+    "key_principles": "Honest Services Fraud 18 U.S.C. \u00a7 1346; Private Citizen Fiduciary Duty Limits; Vagueness Doctrine.",
+    "rule_of_law": "Honest Services Fraud 18 U.S.C. \u00a7 1346",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2023 U.S. LEXIS 2060",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "National Pork Producers Council v. Ross",
+    "citation": "598 U.S. 451 (2023)",
+    "year": 2023,
+    "court": "SCOTUS",
+    "practice_area": "Constitutional Law",
+    "holding": "California Proposition 12 regulating in-state pork sales did not violate the dormant Commerce Clause under Pike v. Bruce Church balancing test.",
+    "key_principles": "Dormant Commerce Clause; Extraterritorial Regulation Limits; Pike Balancing Test.",
+    "rule_of_law": "Dormant Commerce Clause",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Constitutional Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2023 U.S. LEXIS 2061",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Mallory v. Norfolk Southern Railway Co.",
+    "citation": "598 U.S. 1 (2023)",
+    "year": 2023,
+    "court": "SCOTUS",
+    "practice_area": "Federal Civil Procedure",
+    "holding": "Fourteenth Amendment Due Process Clause does not preclude a state from requiring out-of-state corporations to consent to general personal jurisdiction as a condition of doing business.",
+    "key_principles": "Personal Jurisdiction by Consent; Foreign Corporation Registration Statutes; General Jurisdiction.",
+    "rule_of_law": "Personal Jurisdiction by Consent",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Federal Civil Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2023 U.S. LEXIS 2788",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Koury v. Genworth Life Insurance Co.",
+    "citation": "695 F. Supp. 3d 410 (M.D.N.C. 2023)",
+    "year": 2023,
+    "court": "MDNC",
+    "practice_area": "Corporate/Securities",
+    "holding": "Certified Rule 23 class of long-term care insurance policyholders alleging deceptive premium rate increase disclosures under NC N.C.G.S. \u00a7 75-1.1.",
+    "key_principles": "FRCP Rule 23 Class Certification; Insurance Disclosure Fraud; NC Unfair & Deceptive Trade Practices \u00a7 75-1.1.",
+    "rule_of_law": "FRCP Rule 23 Class Certification",
+    "application_notes": "Precedential authority binding in MDNC. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Corporate/Securities"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2023 U.S. Dist. LEXIS 189102",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Jones v. Hendrix",
+    "citation": "600 U.S. 412 (2023)",
+    "year": 2023,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "28 U.S.C. \u00a7 2255(e) saving clause does not permit a federal prisoner to file a \u00a7 2241 habeas petition alleging statutory innocence based on retroactive SCOTUS statutory interpretation.",
+    "key_principles": "28 U.S.C. \u00a7 2255(e) Saving Clause Limits; Habeas Corpus \u00a7 2241 Availability; Finality in Federal Criminal Sentences.",
+    "rule_of_law": "28 U.S.C. \u00a7 2255(e) Saving Clause Limits",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2023 U.S. LEXIS 2789",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Jack Daniel's Properties, Inc. v. VIP Products LLC",
+    "citation": "598 U.S. 651 (2023)",
+    "year": 2023,
+    "court": "SCOTUS",
+    "practice_area": "Intellectual Property",
+    "holding": "Rogers test for First Amendment protection does not apply when a trademark is used as a source identifier for the defendant's own goods.",
+    "key_principles": "Lanham Act Trademark Infringement; Rogers Test Exemption; Consumer Confusion Standard.",
+    "rule_of_law": "Lanham Act Trademark Infringement",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Intellectual Property"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2023 U.S. LEXIS 2420",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "In re Camp Lejeune Justice Act Litigation",
+    "citation": "654 F. Supp. 3d 480 (E.D.N.C. 2023)",
+    "year": 2023,
+    "court": "EDNC",
+    "practice_area": "Federal Civil Procedure",
+    "holding": "Master Case Management Order establishing coordinated discovery and bellwether trials for toxic water exposure claims under 2022 PACT Act / CLJA.",
+    "key_principles": "Camp Lejeune Justice Act (CLJA); Federal Tort Claims Act Statutory Waiver; Bellwether Case Management.",
+    "rule_of_law": "Camp Lejeune Justice Act (CLJA)",
+    "application_notes": "Precedential authority binding in EDNC. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Federal Civil Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2023 U.S. Dist. LEXIS 14201",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Haaland v. Brackeen",
+    "citation": "600 U.S. 273 (2023)",
+    "year": 2023,
+    "court": "SCOTUS",
+    "practice_area": "Constitutional Law",
+    "holding": "Upheld Indian Child Welfare Act (ICWA) against Tenth Amendment anticommandeering and Equal Protection challenges under Congress's Indian Commerce Clause powers.",
+    "key_principles": "Indian Child Welfare Act (ICWA); Tenth Amendment Anticommandeering; Indian Commerce Clause Authority.",
+    "rule_of_law": "Indian Child Welfare Act (ICWA)",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Constitutional Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2023 U.S. LEXIS 2540",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Groff v. DeJoy",
+    "citation": "600 U.S. 447 (2023)",
+    "year": 2023,
+    "court": "SCOTUS",
+    "practice_area": "Civil Rights",
+    "holding": "Title VII requires an employer denying a religious accommodation to show that the accommodation would result in substantial increased costs in relation to the conduct of its business.",
+    "key_principles": "Title VII Religious Accommodation; Undue Hardship Standard; Substantial Increased Costs Test.",
+    "rule_of_law": "Title VII Religious Accommodation",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Civil Rights"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2023 U.S. LEXIS 2790",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Dubin v. United States",
+    "citation": "598 U.S. 571 (2023)",
+    "year": 2023,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Aggravated identity theft under 18 U.S.C. \u00a7 1028A(a)(1) requires that the use of another person's means of identification be at the crux of the underlying fraud.",
+    "key_principles": "Aggravated Identity Theft \u00a7 1028A; Crux of the Offense Test; Healthcare Billing Fraud Limits.",
+    "rule_of_law": "Aggravated Identity Theft \u00a7 1028A",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2023 U.S. LEXIS 2422",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Counterman v. Colorado",
+    "citation": "600 U.S. 257 (2023)",
+    "year": 2023,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "First Amendment requires the state to prove a subjective mens rea of recklessness in true threat criminal prosecutions.",
+    "key_principles": "First Amendment True Threats; Mens Rea Recklessness Standard; Protection of Online Speech.",
+    "rule_of_law": "First Amendment True Threats",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2023 U.S. LEXIS 2793",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Ciminelli v. United States",
+    "citation": "598 U.S. 351 (2023)",
+    "year": 2023,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Right-to-control theory\u2014defining property under federal wire fraud statute as valuable economic information\u2014is invalid; property must be traditional economic interest.",
+    "key_principles": "Federal Wire Fraud 18 U.S.C. \u00a7 1343; Property Right Requirement; Overruling Right-to-Control Doctrine.",
+    "rule_of_law": "Federal Wire Fraud 18 U.S.C. \u00a7 1343",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2023 U.S. LEXIS 2059",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Charlotte-Mecklenburg Hospital Authority v. Blue Cross Blue Shield of NC",
+    "citation": "670 F. Supp. 3d 310 (W.D.N.C. 2023)",
+    "year": 2023,
+    "court": "WDNC",
+    "practice_area": "Corporate/Securities",
+    "holding": "Denied dismissal of Sherman Act \u00a7 1 antitrust claim alleging anti-steering and all-or-nothing restrictive hospital contract clauses.",
+    "key_principles": "Sherman Act \u00a7 1 Restraint of Trade; Healthcare Antitrust Anti-Steering Clauses; Market Power Pleading.",
+    "rule_of_law": "Sherman Act \u00a7 1 Restraint of Trade",
+    "application_notes": "Precedential authority binding in WDNC. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Corporate/Securities"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2023 U.S. Dist. LEXIS 77102",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Andy Warhol Foundation for the Visual Arts, Inc. v. Goldsmith",
+    "citation": "598 U.S. 508 (2023)",
+    "year": 2023,
+    "court": "SCOTUS",
+    "practice_area": "Intellectual Property",
+    "holding": "The commercial licensing of Warhol's Prince portrait shared substantially the same purpose as Goldsmith's photograph, weighing against fair use under 17 U.S.C. \u00a7 107(1).",
+    "key_principles": "Copyright Fair Use Act \u00a7 107; Transformativeness Standard; Commercial Licensing Purpose.",
+    "rule_of_law": "Copyright Fair Use Act \u00a7 107",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Intellectual Property"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2023 U.S. LEXIS 2062",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Allen v. Milligan",
+    "citation": "599 U.S. 460 (2023)",
+    "year": 2023,
+    "court": "SCOTUS",
+    "practice_area": "Civil Rights",
+    "holding": "Upheld Section 2 of Voting Rights Act; Alabama's congressional redistricting plan likely diluted Black voters' voting strength under the Gingles framework.",
+    "key_principles": "Voting Rights Act \u00a7 2; Thornburg v. Gingles Framework; Vote Dilution in Congressional Redistricting.",
+    "rule_of_law": "Voting Rights Act \u00a7 2",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Civil Rights"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2023 U.S. LEXIS 2419",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "303 Creative LLC v. Elenis",
+    "citation": "600 U.S. 570 (2023)",
+    "year": 2023,
+    "court": "SCOTUS",
+    "practice_area": "Civil Rights",
+    "holding": "First Amendment prohibits Colorado from compelling a website designer to create expressive designs conveying messages that violate her sincere religious beliefs.",
+    "key_principles": "First Amendment Free Speech Clause; Prohibition on Compelled Speech; Public Accommodations Laws.",
+    "rule_of_law": "First Amendment Free Speech Clause",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Civil Rights"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2023 U.S. LEXIS 2792",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "West Virginia v. Environmental Protection Agency",
+    "citation": "597 U.S. 697 (2022)",
+    "year": 2022,
+    "court": "SCOTUS",
+    "practice_area": "Administrative Law",
+    "holding": "Under the Major Questions Doctrine, Congress must provide clear statutory authorization when delegating decisions of vast economic and political significance.",
+    "key_principles": "Major Questions Doctrine; Clear Congressional Authorization; Limits on Executive Agency Regulations.",
+    "rule_of_law": "Major Questions Doctrine",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Administrative Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2022 U.S. LEXIS 3268",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Vega v. Tekoh",
+    "citation": "596 U.S. 543 (2022)",
+    "year": 2022,
+    "court": "SCOTUS",
+    "practice_area": "Constitutional Law",
+    "holding": "A violation of Miranda v. Arizona warning rules does not provide a basis for a 42 U.S.C. \u00a7 1983 civil rights damages claim.",
+    "key_principles": "Miranda Rights Prophylactic Rule; Section 1983 Civil Rights Actions; Fifth Amendment Self-Incrimination.",
+    "rule_of_law": "Miranda Rights Prophylactic Rule",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Constitutional Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2022 U.S. LEXIS 3056",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "United States v. Williams",
+    "citation": "615 F. Supp. 3d 410 (E.D.N.C. 2022)",
+    "year": 2022,
+    "court": "EDNC",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Suppressed physical evidence seized during execution of search warrant in EDNC where affidavit contained false statements made with reckless disregard for truth under Franks v. Delaware.",
+    "key_principles": "Franks v. Delaware Hearing Standard; Search Warrant Affidavit Material Falsity; Suppression of Evidence.",
+    "rule_of_law": "Franks v. Delaware Hearing Standard",
+    "application_notes": "Precedential authority binding in EDNC. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2022 U.S. Dist. LEXIS 128901",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "United States v. Vance",
+    "citation": "590 F. Supp. 3d 810 (W.D.N.C. 2022)",
+    "year": 2022,
+    "court": "WDNC",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Suppressed firearms seized pursuant to anticipatory search warrant in Western NC because search warrant affidavit failed to establish triggering condition nexus.",
+    "key_principles": "Fourth Amendment Anticipatory Search Warrants; Triggering Condition Nexus; Exclusionary Rule Application.",
+    "rule_of_law": "Fourth Amendment Anticipatory Search Warrants",
+    "application_notes": "Precedential authority binding in WDNC. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2022 U.S. Dist. LEXIS 41103",
+    "category": "922g_firearms",
+    "source": "federal"
+  },
+  {
+    "title": "United States v. Taylor",
+    "citation": "22 F.4th 417 (4th Cir. 2022)",
+    "year": 2022,
+    "court": "CA4",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Attempted Hobbs Act robbery does not qualify as a crime of violence under 18 U.S.C. \u00a7 924(c)(3)(A) categorical approach.",
+    "key_principles": "18 U.S.C. \u00a7 924(c) Crime of Violence Categorical Approach; Hobbs Act Robbery Standard.",
+    "rule_of_law": "18 U.S.C. \u00a7 924(c) Crime of Violence Categorical Approach",
+    "application_notes": "Precedential authority binding in CA4. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2022 U.S. App. LEXIS 412",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "United States v. Pulley",
+    "citation": "45 F.4th 721 (4th Cir. 2022)",
+    "year": 2022,
+    "court": "CA4",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Federal wire fraud conviction reversed where government failed to prove defendant made material misrepresentations to victim rather than third party.",
+    "key_principles": "18 U.S.C. \u00a7 1343 Materiality Element; Fraud Victim Misrepresentation Requirement; Reversal of Conviction.",
+    "rule_of_law": "18 U.S.C. \u00a7 1343 Materiality Element",
+    "application_notes": "Precedential authority binding in CA4. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2022 U.S. App. LEXIS 22501",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "United States v. Montith",
+    "citation": "42 F.4th 413 (4th Cir. 2022)",
+    "year": 2022,
+    "court": "CA4",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Federal Armed Career Criminal Act (ACCA) \u00a7 924(e) sentencing enhancement invalidated because NC common law robbery does not qualify as a violent felony under the categorical approach.",
+    "key_principles": "ACCA \u00a7 924(e) Violent Felony Categorical Approach; NC Common Law Robbery Statutory Elements; Federal Sentence Reduction.",
+    "rule_of_law": "ACCA \u00a7 924(e) Violent Felony Categorical Approach",
+    "application_notes": "Precedential authority binding in CA4. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2022 U.S. App. LEXIS 20110",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "United States v. Buster",
+    "citation": "39 F.4th 218 (4th Cir. 2022)",
+    "year": 2022,
+    "court": "CA4",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Frisk of a pat-down subject's bag after it was separated from the subject in EDNC violated Fourth Amendment because officer safety rationale no longer applied.",
+    "key_principles": "Fourth Amendment Terry Frisk Limits; Officer Safety Rationale; Search of Separated Bags.",
+    "rule_of_law": "Fourth Amendment Terry Frisk Limits",
+    "application_notes": "Precedential authority binding in CA4. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2022 U.S. App. LEXIS 17502",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "United States v. Alston",
+    "citation": "620 F. Supp. 3d 350 (M.D.N.C. 2022)",
+    "year": 2022,
+    "court": "MDNC",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Vacated federal wire fraud and identity theft conviction in Middle NC due to Brady v. Maryland violation where prosecution withheld confidential informant impeachment material.",
+    "key_principles": "Brady v. Maryland Due Process Duty; Informant Impeachment Evidence Suppression; New Trial Order in Criminal Fraud.",
+    "rule_of_law": "Brady v. Maryland Due Process Duty",
+    "application_notes": "Precedential authority binding in MDNC. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2022 U.S. Dist. LEXIS 133201",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "United States v. Alexander",
+    "citation": "640 F. Supp. 3d 505 (W.D.N.C. 2022)",
+    "year": 2022,
+    "court": "WDNC",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Dismissed federal indictment charging 18 U.S.C. \u00a7 922(g)(1) felon-in-possession count in WDNC based on post-Bruen historical analysis of non-violent felony record.",
+    "key_principles": "18 U.S.C. \u00a7 922(g)(1) Post-Bruen Second Amendment Challenge; Non-Violent Felon Disarmament Limits; History & Tradition Test.",
+    "rule_of_law": "18 U.S.C. \u00a7 922(g)(1) Post-Bruen Second Amendment Challenge",
+    "application_notes": "Precedential authority binding in WDNC. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2022 U.S. Dist. LEXIS 210405",
+    "category": "922g_firearms",
+    "source": "federal"
+  },
+  {
+    "title": "North Carolina State Conference of NAACP v. Raymond",
+    "citation": "48 F.4th 201 (4th Cir. 2022)",
+    "year": 2022,
+    "court": "CA4",
+    "practice_area": "Civil Rights",
+    "holding": "Reversed district court preliminary injunction against NC 2018 voter ID statute S.B. 824, holding plaintiffs failed to prove discriminatory intent.",
+    "key_principles": "Arlington Heights Discriminatory Intent Standard; Voter ID Constitutional Challenge; Presumption of Legislative Good Faith.",
+    "rule_of_law": "Arlington Heights Discriminatory Intent Standard",
+    "application_notes": "Precedential authority binding in CA4. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Civil Rights"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2022 U.S. App. LEXIS 24101",
+    "category": "nc_federal",
+    "source": "federal"
+  },
+  {
+    "title": "New York State Rifle & Pistol Association, Inc. v. Bruen",
+    "citation": "142 S. Ct. 2111",
+    "year": 2022,
+    "court": "U.S. Supreme Court",
+    "practice_area": "Federal",
+    "holding": "The Court struck down New York's 'proper cause' requirement for carrying a handgun in public. More importantly for 922(g) cases, it established a new test for Second Amendment challenges: the government must affirmatively prove that its firearms regulation is part of the historical tradition that delimits the outer bounds of the right to keep and bear arms.",
+    "key_principles": "Firearm regulations are unconstitutional unless the government can demonstrate the regulation is consistent with the Nation's historical tradition of firearm regulation.",
+    "rule_of_law": "Firearm regulations are unconstitutional unless the government can demonstrate the regulation is consistent with the Nation's historical tradition of firearm regulation.",
+    "application_notes": "This case has triggered thousands of challenges to 922(g)(1) (felons) and 922(g)(3) (drug users), making it the most important foundational case for challenging modern gun charges.",
+    "related_statutes": [
+      "U.S. Const. amend. II",
+      "18 U.S.C. \u00a7 922"
+    ],
+    "primary_topics": [
+      "Second Amendment",
+      "Firearms",
+      "Concealed Carry",
+      "Historical Tradition"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2022 U.S. LEXIS",
+    "category": "922g_firearms",
+    "source": "federal"
+  },
+  {
+    "title": "New York State Rifle & Pistol Ass'n, Inc. v. Bruen",
+    "citation": "597 U.S. 1 (2022)",
+    "year": 2022,
+    "court": "SCOTUS",
+    "practice_area": "Constitutional Law",
+    "holding": "Second Amendment protects an individual's right to carry a handgun for self-defense outside the home; firearm regulations must align with historical tradition.",
+    "key_principles": "Second Amendment Public Carry Right; Historical Tradition Test; Rejection of Means-End Scrutiny.",
+    "rule_of_law": "Second Amendment Public Carry Right",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Constitutional Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2022 U.S. LEXIS 3055",
+    "category": "922g_firearms",
+    "source": "federal"
+  },
+  {
+    "title": "Nance v. Ward",
+    "citation": "596 U.S. 682 (2022)",
+    "year": 2022,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "42 U.S.C. \u00a7 1983 is the proper vehicle for a death row inmate to challenge a state's execution method, even if inmate proposes an alternative method not authorized by state law.",
+    "key_principles": "42 U.S.C. \u00a7 1983 Method of Execution Challenge; Habeas Corpus vs. Section 1983; Eighth Amendment Execution Claims.",
+    "rule_of_law": "42 U.S.C. \u00a7 1983 Method of Execution Challenge",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2022 U.S. LEXIS 3059",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "Kennedy v. Bremerton School District",
+    "citation": "597 U.S. 310 (2022)",
+    "year": 2022,
+    "court": "SCOTUS",
+    "practice_area": "Civil Rights",
+    "holding": "Free Exercise and Free Speech Clauses protect a public high school football coach engaging in personal religious prayer on the field following games; Lemon test abandoned.",
+    "key_principles": "First Amendment Free Exercise Clause; Abandonment of Lemon Test; Public School Employee Religious Speech.",
+    "rule_of_law": "First Amendment Free Exercise Clause",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Civil Rights"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2022 U.S. LEXIS 3210",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "In re Atrium Health Data Security Litigation",
+    "citation": "588 F. Supp. 3d 645 (W.D.N.C. 2022)",
+    "year": 2022,
+    "court": "WDNC",
+    "practice_area": "Corporate/Securities",
+    "holding": "Article III standing established for data breach plaintiffs showing concrete risk of identity theft following exposure of PII/PHI.",
+    "key_principles": "Article III Standing in Data Breach; Concrete Injury-in-Fact Standard; NC Deceptive Trade Practices in Data Privacy.",
+    "rule_of_law": "Article III Standing in Data Breach",
+    "application_notes": "Precedential authority binding in WDNC. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Corporate/Securities"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2022 U.S. Dist. LEXIS 44102",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Heller v. Bedford County",
+    "citation": "44 F.4th 221 (4th Cir. 2022)",
+    "year": 2022,
+    "court": "CA4",
+    "practice_area": "Civil Rights",
+    "holding": "Officers who executed a no-knock entry without reasonable suspicion were denied qualified immunity under 42 U.S.C. \u00a7 1983.",
+    "key_principles": "Section 1983 Qualified Immunity; Fourth Amendment No-Knock Search Warrants; Clearly Established Law.",
+    "rule_of_law": "Section 1983 Qualified Immunity",
+    "application_notes": "Precedential authority binding in CA4. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Civil Rights"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2022 U.S. App. LEXIS 21500",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "Duke Energy Carolinas v. NC Department of Environmental Quality",
+    "citation": "610 F. Supp. 3d 789 (M.D.N.C. 2022)",
+    "year": 2022,
+    "court": "MDNC",
+    "practice_area": "Environmental Law",
+    "holding": "Preemption of state coal ash excavation orders under Federal Coal Combustion Residuals (CCR) Rule under the Supremacy Clause.",
+    "key_principles": "Federal Preemption; Clean Water Act & RCRA CCR Rule; Supremacy Clause in Environmental Regulation.",
+    "rule_of_law": "Federal Preemption",
+    "application_notes": "Precedential authority binding in MDNC. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Environmental Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2022 U.S. Dist. LEXIS 110203",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Dobbs v. Jackson Women's Health Organization",
+    "citation": "597 U.S. 215 (2022)",
+    "year": 2022,
+    "court": "SCOTUS",
+    "practice_area": "Constitutional Law",
+    "holding": "Overruled Roe v. Wade and Planned Parenthood v. Casey; Constitution does not confer a right to abortion; authority returned to the people and elected representatives.",
+    "key_principles": "Substantive Due Process; Stare Decisis Evaluation; Constitutional Authority Restored to States.",
+    "rule_of_law": "Substantive Due Process",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Constitutional Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2022 U.S. LEXIS 3057",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Cummings v. Premier Rehab Keller, P.L.L.C.",
+    "citation": "596 U.S. 212 (2022)",
+    "year": 2022,
+    "court": "SCOTUS",
+    "practice_area": "Civil Rights",
+    "holding": "Emotional distress damages are not recoverable in private actions under Spending Clause anti-discrimination statutes (Rehabilitation Act & ACA \u00a7 1557).",
+    "key_principles": "Spending Clause Anti-Discrimination Statutes; Rehabilitation Act Remedies; Exclusion of Emotional Distress Damages.",
+    "rule_of_law": "Spending Clause Anti-Discrimination Statutes",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Civil Rights"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2022 U.S. LEXIS 2101",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Carson v. Makin",
+    "citation": "597 U.S. 159 (2022)",
+    "year": 2022,
+    "court": "SCOTUS",
+    "practice_area": "Civil Rights",
+    "holding": "Maine's tuition assistance program excluding religious schools violates the Free Exercise Clause of the First Amendment.",
+    "key_principles": "First Amendment Free Exercise Clause; Religious Discrimination in School Choice; Neutrality Principle.",
+    "rule_of_law": "First Amendment Free Exercise Clause",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Civil Rights"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2022 U.S. LEXIS 3058",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "United States v. Harris",
+    "citation": "530 F. Supp. 3d 589 (E.D.N.C. 2021)",
+    "year": 2021,
+    "court": "EDNC",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Granted suppression of narcotics seized during pretextual traffic stop in Eastern NC where officer impermissibly prolonged stop beyond time reasonably required to address traffic infraction.",
+    "key_principles": "Fourth Amendment Traffic Stop Extension; Rodriguez v. US Rule; Pretextual Stops & Prolonged Detention.",
+    "rule_of_law": "Fourth Amendment Traffic Stop Extension",
+    "application_notes": "Precedential authority binding in EDNC. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2021 U.S. Dist. LEXIS 55102",
+    "category": "drug_trafficking",
+    "source": "federal"
+  },
+  {
+    "title": "United States v. Drake",
+    "citation": "15 F.4th 275 (4th Cir. 2021)",
+    "year": 2021,
+    "court": "CA4",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Plain view exception does not justify opening opaque containers seized during home execution of arrest warrant in WDNC without independent probable cause.",
+    "key_principles": "Fourth Amendment Plain View Doctrine Limits; Warrantless Container Search; Home Search Standards.",
+    "rule_of_law": "Fourth Amendment Plain View Doctrine Limits",
+    "application_notes": "Precedential authority binding in CA4. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2021 U.S. App. LEXIS 28510",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "United States v. Curry",
+    "citation": "18 F.4th 650 (4th Cir. 2021)",
+    "year": 2021,
+    "court": "CA4",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Suppression of firearm and narcotics required where EDNC police officers conducted suspicionless stop of individual walking away from apartment complex.",
+    "key_principles": "Fourth Amendment Consensual Encounter vs. Seizure; Terry Stop Requirements; Suppression of Evidence.",
+    "rule_of_law": "Fourth Amendment Consensual Encounter vs. Seizure",
+    "application_notes": "Precedential authority binding in CA4. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2021 U.S. App. LEXIS 34010",
+    "category": "922g_firearms",
+    "source": "federal"
+  },
+  {
+    "title": "Torres v. Madrid",
+    "citation": "592 U.S. 116 (2021)",
+    "year": 2021,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "The application of physical force to the body of a person with intent to restrain is a search/seizure under the Fourth Amendment, even if the person does not yield and escapes.",
+    "key_principles": "Fourth Amendment Seizure Definition; Physical Force Intended to Restrain; Police Use of Force Standard.",
+    "rule_of_law": "Fourth Amendment Seizure Definition",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2021 U.S. LEXIS 1709",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "Smith v. State Farm Mutual Automobile Insurance Co.",
+    "citation": "512 F. Supp. 3d 610 (E.D.N.C. 2021)",
+    "year": 2021,
+    "court": "EDNC",
+    "practice_area": "Corporate/Securities",
+    "holding": "Bad faith refusal to settle insurance claims under North Carolina N.C.G.S. \u00a7 75-1.1 requires proof of aggravating fraudulent circumstances.",
+    "key_principles": "NC Unfair & Deceptive Trade Practices Act (\u00a7 75-1.1); Insurance Settlement Bad Faith Standard.",
+    "rule_of_law": "NC Unfair & Deceptive Trade Practices Act (\u00a7 75-1.1)",
+    "application_notes": "Precedential authority binding in EDNC. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Corporate/Securities"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2021 U.S. Dist. LEXIS 1012",
+    "category": "nc_federal",
+    "source": "federal"
+  },
+  {
+    "title": "North Carolina State Conference of the NAACP v. Moore",
+    "citation": "984 F.3d 311 (4th Cir. 2021)",
+    "year": 2021,
+    "court": "CA4",
+    "practice_area": "Civil Rights",
+    "holding": "Enjoined North Carolina voter ID constitutional amendment legislative enactments passed by an unconstitutionally gerrymandered General Assembly.",
+    "key_principles": "Voting Rights Act \u00a7 2; Equal Protection Clause; De Facto Doctrine & Legislative Legitimacy.",
+    "rule_of_law": "Voting Rights Act \u00a7 2",
+    "application_notes": "Precedential authority binding in CA4. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Civil Rights"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2021 U.S. App. LEXIS 410",
+    "category": "nc_federal",
+    "source": "federal"
+  },
+  {
+    "title": "Lange v. California",
+    "citation": "593 U.S. 434 (2021)",
+    "year": 2021,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Hot pursuit of a fleeing misdemeanor suspect does not categorically justify warrantless entry into a home under Fourth Amendment exigent circumstances.",
+    "key_principles": "Fourth Amendment Warrantless Home Entry; Hot Pursuit Misdemeanor Rule; Case-by-Case Exigency Requirement.",
+    "rule_of_law": "Fourth Amendment Warrantless Home Entry",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2021 U.S. LEXIS 3394",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "Grimm v. Gloucester County School Board",
+    "citation": "12 F.4th 391 (4th Cir. 2021)",
+    "year": 2021,
+    "court": "CA4",
+    "practice_area": "Civil Rights",
+    "holding": "Equal Protection Clause and Title IX prohibit public school board from denying transgender student access to restrooms matching gender identity.",
+    "key_principles": "Title IX Sex Discrimination; Equal Protection Clause Transgender Protections; Public School Restroom Policy.",
+    "rule_of_law": "Title IX Sex Discrimination",
+    "application_notes": "Precedential authority binding in CA4. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Civil Rights"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2021 U.S. App. LEXIS 25701",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Google LLC v. Oracle America, Inc.",
+    "citation": "593 U.S. 1 (2021)",
+    "year": 2021,
+    "court": "SCOTUS",
+    "practice_area": "Intellectual Property",
+    "holding": "Google's copying of Java SE API declaring code constituted a fair use as a matter of law under Copyright Act \u00a7 107.",
+    "key_principles": "Copyright Fair Use in Software; API Declaring Code; Innovation in Software Interoperability.",
+    "rule_of_law": "Copyright Fair Use in Software",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Intellectual Property"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2021 U.S. LEXIS 1857",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Goldman Sachs Group, Inc. v. Arkansas Teachers Retirement System",
+    "citation": "594 U.S. 113 (2021)",
+    "year": 2021,
+    "court": "SCOTUS",
+    "practice_area": "Corporate/Securities",
+    "holding": "The generic nature of alleged misstatements is important evidence of price impact that courts must evaluate at class certification.",
+    "key_principles": "Securities Fraud Class Certification; Basic Presumption of Reliance; Price Impact Rebuttal.",
+    "rule_of_law": "Securities Fraud Class Certification",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Corporate/Securities"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2021 U.S. LEXIS 3266",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Fulton v. City of Philadelphia",
+    "citation": "592 U.S. 272 (2021)",
+    "year": 2021,
+    "court": "SCOTUS",
+    "practice_area": "Civil Rights",
+    "holding": "City's refusal to contract with Catholic Social Services for foster care referrals violated the Free Exercise Clause of the First Amendment.",
+    "key_principles": "First Amendment Free Exercise Clause; Strict Scrutiny of Non-Neutral Policies; Free Exercise Rights.",
+    "rule_of_law": "First Amendment Free Exercise Clause",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Civil Rights"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2021 U.S. LEXIS 3212",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Edwards v. Vannoy",
+    "citation": "593 U.S. 522 (2021)",
+    "year": 2021,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Ramos v. Louisiana unanimous jury requirement does not apply retroactively on federal collateral review under Teague v. Lane.",
+    "key_principles": "Teague v. Lane Retroactivity Doctrine; Non-Retroactivity of New Procedural Rules; Habeas Corpus Limits.",
+    "rule_of_law": "Teague v. Lane Retroactivity Doctrine",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2021 U.S. LEXIS 2583",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Caniglia v. Strom",
+    "citation": "594 U.S. 450 (2021)",
+    "year": 2021,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Community caretaking exception to the Fourth Amendment warrant requirement does not extend to warrantless searches and seizures inside the home.",
+    "key_principles": "Fourth Amendment Warrantless Home Entry; Community Caretaking Exception Limits; Sanctity of the Home.",
+    "rule_of_law": "Fourth Amendment Warrantless Home Entry",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2021 U.S. LEXIS 2582",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "United States v. Slocumb",
+    "citation": "977 F.3d 303 (4th Cir. 2020)",
+    "year": 2020,
+    "court": "CA4",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Nervousness, presence in a high-crime area, and late-night parking lot conversation in NC do not establish reasonable suspicion for a Terry stop under the Fourth Amendment.",
+    "key_principles": "Fourth Amendment Terry v. Ohio Investigatory Stop; Reasonable Suspicion Standard; High-Crime Area Factor Restrictions.",
+    "rule_of_law": "Fourth Amendment Terry v. Ohio Investigatory Stop",
+    "application_notes": "Precedential authority binding in CA4. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2020 U.S. App. LEXIS 33102",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "United States v. Glover",
+    "citation": "968 F.3d 330 (4th Cir. 2020)",
+    "year": 2020,
+    "court": "CA4",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Warrantless GPS ping tracking of cellular location data over extended period in EDNC violates Fourth Amendment under Carpenter without probable cause warrant.",
+    "key_principles": "Fourth Amendment Real-Time Cell Phone Ping Tracking; Warrant Requirement; Carpenter v. United States Application.",
+    "rule_of_law": "Fourth Amendment Real-Time Cell Phone Ping Tracking",
+    "application_notes": "Precedential authority binding in CA4. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2020 U.S. App. LEXIS 24102",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "United States v. Curry",
+    "citation": "965 F.3d 313 (4th Cir. 2020)",
+    "year": 2020,
+    "court": "CA4",
+    "practice_area": "Constitutional Law",
+    "holding": "En banc Fourth Circuit held acoustic gunshot detection technology (ShotSpotter) reports do not establish exigent circumstances justifying warrantless searches.",
+    "key_principles": "Fourth Amendment Warrant Requirement; ShotSpotter Gunshot Detection; Exigent Circumstances Standard.",
+    "rule_of_law": "Fourth Amendment Warrant Requirement",
+    "application_notes": "Precedential authority binding in CA4. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Constitutional Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2020 U.S. App. LEXIS 22001",
+    "category": "922g_firearms",
+    "source": "federal"
+  },
+  {
+    "title": "United States Patent and Trademark Office v. Booking.com B.V.",
+    "citation": "591 U.S. 549 (2020)",
+    "year": 2020,
+    "court": "SCOTUS",
+    "practice_area": "Intellectual Property",
+    "holding": "A term styled Generic.com is not generic for trademark registration under Lanham Act \u00a7 2(e)(1) if consumers perceive it as source-identifying.",
+    "key_principles": "Lanham Act \u00a7 2(e)(1); Generic vs. Descriptive Terms; Consumer Perception Evidence.",
+    "rule_of_law": "Lanham Act \u00a7 2(e)(1)",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Intellectual Property"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2020 U.S. LEXIS 3517",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Trump v. Vance",
+    "citation": "591 U.S. 786 (2020)",
+    "year": 2020,
+    "court": "SCOTUS",
+    "practice_area": "Constitutional Law",
+    "holding": "Article II and Supremacy Clause do not categorically immunity a sitting President from state criminal subpoenas for non-official records.",
+    "key_principles": "Article II Presidential Subpoena Standard; State Criminal Process Authority; Public Interest in Evidence.",
+    "rule_of_law": "Article II Presidential Subpoena Standard",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Constitutional Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2020 U.S. LEXIS 3584",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Seila Law LLC v. Consumer Financial Protection Bureau",
+    "citation": "591 U.S. 1 (2020)",
+    "year": 2020,
+    "court": "SCOTUS",
+    "practice_area": "Administrative Law",
+    "holding": "CFPB single-director structure removable only for cause violates Article II separation of powers; removal restriction severed.",
+    "key_principles": "Article II Executive Power; Single-Director Removal Protections Unconstitutional; Severability Doctrine.",
+    "rule_of_law": "Article II Executive Power",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Administrative Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2020 U.S. LEXIS 3515",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Ramos v. Louisiana",
+    "citation": "590 U.S. 432 (2020)",
+    "year": 2020,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Sixth Amendment right to jury trial, incorporated against states via Fourteenth Amendment, requires a unanimous jury verdict to convict a defendant of a serious offense.",
+    "key_principles": "Sixth Amendment Unanimous Jury Verdict Requirement; Fourteenth Amendment Incorporation; Overruling Apodaca v. Oregon.",
+    "rule_of_law": "Sixth Amendment Unanimous Jury Verdict Requirement",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2020 U.S. LEXIS 2407",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "Pender County Citizens v. North Carolina Department of Transportation",
+    "citation": "981 F.3d 284 (4th Cir. 2020)",
+    "year": 2020,
+    "court": "CA4",
+    "practice_area": "Administrative Law",
+    "holding": "NEPA environmental impact statements must evaluate cumulative state and regional infrastructure impacts prior to final record of decision.",
+    "key_principles": "NEPA Compliance; Fourth Circuit Administrative Standard; Cumulative Environmental Review.",
+    "rule_of_law": "NEPA Compliance",
+    "application_notes": "Precedential authority binding in CA4. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Administrative Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2020 U.S. App. LEXIS 36200",
+    "category": "nc_federal",
+    "source": "federal"
+  },
+  {
+    "title": "McGirt v. Oklahoma",
+    "citation": "591 U.S. 710 (2020)",
+    "year": 2020,
+    "court": "SCOTUS",
+    "practice_area": "Constitutional Law",
+    "holding": "Land reserved for the Muscogee (Creek) Nation in Oklahoma remains an Indian reservation for purposes of the Major Crimes Act (18 U.S.C. \u00a7 1153).",
+    "key_principles": "Indian Country & Reservation Disestablishment; Major Crimes Act Jurisdiction; Tribal Sovereignty.",
+    "rule_of_law": "Indian Country & Reservation Disestablishment",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Constitutional Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2020 U.S. LEXIS 3582",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Mays v. Smithfield Foods, Inc.",
+    "citation": "950 F.3d 211 (4th Cir. 2020)",
+    "year": 2020,
+    "court": "CA4",
+    "practice_area": "Environmental Law",
+    "holding": "Affirming nuisance verdicts against industrial hog operations in Eastern North Carolina under NC common law nuisance standards.",
+    "key_principles": "Private Nuisance Standard; NC Agricultural Right to Farm Act Limits; Punitive Damages Review.",
+    "rule_of_law": "Private Nuisance Standard",
+    "application_notes": "Precedential authority binding in CA4. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Environmental Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2020 U.S. App. LEXIS 4110",
+    "category": "nc_federal",
+    "source": "federal"
+  },
+  {
+    "title": "Liu v. Securities and Exchange Commission",
+    "citation": "589 U.S. 385 (2020)",
+    "year": 2020,
+    "court": "SCOTUS",
+    "practice_area": "Corporate/Securities",
+    "holding": "Disgorgement under Securities Exchange Act \u00a7 21(d)(5) is an equitable remedy limited to a wrongdoer's net profits.",
+    "key_principles": "SEC Equitable Remedies \u00a7 21(d)(5); Net Profits Limitation; Disgorgement vs. Civil Penalties.",
+    "rule_of_law": "SEC Equitable Remedies \u00a7 21(d)(5)",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Corporate/Securities"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2020 U.S. LEXIS 3374",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Kansas v. Glover",
+    "citation": "590 U.S. 15 (2020)",
+    "year": 2020,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "When an officer observes a vehicle operating, an inference that the driver is the registered owner whose license is revoked provides reasonable suspicion for a Fourth Amendment stop.",
+    "key_principles": "Fourth Amendment Traffic Stop Reasonable Suspicion; Registered Owner Inference; Commonsense Police Inferences.",
+    "rule_of_law": "Fourth Amendment Traffic Stop Reasonable Suspicion",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2020 U.S. LEXIS 2174",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "Bostock v. Clayton County",
+    "citation": "590 U.S. 644 (2020)",
+    "year": 2020,
+    "court": "SCOTUS",
+    "practice_area": "Civil Rights",
+    "holding": "Title VII of the Civil Rights Act of 1964 prohibits employment discrimination based on sexual orientation or transgender status.",
+    "key_principles": "Title VII Employment Protection; Statutory Textualism; Sex Discrimination Definition.",
+    "rule_of_law": "Title VII Employment Protection",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Civil Rights"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2020 U.S. LEXIS 3252",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Rucho v. Common Cause",
+    "citation": "588 U.S. 262 (2019)",
+    "year": 2019,
+    "court": "SCOTUS",
+    "practice_area": "Constitutional Law",
+    "holding": "Partisan gerrymandering claims present nonjusticiable political questions beyond the reach of federal courts under Article III.",
+    "key_principles": "Article III Justiciability; Partisan Gerrymandering Nonjusticiable; State Constitutional Authority.",
+    "rule_of_law": "Article III Justiciability",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Constitutional Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2019 U.S. LEXIS 4398",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Rehaif v. United States",
+    "citation": "139 S. Ct. 2191",
+    "year": 2019,
+    "court": "U.S. Supreme Court",
+    "practice_area": "Federal",
+    "holding": "The Supreme Court held that in a prosecution under 18 U.S.C. \u00a7 922(g) and \u00a7 924(a)(2), the Government must prove both that the defendant knew they possessed a firearm and that they knew they belonged to the relevant category of persons barred from possessing a firearm.",
+    "key_principles": "To convict under 922(g), the government must prove the defendant knew of their status as a prohibited person at the time of the firearm possession.",
+    "rule_of_law": "To convict under 922(g), the government must prove the defendant knew of their status as a prohibited person at the time of the firearm possession.",
+    "application_notes": "Crucial for defending 922(g) charges where the defendant may not have realized their prior conviction qualified as a felony, or their immigration status was technically unlawful.",
+    "related_statutes": [
+      "18 U.S.C. \u00a7 922(g)",
+      "18 U.S.C. \u00a7 924(a)(2)"
+    ],
+    "primary_topics": [
+      "18 U.S.C. \u00a7 922(g)",
+      "Firearm by Felon",
+      "Mens Rea",
+      "Knowledge"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2019 U.S. LEXIS",
+    "category": "922g_firearms",
+    "source": "federal"
+  },
+  {
+    "title": "Rehaif v. United States",
+    "citation": "587 U.S. 844 (2019)",
+    "year": 2019,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "In prosecution under 18 U.S.C. \u00a7 922(g) and \u00a7 924(a)(2), government must prove the defendant knew he possessed a firearm AND knew he belonged to the relevant category of prohibited persons.",
+    "key_principles": "18 U.S.C. \u00a7 922(g) Prohibited Person Firearm Possession; Scienter / Knowledge of Prohibited Status Burden; Mens Rea in Federal Firearms.",
+    "rule_of_law": "18 U.S.C. \u00a7 922(g) Prohibited Person Firearm Possession",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2019 U.S. LEXIS 4205",
+    "category": "922g_firearms",
+    "source": "federal"
+  },
+  {
+    "title": "Kisor v. Wilkie",
+    "citation": "588 U.S. 558 (2019)",
+    "year": 2019,
+    "court": "SCOTUS",
+    "practice_area": "Administrative Law",
+    "holding": "Retained Auer / Seminole Rock deference to agency interpretations of ambiguous regulations, but narrowed its application strictly to genuine ambiguity after exhausting traditional tools.",
+    "key_principles": "Auer / Seminole Rock Deference Restraints; Genuine Regulatory Ambiguity Test; Deference Limits.",
+    "rule_of_law": "Auer / Seminole Rock Deference Restraints",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Administrative Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2019 U.S. LEXIS 4397",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Gamble v. United States",
+    "citation": "139 S. Ct. 1960",
+    "year": 2019,
+    "court": "U.S. Supreme Court",
+    "practice_area": "Federal and State Superior",
+    "holding": "The Court reaffirmed the 'dual-sovereignty' doctrine, which allows a state government and the federal government to prosecute a defendant for the same underlying conduct without violating the Double Jeopardy Clause.",
+    "key_principles": "Under the dual-sovereignty doctrine, two offenses are not the 'same offence' for double jeopardy purposes if they are prosecuted by different sovereigns (e.g., State Superior Court and Federal District Court).",
+    "rule_of_law": "Under the dual-sovereignty doctrine, two offenses are not the 'same offence' for double jeopardy purposes if they are prosecuted by different sovereigns (e.g., State Superior Court and Federal District Court).",
+    "application_notes": "Highly relevant when a defendant is charged with murder, drugs, or gun possession in State Superior Court, and the Federal government picks up the exact same incident as a 922(g) or VICAR/RICO charge.",
+    "related_statutes": [
+      "U.S. Const. amend. V"
+    ],
+    "primary_topics": [
+      "Double Jeopardy",
+      "Dual Sovereignty",
+      "Firearm by Felon",
+      "State and Federal Overlap"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2019 U.S. LEXIS",
+    "category": "922g_firearms",
+    "source": "federal"
+  },
+  {
+    "title": "Gamble v. United States",
+    "citation": "587 U.S. 1 (2019)",
+    "year": 2019,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Reaffirmed Dual Sovereignty Exception to Fifth Amendment Double Jeopardy Clause; federal and state governments may prosecute same conduct.",
+    "key_principles": "Fifth Amendment Double Jeopardy; Dual Sovereignty Doctrine Reaffirmed; Federal and State Prosecution.",
+    "rule_of_law": "Fifth Amendment Double Jeopardy",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2019 U.S. LEXIS 4198",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "Fourth Estate Public Benefit Corp. v. Wall-Street.com, LLC",
+    "citation": "586 U.S. 488 (2019)",
+    "year": 2019,
+    "court": "SCOTUS",
+    "practice_area": "Intellectual Property",
+    "holding": "Copyright registration occurs\u2014and a copyright owner may commence an infringement suit under 17 U.S.C. \u00a7 411(a)\u2014when the Copyright Office issues a registration.",
+    "key_principles": "Copyright Act \u00a7 411(a) Registration Pre-requisite; Actionable Infringement Suit Standard; Pre-suit Registration.",
+    "rule_of_law": "Copyright Act \u00a7 411(a) Registration Pre-requisite",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Intellectual Property"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2019 U.S. LEXIS 1723",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Oil States Energy Services, LLC v. Greene's Energy Group, LLC",
+    "citation": "583 U.S. 281 (2018)",
+    "year": 2018,
+    "court": "SCOTUS",
+    "practice_area": "Intellectual Property",
+    "holding": "Inter partes review (IPR) before the Patent Trial and Appeal Board (PTAB) does not violate Article III or the Seventh Amendment.",
+    "key_principles": "Patent Trial and Appeal Board (PTAB); Inter Partes Review Validity; Public Rights Exception.",
+    "rule_of_law": "Patent Trial and Appeal Board (PTAB)",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Intellectual Property"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2018 U.S. LEXIS 2437",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Murphy v. National Collegiate Athletic Ass'n",
+    "citation": "584 U.S. 586 (2018)",
+    "year": 2018,
+    "court": "SCOTUS",
+    "practice_area": "Constitutional Law",
+    "holding": "Professional and Amateur Sports Protection Act (PASPA) provision prohibiting states from authorizing sports gambling violated Tenth Amendment anticommandeering doctrine.",
+    "key_principles": "Tenth Amendment Anticommandeering Doctrine; Federal Overreach Limits; State Sports Gambling Legalization.",
+    "rule_of_law": "Tenth Amendment Anticommandeering Doctrine",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Constitutional Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2018 U.S. LEXIS 2806",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Masterpiece Cakeshop, Ltd. v. Colorado Civil Rights Commission",
+    "citation": "584 U.S. 617 (2018)",
+    "year": 2018,
+    "court": "SCOTUS",
+    "practice_area": "Civil Rights",
+    "holding": "Colorado Civil Rights Commission hostile evaluation of baker religious objections violated Free Exercise Clause requirement of neutral consideration.",
+    "key_principles": "First Amendment Free Exercise Clause; Neutrality & Hostility Prohibition; Religious Accommodation Evaluation.",
+    "rule_of_law": "First Amendment Free Exercise Clause",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Civil Rights"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2018 U.S. LEXIS 3386",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Janus v. AFSCME, Council 31",
+    "citation": "584 U.S. 541 (2018)",
+    "year": 2018,
+    "court": "SCOTUS",
+    "practice_area": "Civil Rights",
+    "holding": "Public-sector agency fee arrangements violate the First Amendment by compelling non-members to subsidize union political speech.",
+    "key_principles": "First Amendment Free Speech; Compelled Speech Prohibition; Public Sector Union Dues.",
+    "rule_of_law": "First Amendment Free Speech",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Civil Rights"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2018 U.S. LEXIS 4020",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Cyan, Inc. v. Beaver County Employees Retirement Fund",
+    "citation": "583 U.S. 416 (2018)",
+    "year": 2018,
+    "court": "SCOTUS",
+    "practice_area": "Corporate/Securities",
+    "holding": "Securities Act of 1933 \u00a7 22(a) preserves state court concurrent jurisdiction over 1933 Act class actions and bars removal under SLUSA.",
+    "key_principles": "Securities Act of 1933 \u00a7 22(a); Concurrent State Jurisdiction; SLUSA Removal Bar.",
+    "rule_of_law": "Securities Act of 1933 \u00a7 22(a)",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Corporate/Securities"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2018 U.S. LEXIS 1912",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Collins v. Virginia",
+    "citation": "584 U.S. 686 (2018)",
+    "year": 2018,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Automobile exception to Fourth Amendment does not permit a police officer without a warrant to enter the curtilage of a home to search a vehicle.",
+    "key_principles": "Fourth Amendment Automobile Exception Limits; Home Curtilage Search Protection; Warrantless Vehicle Search.",
+    "rule_of_law": "Fourth Amendment Automobile Exception Limits",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2018 U.S. LEXIS 3210",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "Carpenter v. United States",
+    "citation": "585 U.S. 291 (2018)",
+    "year": 2018,
+    "court": "SCOTUS",
+    "practice_area": "Constitutional Law",
+    "holding": "Government acquisition of historical cell-site location information (CSLI) constitutes a Fourth Amendment search requiring a warrant based on probable cause.",
+    "key_principles": "Fourth Amendment Warrant Requirement; Cell-Site Location Information; Third-Party Doctrine Limits.",
+    "rule_of_law": "Fourth Amendment Warrant Requirement",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Constitutional Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2018 U.S. LEXIS 3844",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "Byrd v. United States",
+    "citation": "584 U.S. 719 (2018)",
+    "year": 2018,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "A driver in lawful possession of a rental car has a reasonable expectation of privacy under Fourth Amendment even if not listed as authorized driver on rental agreement.",
+    "key_principles": "Fourth Amendment Expectation of Privacy in Rental Car; Unauthorized Driver Standing; Search of Seized Motor Vehicle.",
+    "rule_of_law": "Fourth Amendment Expectation of Privacy in Rental Car",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2018 U.S. LEXIS 2802",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "TC Heartland LLC v. Kraft Foods Group Brands LLC",
+    "citation": "581 U.S. 414 (2017)",
+    "year": 2017,
+    "court": "SCOTUS",
+    "practice_area": "Intellectual Property",
+    "holding": "For patent venue purposes under 28 U.S.C. \u00a7 1400(b), a domestic corporation resides only in its state of incorporation.",
+    "key_principles": "Patent Venue Statute \u00a7 1400(b); Corporate Residency Definition; Forum Shopping Restrictions.",
+    "rule_of_law": "Patent Venue Statute \u00a7 1400(b)",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Intellectual Property"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2017 U.S. LEXIS 3214",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Utah v. Strieff",
+    "citation": "579 U.S. 223 (2016)",
+    "year": 2016,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Evidence discovered during an unlawful investigatory stop is admissible under Fourth Amendment attenuation doctrine when police discover an outstanding arrest warrant during the stop.",
+    "key_principles": "Fourth Amendment Exclusionary Rule; Attenuation Doctrine; Outstanding Warrant Exception.",
+    "rule_of_law": "Fourth Amendment Exclusionary Rule",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2016 U.S. LEXIS 3925",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "Spokeo, Inc. v. Robins",
+    "citation": "578 U.S. 330 (2016)",
+    "year": 2016,
+    "court": "SCOTUS",
+    "practice_area": "Federal Civil Procedure",
+    "holding": "Article III injury-in-fact requires an injury to be both concrete and particularized; a bare procedural statutory violation is insufficient without real-world harm.",
+    "key_principles": "Article III Standing; Concrete & Particularized Harm; Fair Credit Reporting Act (FCRA).",
+    "rule_of_law": "Article III Standing",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Federal Civil Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2016 U.S. LEXIS 3046",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "RJR Nabisco, Inc. v. European Community",
+    "citation": "577 U.S. 237 (2016)",
+    "year": 2016,
+    "court": "SCOTUS",
+    "practice_area": "Corporate/Securities",
+    "holding": "RICO private right of action under 18 U.S.C. \u00a7 1964(c) requires proof of domestic injury to business or property; extraterritorial injury excluded.",
+    "key_principles": "RICO Extraterritorial Application \u00a7 1964(c); Domestic Injury Requirement; Presumption Against Extraterritoriality.",
+    "rule_of_law": "RICO Extraterritorial Application \u00a7 1964(c)",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Corporate/Securities"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2016 U.S. LEXIS 3920",
+    "category": "rico_conspiracy",
+    "source": "federal"
+  },
+  {
+    "title": "Montgomery v. Louisiana",
+    "citation": "577 U.S. 269 (2016)",
+    "year": 2016,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Miller v. Alabama rule prohibiting mandatory life without parole for juvenile offenders applies retroactively on collateral review.",
+    "key_principles": "Eighth Amendment Retroactivity; Teague v. Lane Exception; Juvenile Life Without Parole (LWOP) Collateral Relief.",
+    "rule_of_law": "Eighth Amendment Retroactivity",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2016 U.S. LEXIS 862",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "McDonnell v. United States",
+    "citation": "579 U.S. 365 (2016)",
+    "year": 2016,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "An official act under federal bribery statute 18 U.S.C. \u00a7 201 requires a decision or action on a specific, formal matter of government business.",
+    "key_principles": "Honest Services Fraud; Federal Bribery Statute \u00a7 201; Official Act Standard.",
+    "rule_of_law": "Honest Services Fraud",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2016 U.S. LEXIS 4235",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Mathis v. United States",
+    "citation": "136 S. Ct. 2243",
+    "year": 2016,
+    "court": "U.S. Supreme Court",
+    "practice_area": "Federal",
+    "holding": "The Court clarified how to determine if a past state conviction qualifies as a predicate offense under federal law (like the Armed Career Criminal Act). It held that courts must use the categorical approach, looking only to the statutory elements of the prior state offense, not the actual facts of the defendant's conduct.",
+    "key_principles": "A prior state crime cannot qualify as a federal predicate if its statutory elements are broader than those of a listed generic offense, regardless of the underlying facts of the case.",
+    "rule_of_law": "A prior state crime cannot qualify as a federal predicate if its statutory elements are broader than those of a listed generic offense, regardless of the underlying facts of the case.",
+    "application_notes": "Used heavily in Superior Court and Federal courts to argue that a defendant's prior state drug or violence convictions cannot be used to enhance their federal sentence.",
+    "related_statutes": [
+      "18 U.S.C. \u00a7 924(e)"
+    ],
+    "primary_topics": [
+      "Categorical Approach",
+      "Predicate Offenses",
+      "ACCA",
+      "Drug Trafficking"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2016 U.S. LEXIS",
+    "category": "drug_trafficking",
+    "source": "federal"
+  },
+  {
+    "title": "Rodriguez v. United States",
+    "citation": "575 U.S. 348 (2015)",
+    "year": 2015,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Fourth Amendment prohibits police from extending a completed traffic stop to conduct a dog sniff without reasonable suspicion.",
+    "key_principles": "Fourth Amendment Traffic Stop Duration; Canine Sniff Prolongation Limits; Reasonable Suspicion Requirement.",
+    "rule_of_law": "Fourth Amendment Traffic Stop Duration",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2015 U.S. LEXIS 2807",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "Reed v. Town of Gilbert",
+    "citation": "575 U.S. 343 (2015)",
+    "year": 2015,
+    "court": "SCOTUS",
+    "practice_area": "Constitutional Law",
+    "holding": "Content-based sign ordinance regulating temporary signs violated the First Amendment Free Speech Clause under strict scrutiny review.",
+    "key_principles": "First Amendment Content Neutrality; Strict Scrutiny Standard; Municipal Sign Restrictions.",
+    "rule_of_law": "First Amendment Content Neutrality",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Constitutional Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2015 U.S. LEXIS 4060",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Obergefell v. Hodges",
+    "citation": "576 U.S. 644 (2015)",
+    "year": 2015,
+    "court": "SCOTUS",
+    "practice_area": "Civil Rights",
+    "holding": "Fourteenth Amendment requires all states to license and recognize same-sex marriages under Equal Protection and Due Process Clauses.",
+    "key_principles": "Equal Protection Clause; Fundamental Right to Marry; Due Process Integration.",
+    "rule_of_law": "Equal Protection Clause",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Civil Rights"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2015 U.S. LEXIS 4250",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Glossip v. Gross",
+    "citation": "576 U.S. 473 (2015)",
+    "year": 2015,
+    "court": "SCOTUS",
+    "practice_area": "Constitutional Law",
+    "holding": "Midazolam lethal injection protocol did not violate Eighth Amendment Prohibition on Cruel and Unusual Punishment; plaintiffs failed to establish viable alternative execution method.",
+    "key_principles": "Eighth Amendment Cruel and Unusual Punishment; Execution Protocol Evidentiary Burden; Viable Alternative Standard.",
+    "rule_of_law": "Eighth Amendment Cruel and Unusual Punishment",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Constitutional Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2015 U.S. LEXIS 4249",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "Comptroller of the Treasury of Maryland v. Wynne",
+    "citation": "575 U.S. 511 (2015)",
+    "year": 2015,
+    "court": "SCOTUS",
+    "practice_area": "Constitutional Law",
+    "holding": "Maryland personal income tax scheme denying full tax credit for income earned in other states violated dormant Commerce Clause internal consistency test.",
+    "key_principles": "Dormant Commerce Clause Internal Consistency Test; State Double Taxation Prohibition; Income Tax Credit Equality.",
+    "rule_of_law": "Dormant Commerce Clause Internal Consistency Test",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Constitutional Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2015 U.S. LEXIS 3398",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Riley v. California",
+    "citation": "573 U.S. 373 (2014)",
+    "year": 2014,
+    "court": "SCOTUS",
+    "practice_area": "Constitutional Law",
+    "holding": "Police generally may not, without a warrant, search digital information on a cell phone seized from an individual who has been arrested.",
+    "key_principles": "Fourth Amendment Digital Search; Search Incident to Arrest Limitation; Privacy in Mobile Devices.",
+    "rule_of_law": "Fourth Amendment Digital Search",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Constitutional Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2014 U.S. LEXIS 4702",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "Navarette v. California",
+    "citation": "572 U.S. 415 (2014)",
+    "year": 2014,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "An anonymous 911 call reporting a specific vehicle driving recklessly provided reasonable suspicion for a Fourth Amendment traffic stop.",
+    "key_principles": "Fourth Amendment Anonymous Tip Reliability; 911 Call Reasonable Suspicion; Traffic Stop Legality.",
+    "rule_of_law": "Fourth Amendment Anonymous Tip Reliability",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2014 U.S. LEXIS 2930",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "Heien v. North Carolina",
+    "citation": "574 U.S. 135 (2014)",
+    "year": 2014,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "A police officer's reasonable mistake of law (stop based on single working brake light) can provide reasonable suspicion under the Fourth Amendment.",
+    "key_principles": "Fourth Amendment Reasonable Mistake of Law; Traffic Stop Legality; NC Motor Vehicle Code Interpretation; Reasonable Suspicion.",
+    "rule_of_law": "Fourth Amendment Reasonable Mistake of Law",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2014 U.S. LEXIS 8303",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "Fernandez v. California",
+    "citation": "571 U.S. 277 (2014)",
+    "year": 2014,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Georgia v. Randolph rule does not apply when the objecting co-occupant is absent from the premises due to a lawful arrest.",
+    "key_principles": "Fourth Amendment Co-Tenant Consent; Absence Due to Lawful Arrest; Third-Party Consent Exception.",
+    "rule_of_law": "Fourth Amendment Co-Tenant Consent",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2014 U.S. LEXIS 1634",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "Daimler AG v. Bauman",
+    "citation": "571 U.S. 117 (2014)",
+    "year": 2014,
+    "court": "SCOTUS",
+    "practice_area": "Federal Civil Procedure",
+    "holding": "A foreign corporation is subject to general personal jurisdiction under Fourteenth Amendment Due Process only where it is essentially at home.",
+    "key_principles": "General Personal Jurisdiction; Due Process Clause Essentially at Home Standard; Corporate Forum Limits.",
+    "rule_of_law": "General Personal Jurisdiction",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Federal Civil Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2014 U.S. LEXIS 509",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Burwell v. Hobby Lobby Stores, Inc.",
+    "citation": "573 U.S. 593 (2014)",
+    "year": 2014,
+    "court": "SCOTUS",
+    "practice_area": "Civil Rights",
+    "holding": "Religious Freedom Restoration Act (RFRA) permits closely held for-profit corporations to deny contraceptive coverage under ACA based on religious objections.",
+    "key_principles": "Religious Freedom Restoration Act (RFRA); For-Profit Corporate Religious Standing; Least Restrictive Means Test.",
+    "rule_of_law": "Religious Freedom Restoration Act (RFRA)",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Civil Rights"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2014 U.S. LEXIS 4699",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Alice Corp. Pty. Ltd. v. CLS Bank International",
+    "citation": "573 U.S. 208 (2014)",
+    "year": 2014,
+    "court": "SCOTUS",
+    "practice_area": "Intellectual Property",
+    "holding": "Claims directed to an abstract idea implemented on a computer system are not patent-eligible subject matter under 35 U.S.C. \u00a7 101.",
+    "key_principles": "Patent Subject Matter Eligibility 35 U.S.C. \u00a7 101; Mayo/Alice Two-Step Test; Abstract Idea Doctrine.",
+    "rule_of_law": "Patent Subject Matter Eligibility 35 U.S.C. \u00a7 101",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Intellectual Property"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2014 U.S. LEXIS 4302",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "United States v. Windsor",
+    "citation": "570 U.S. 693 (2013)",
+    "year": 2013,
+    "court": "SCOTUS",
+    "practice_area": "Civil Rights",
+    "holding": "Defense of Marriage Act (DOMA) \u00a7 3 defining marriage strictly as between one man and one woman violated Fifth Amendment Due Process Clause equal protection guarantees.",
+    "key_principles": "Fifth Amendment Due Process Equal Protection; Federal Marriage Definitions; State Domestic Relations Authority.",
+    "rule_of_law": "Fifth Amendment Due Process Equal Protection",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Civil Rights"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2013 U.S. LEXIS 4921",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "Shelby County v. Holder",
+    "citation": "570 U.S. 529 (2013)",
+    "year": 2013,
+    "court": "SCOTUS",
+    "practice_area": "Civil Rights",
+    "holding": "Voting Rights Act \u00a7 4(b) coverage formula for preclearance held unconstitutional as violating Tenth Amendment and principle of equal state sovereignty.",
+    "key_principles": "Voting Rights Act \u00a7 4(b) Coverage Formula; Equal State Sovereignty; Tenth Amendment Limits on Federal Preclearance.",
+    "rule_of_law": "Voting Rights Act \u00a7 4(b) Coverage Formula",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Civil Rights"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2013 U.S. LEXIS 4918",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Salinas v. Texas",
+    "citation": "570 U.S. 178 (2013)",
+    "year": 2013,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Fifth Amendment privilege against self-incrimination does not protect a suspect's silence during an informal, pre-arrest, non-custodial police interview unless explicitly invoked.",
+    "key_principles": "Fifth Amendment Self-Incrimination Privilege; Express Invocation Requirement in Non-Custodial Interview; Pre-Arrest Silence Admissibility.",
+    "rule_of_law": "Fifth Amendment Self-Incrimination Privilege",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2013 U.S. LEXIS 4697",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "Missouri v. McNeely",
+    "citation": "569 U.S. 1 (2013)",
+    "year": 2013,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "The natural dissipation of alcohol in the bloodstream does not constitute a per se exigent circumstance justifying warrantless blood draws in drunk-driving investigations.",
+    "key_principles": "Fourth Amendment Warrantless Blood Draw; DWI / DUI Search Exceptions; Exigent Circumstances Case-by-Case Evaluation.",
+    "rule_of_law": "Fourth Amendment Warrantless Blood Draw",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2013 U.S. LEXIS 3160",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "Maryland v. King",
+    "citation": "569 U.S. 219 (2013)",
+    "year": 2013,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Taking and analyzing a cheek swab of an arrestee's DNA is a legitimate police booking procedure that is reasonable under the Fourth Amendment.",
+    "key_principles": "Fourth Amendment Arrestee DNA Collection; Routine Booking Procedure Search; Identification Purpose.",
+    "rule_of_law": "Fourth Amendment Arrestee DNA Collection",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2013 U.S. LEXIS 4165",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "Florida v. Jardines",
+    "citation": "569 U.S. 141 (2013)",
+    "year": 2013,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Government's use of trained police dogs to investigate the home and its immediate curtilage is a search under the Fourth Amendment requiring a warrant.",
+    "key_principles": "Fourth Amendment Curtilage Search; Drug-Sniffing Canine Intrusion; Property-Based Fourth Amendment Trespass Standard.",
+    "rule_of_law": "Fourth Amendment Curtilage Search",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2013 U.S. LEXIS 2542",
+    "category": "drug_trafficking",
+    "source": "federal"
+  },
+  {
+    "title": "Alleyne v. United States",
+    "citation": "570 U.S. 99",
+    "year": 2013,
+    "court": "U.S. Supreme Court",
+    "practice_area": "Federal",
+    "holding": "The Supreme Court held that any fact that increases the mandatory minimum sentence for a crime is an 'element' of the crime, not a sentencing factor, and must be submitted to the jury and found beyond a reasonable doubt.",
+    "key_principles": "Facts that increase mandatory minimum sentences must be submitted to the jury and found beyond a reasonable doubt.",
+    "rule_of_law": "Facts that increase mandatory minimum sentences must be submitted to the jury and found beyond a reasonable doubt.",
+    "application_notes": "Critical for drug trafficking and firearms cases where prosecutors attempt to use drug weight or firearm possession to trigger mandatory minimums without jury findings.",
+    "related_statutes": [
+      "21 U.S.C. \u00a7 841",
+      "U.S. Const. amend. VI"
+    ],
+    "primary_topics": [
+      "Mandatory Minimums",
+      "Drug Trafficking",
+      "21 U.S.C. \u00a7 841",
+      "Sixth Amendment"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2013 U.S. LEXIS",
+    "category": "drug_trafficking",
+    "source": "federal"
+  },
+  {
+    "title": "United States v. Jones",
+    "citation": "565 U.S. 400 (2012)",
+    "year": 2012,
+    "court": "SCOTUS",
+    "practice_area": "Constitutional Law",
+    "holding": "Attaching a Global-Positioning-System (GPS) tracking device to a vehicle and using it to monitor movements constitutes a search under the Fourth Amendment.",
+    "key_principles": "Fourth Amendment Trespass Theory; Physical Intrusion Standard; GPS Tracking Limitations.",
+    "rule_of_law": "Fourth Amendment Trespass Theory",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Constitutional Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2012 U.S. LEXIS 907",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "National Federation of Independent Business v. Sebelius",
+    "citation": "567 U.S. 519 (2012)",
+    "year": 2012,
+    "court": "SCOTUS",
+    "practice_area": "Constitutional Law",
+    "holding": "Individual Mandate of ACA upheld under Congress's Taxing Clause power; Commerce Clause does not authorize compelling individuals to engage in commerce.",
+    "key_principles": "Article I Taxing Clause Power; Commerce Clause Limits; ACA Individual Mandate Validity.",
+    "rule_of_law": "Article I Taxing Clause Power",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Constitutional Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2012 U.S. LEXIS 4876",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Missouri v. Frye",
+    "citation": "566 U.S. 134 (2012)",
+    "year": 2012,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Sixth Amendment right to effective assistance requires defense counsel to communicate formal plea offers to the accused before they expire.",
+    "key_principles": "Sixth Amendment Duty to Communicate Plea Offers; Plea Bargaining Sixth Amendment Guarantees; Pre-trial Representation Duty.",
+    "rule_of_law": "Sixth Amendment Duty to Communicate Plea Offers",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2012 U.S. LEXIS 2321",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "Miller v. Alabama",
+    "citation": "567 U.S. 460 (2012)",
+    "year": 2012,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Eighth Amendment prohibition on cruel and unusual punishment forbids a mandatory sentence of life without parole for juvenile offenders convicted of homicide.",
+    "key_principles": "Eighth Amendment Cruel and Unusual Punishment; Mandatory Life Without Parole (LWOP) Prohibition for Juveniles; Individualized Sentencing.",
+    "rule_of_law": "Eighth Amendment Cruel and Unusual Punishment",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2012 U.S. LEXIS 4875",
+    "category": "murder_homicide",
+    "source": "federal"
+  },
+  {
+    "title": "Lafler v. Cooper",
+    "citation": "566 U.S. 156 (2012)",
+    "year": 2012,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Sixth Amendment right to effective assistance of counsel under Strickland applies to the plea bargaining process when ineffective advice leads to rejection of a favorable plea offer.",
+    "key_principles": "Sixth Amendment Ineffective Assistance in Plea Bargaining; Strickland v. Washington Standard in Plea Rejection; Sixth Amendment Plea Prejudice.",
+    "rule_of_law": "Sixth Amendment Ineffective Assistance in Plea Bargaining",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2012 U.S. LEXIS 2320",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "Wal-Mart Stores, Inc. v. Dukes",
+    "citation": "564 U.S. 338 (2011)",
+    "year": 2011,
+    "court": "SCOTUS",
+    "practice_area": "Federal Civil Procedure",
+    "holding": "Class certification denied under FRCP Rule 23(a)(2) due to lack of a common question capable of classwide resolution in employment discrimination action.",
+    "key_principles": "FRCP Rule 23(a)(2) Commonality Requirement; Title VII Class Action Standards; Discretionary Employment Policies.",
+    "rule_of_law": "FRCP Rule 23(a)(2) Commonality Requirement",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Federal Civil Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2011 U.S. LEXIS 4581",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Snyder v. Phelps",
+    "citation": "563 U.S. 125 (2011)",
+    "year": 2011,
+    "court": "SCOTUS",
+    "practice_area": "Constitutional Law",
+    "holding": "First Amendment protects Westboro Baptist Church picketing on public land near military funerals against state tort claims for intentional infliction of emotional distress (IIED).",
+    "key_principles": "First Amendment Public Concern Speech; IIED Protection in Public Forums; Funeral Picketing Limits.",
+    "rule_of_law": "First Amendment Public Concern Speech",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Constitutional Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2011 U.S. LEXIS 1903",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Pliva, Inc. v. Mensing",
+    "citation": "564 U.S. 552 (2011)",
+    "year": 2011,
+    "court": "SCOTUS",
+    "practice_area": "Administrative Law",
+    "holding": "State-law failure-to-warn claims against generic drug manufacturers preempted under Supremacy Clause due to FDCA sameness requirement for generic labels.",
+    "key_principles": "Federal Preemption; FDCA Generic Drug Labeling Sameness Requirement; Impossibility Preemption.",
+    "rule_of_law": "Federal Preemption",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Administrative Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2011 U.S. LEXIS 4749",
+    "category": "drug_trafficking",
+    "source": "federal"
+  },
+  {
+    "title": "Kentucky v. King",
+    "citation": "562 U.S. 229 (2011)",
+    "year": 2011,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Fourth Amendment exigent circumstances rule applies even when police create the exigency provided police do not create exigency by engaging or threatening conduct violating Fourth Amendment.",
+    "key_principles": "Fourth Amendment Exigent Circumstances; Destruction of Evidence Exception; Police-Created Exigency Doctrine.",
+    "rule_of_law": "Fourth Amendment Exigent Circumstances",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2011 U.S. LEXIS 3541",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "J.D.B. v. North Carolina",
+    "citation": "564 U.S. 261 (2011)",
+    "year": 2011,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "A child's age is a relevant factor that must be considered in the objective Miranda custody analysis whenever known to the officer or objectively apparent to a reasonable officer.",
+    "key_principles": "Miranda v. Arizona Custody Analysis; Juvenile Suspect Interrogation Standard; Objective Reasonable Suspect Test; NC Juvenile Interrogation.",
+    "rule_of_law": "Miranda v. Arizona Custody Analysis",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2011 U.S. LEXIS 4582",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "Bullcoming v. New Mexico",
+    "citation": "563 U.S. 452 (2011)",
+    "year": 2011,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Sixth Amendment Confrontation Clause prohibits surrogate testimony of an analyst who did not sign or perform the forensic blood alcohol concentration test.",
+    "key_principles": "Sixth Amendment Confrontation Clause; Forensic Laboratory Test Admissibility; Surrogate Testimony Invalidation.",
+    "rule_of_law": "Sixth Amendment Confrontation Clause",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2011 U.S. LEXIS 4790",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "AT&T Mobility LLC v. Concepcion",
+    "citation": "562 U.S. 428 (2011)",
+    "year": 2011,
+    "court": "SCOTUS",
+    "practice_area": "Corporate/Securities",
+    "holding": "Federal Arbitration Act (FAA) \u00a7 2 preempts state judicial rules conditioning arbitration enforceability on the availability of classwide arbitration procedures.",
+    "key_principles": "Federal Arbitration Act (FAA) Preemption; Class Action Waivers; Consumer Arbitration Enforcement.",
+    "rule_of_law": "Federal Arbitration Act (FAA) Preemption",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Corporate/Securities"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2011 U.S. LEXIS 3367",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Skilling v. United States",
+    "citation": "561 U.S. 247 (2010)",
+    "year": 2010,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Honest services mail fraud under 18 U.S.C. \u00a7 1346 is strictly limited to bribery and kickback schemes, excluding general conflict of interest.",
+    "key_principles": "Mail Fraud Statute \u00a7 1346; Honest Services Fraud Limits; Bribery and Kickbacks Requirement.",
+    "rule_of_law": "Mail Fraud Statute \u00a7 1346",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2010 U.S. LEXIS 5259",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Padilla v. Kentucky",
+    "citation": "559 U.S. 356 (2010)",
+    "year": 2010,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Sixth Amendment right to effective assistance of counsel under Strickland requires defense counsel to inform noncitizen clients whether a guilty plea carries a risk of deportation.",
+    "key_principles": "Sixth Amendment Ineffective Assistance of Counsel; Strickland v. Washington Standard; Advice on Immigration Consequences of Guilty Pleas.",
+    "rule_of_law": "Sixth Amendment Ineffective Assistance of Counsel",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2010 U.S. LEXIS 2928",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "City of Ontario v. Quon",
+    "citation": "560 U.S. 452 (2010)",
+    "year": 2010,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Government employer's audit of text messages on a government-issued pager was reasonable under the Fourth Amendment workplace search standard.",
+    "key_principles": "Fourth Amendment Workplace Electronic Search; Reasonable Expectation of Privacy in Employer Devices; O'Connor Standard.",
+    "rule_of_law": "Fourth Amendment Workplace Electronic Search",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2010 U.S. LEXIS 4972",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "Citizens United v. Federal Election Commission",
+    "citation": "558 U.S. 310 (2010)",
+    "year": 2010,
+    "court": "SCOTUS",
+    "practice_area": "Constitutional Law",
+    "holding": "First Amendment prohibits government restrictions on independent political expenditures by corporations and labor unions.",
+    "key_principles": "First Amendment Political Speech; Corporate Speech Rights; Independent Expenditure Protections.",
+    "rule_of_law": "First Amendment Political Speech",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Constitutional Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2010 U.S. LEXIS 766",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Berghuis v. Thompkins",
+    "citation": "560 U.S. 370 (2010)",
+    "year": 2010,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "A suspect who has received Miranda warnings must invoke the right to remain silent unambiguously; silence alone does not invoke the right.",
+    "key_principles": "Miranda v. Arizona Right to Remain Silent; Unambiguous Invocation Requirement; Implied Waiver.",
+    "rule_of_law": "Miranda v. Arizona Right to Remain Silent",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2010 U.S. LEXIS 4379",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "Pearson v. Callahan",
+    "citation": "555 U.S. 181 (2009)",
+    "year": 2009,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Courts evaluating 42 U.S.C. \u00a7 1983 qualified immunity may decide whether a constitutional right was clearly established without first deciding whether a constitutional violation occurred.",
+    "key_principles": "42 U.S.C. \u00a7 1983 Qualified Immunity; Saucier v. Katz Two-Step Procedure Flexibility; Clearly Established Law.",
+    "rule_of_law": "42 U.S.C. \u00a7 1983 Qualified Immunity",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2009 U.S. LEXIS 591",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Herring v. United States",
+    "citation": "555 U.S. 323 (2009)",
+    "year": 2009,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Exclusionary rule does not apply to evidence discovered during an arrest resulting from isolated, negligent police recordkeeping errors.",
+    "key_principles": "Fourth Amendment Exclusionary Rule; Good-Faith Exception; Culpability & Deterrence Requirement.",
+    "rule_of_law": "Fourth Amendment Exclusionary Rule",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2009 U.S. LEXIS 608",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "Boyle v. United States",
+    "citation": "556 U.S. 938",
+    "year": 2009,
+    "court": "U.S. Supreme Court",
+    "practice_area": "Federal",
+    "holding": "The Court clarified the definition of an 'association-in-fact' enterprise under the Racketeer Influenced and Corrupt Organizations Act (RICO). It held that an enterprise must have a structure, but it does not need to have a hierarchical structure or a chain of command.",
+    "key_principles": "An association-in-fact enterprise must have at least three structural features: a purpose, relationships among those associated with the enterprise, and longevity sufficient to permit these associates to pursue the enterprise's purpose.",
+    "rule_of_law": "An association-in-fact enterprise must have at least three structural features: a purpose, relationships among those associated with the enterprise, and longevity sufficient to permit these associates to pursue the enterprise's purpose.",
+    "application_notes": "Used heavily in state and federal RICO cases to prove or disprove whether a loose gang, crew, or group of individuals qualifies as a legal 'enterprise'.",
+    "related_statutes": [
+      "18 U.S.C. \u00a7 1961(4)",
+      "18 U.S.C. \u00a7 1962(c)"
+    ],
+    "primary_topics": [
+      "RICO",
+      "18 U.S.C. \u00a7 1962(c)",
+      "Association-in-Fact Enterprise"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2009 U.S. LEXIS",
+    "category": "rico_conspiracy",
+    "source": "federal"
+  },
+  {
+    "title": "Ashcroft v. Iqbal",
+    "citation": "556 U.S. 662 (2009)",
+    "year": 2009,
+    "court": "SCOTUS",
+    "practice_area": "Federal Civil Procedure",
+    "holding": "Twombly plausibility pleading standard applies to all federal civil complaints under Federal Rule of Civil Procedure 8.",
+    "key_principles": "FRCP Rule 8 Plausibility Standard Extension; Qualified Immunity Pleading; Conclusory Allegations Stripped.",
+    "rule_of_law": "FRCP Rule 8 Plausibility Standard Extension",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Federal Civil Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2009 U.S. LEXIS 3731",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Arizona v. Gant",
+    "citation": "556 U.S. 332 (2009)",
+    "year": 2009,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Fourth Amendment search incident to arrest of a vehicle is permitted only if arrestee is within reaching distance of passenger compartment or vehicle contains evidence of offense of arrest.",
+    "key_principles": "Fourth Amendment Vehicle Search Incident to Arrest; Chimel/Belton Limits; Warrant Requirement Exception.",
+    "rule_of_law": "Fourth Amendment Vehicle Search Incident to Arrest",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2009 U.S. LEXIS 3120",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "United States v. Banks",
+    "citation": "514 F.3d 959",
+    "year": 2008,
+    "court": "U.S. Court of Appeals for the Ninth Circuit",
+    "practice_area": "Federal",
+    "holding": "The court analyzed the motive requirement under the Violent Crimes in Aid of Racketeering (VICAR) statute, determining whether a murder or assault was committed for the purpose of gaining entrance to or maintaining status in a racketeering enterprise.",
+    "key_principles": "To prove a VICAR violation, the government must show that the defendant committed the violent crime as an integral aspect of membership in the enterprise, though it need not be the sole or principal motive.",
+    "rule_of_law": "To prove a VICAR violation, the government must show that the defendant committed the violent crime as an integral aspect of membership in the enterprise, though it need not be the sole or principal motive.",
+    "application_notes": "Used to defend state murder charges that get elevated to federal VICAR cases. The defense often argues the violence was a personal dispute, not for 'maintaining status' in the gang or enterprise.",
+    "related_statutes": [
+      "18 U.S.C. \u00a7 1959"
+    ],
+    "primary_topics": [
+      "VICAR",
+      "Murder",
+      "18 U.S.C. \u00a7 1959",
+      "Racketeering"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2008 U.S. LEXIS",
+    "category": "rico_conspiracy",
+    "source": "federal"
+  },
+  {
+    "title": "Giles v. California",
+    "citation": "554 U.S. 264 (2008)",
+    "year": 2008,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Sixth Amendment Confrontation Clause forfeiture by wrongdoing exception applies only when defendant acted with specific intent to prevent witness from testifying.",
+    "key_principles": "Sixth Amendment Confrontation Clause; Forfeiture by Wrongdoing Intent Requirement; Hearsay Objections in Homicide.",
+    "rule_of_law": "Sixth Amendment Confrontation Clause",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2008 U.S. LEXIS 5263",
+    "category": "murder_homicide",
+    "source": "federal"
+  },
+  {
+    "title": "District of Columbia v. Heller",
+    "citation": "554 U.S. 570 (2008)",
+    "year": 2008,
+    "court": "SCOTUS",
+    "practice_area": "Constitutional Law",
+    "holding": "Second Amendment guarantees an individual right to possess a firearm unconnected with service in a militia for traditionally lawful self-defense.",
+    "key_principles": "Second Amendment Individual Right; Self-Defense Standard; History and Tradition Framework.",
+    "rule_of_law": "Second Amendment Individual Right",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Constitutional Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2008 U.S. LEXIS 5881",
+    "category": "922g_firearms",
+    "source": "federal"
+  },
+  {
+    "title": "Parents Involved in Community Schools v. Seattle School District No. 1",
+    "citation": "551 U.S. 701 (2007)",
+    "year": 2007,
+    "court": "SCOTUS",
+    "practice_area": "Civil Rights",
+    "holding": "Public school student assignment plans relying on racial classifications to achieve racial balance violate the Equal Protection Clause.",
+    "key_principles": "Fourteenth Amendment Equal Protection; Strict Scrutiny of Racial Classifications; K-12 Student Assignment.",
+    "rule_of_law": "Fourteenth Amendment Equal Protection",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Civil Rights"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2007 U.S. LEXIS 8670",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Massachusetts v. Environmental Protection Agency",
+    "citation": "549 U.S. 497 (2007)",
+    "year": 2007,
+    "court": "SCOTUS",
+    "practice_area": "Environmental Law",
+    "holding": "Clean Air Act authorizes EPA to regulate greenhouse gas emissions from motor vehicles; Massachusetts had Article III standing based on coastal erosion injury.",
+    "key_principles": "Clean Air Act Greenhouse Gas Regulation; State Article III Standing; Agency Duty to Reason Decisions.",
+    "rule_of_law": "Clean Air Act Greenhouse Gas Regulation",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Environmental Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2007 U.S. LEXIS 3785",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Bell Atlantic Corp. v. Twombly",
+    "citation": "550 U.S. 544 (2007)",
+    "year": 2007,
+    "court": "SCOTUS",
+    "practice_area": "Federal Civil Procedure",
+    "holding": "Rule 8(a)(2) requires a complaint to state plausible facts supporting a claim for relief beyond mere speculative labels and conclusions.",
+    "key_principles": "FRCP Rule 8(a)(2) Plausibility Standard; Motion to Dismiss under Rule 12(b)(6); Antitrust Pleading Burden.",
+    "rule_of_law": "FRCP Rule 8(a)(2) Plausibility Standard",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Federal Civil Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2007 U.S. LEXIS 5901",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "eBay Inc. v. MercExchange, L.L.C.",
+    "citation": "547 U.S. 103 (2006)",
+    "year": 2006,
+    "court": "SCOTUS",
+    "practice_area": "Intellectual Property",
+    "holding": "Traditional four-factor equitable test for permanent injunctions applies to patent infringement litigation under 35 U.S.C. \u00a7 283.",
+    "key_principles": "Four-Factor Injunction Test; Patent Law Injunctions; Irreparable Harm Requirement.",
+    "rule_of_law": "Four-Factor Injunction Test",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Intellectual Property"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2006 U.S. LEXIS 3872",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Hudson v. Michigan",
+    "citation": "547 U.S. 1032 (2006)",
+    "year": 2006,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Violation of the Fourth Amendment knock-and-announce rule does not require suppression of evidence found in search under the exclusionary rule.",
+    "key_principles": "Fourth Amendment Knock-and-Announce Rule; Exclusionary Rule Inapplicability; Attenuation & Causation.",
+    "rule_of_law": "Fourth Amendment Knock-and-Announce Rule",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2006 U.S. LEXIS 4731",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "Georgia v. Randolph",
+    "citation": "547 U.S. 586 (2006)",
+    "year": 2006,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Fourth Amendment warrantless search of a shared home based on consent of one co-occupant is invalid as to a physically present co-occupant who expressly refuses consent.",
+    "key_principles": "Fourth Amendment Co-Occupant Consent; Physically Present Refusal; Warrant Requirement in Shared Homes.",
+    "rule_of_law": "Fourth Amendment Co-Occupant Consent",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2006 U.S. LEXIS 2498",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "United States v. Booker",
+    "citation": "543 U.S. 220 (2005)",
+    "year": 2005,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Federal Sentencing Guidelines rendered advisory rather than mandatory to comply with Sixth Amendment jury trial guarantees.",
+    "key_principles": "Sixth Amendment Sentencing Rights; Federal Sentencing Guidelines Advisory Status; 18 U.S.C. \u00a7 3553(a) Factors.",
+    "rule_of_law": "Sixth Amendment Sentencing Rights",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2005 U.S. LEXIS 628",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "MGM Studios, Inc. v. Grokster, Ltd.",
+    "citation": "545 U.S. 967 (2005)",
+    "year": 2005,
+    "court": "SCOTUS",
+    "practice_area": "Intellectual Property",
+    "holding": "One who distributes a device with the object of promoting its use to infringe copyright is liable for third-party inducement infringement.",
+    "key_principles": "Copyright Secondary Liability; Inducement Rule; Peer-to-Peer File Sharing Infringement.",
+    "rule_of_law": "Copyright Secondary Liability",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Intellectual Property"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2005 U.S. LEXIS 5212",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Kelo v. City of New London",
+    "citation": "545 U.S. 469 (2005)",
+    "year": 2005,
+    "court": "SCOTUS",
+    "practice_area": "Constitutional Law",
+    "holding": "Taking of private property for economic development satisfies the Fifth Amendment Takings Clause public use requirement.",
+    "key_principles": "Fifth Amendment Takings Clause; Public Use Requirement; Eminent Domain for Economic Development.",
+    "rule_of_law": "Fifth Amendment Takings Clause",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Constitutional Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2005 U.S. LEXIS 5011",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "Crawford v. Washington",
+    "citation": "541 U.S. 36",
+    "year": 2004,
+    "court": "U.S. Supreme Court",
+    "practice_area": "Federal and State Superior",
+    "holding": "The Court reformulated the standard for determining when the admission of hearsay statements in criminal cases violates the Sixth Amendment. It ruled that 'testimonial' out-of-court statements are inadmissible unless the witness is unavailable and the defendant had a prior opportunity to cross-examine them.",
+    "key_principles": "The Confrontation Clause prohibits the introduction of testimonial out-of-court statements against a criminal defendant unless the declarant is unavailable and the defendant had a prior opportunity for cross-examination.",
+    "rule_of_law": "The Confrontation Clause prohibits the introduction of testimonial out-of-court statements against a criminal defendant unless the declarant is unavailable and the defendant had a prior opportunity for cross-examination.",
+    "application_notes": "Essential for trial prep in murder and major conspiracy cases (both state and federal) to block prosecutors from using police interrogations, 911 calls, or accomplice confessions if that person does not testify at trial.",
+    "related_statutes": [
+      "U.S. Const. amend. VI"
+    ],
+    "primary_topics": [
+      "Murder",
+      "Confrontation Clause",
+      "Evidence",
+      "Sixth Amendment"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2004 U.S. LEXIS",
+    "category": "murder_homicide",
+    "source": "federal"
+  },
+  {
+    "title": "Crawford v. Washington",
+    "citation": "541 U.S. 36 (2004)",
+    "year": 2004,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Sixth Amendment Confrontation Clause bars admission of testimonial hearsay against a criminal defendant unless declarant is unavailable and defendant had a prior opportunity for cross-examination.",
+    "key_principles": "Sixth Amendment Confrontation Clause; Testimonial Hearsay Standard; Overruling Ohio v. Roberts Reliability Test.",
+    "rule_of_law": "Sixth Amendment Confrontation Clause",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2004 U.S. LEXIS 1838",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "Blakely v. Washington",
+    "citation": "542 U.S. 296 (2004)",
+    "year": 2004,
+    "court": "SCOTUS",
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Sixth Amendment right to jury trial precludes judges from increasing criminal sentences based on facts not found by a jury beyond a reasonable doubt.",
+    "key_principles": "Sixth Amendment Jury Trial Right; Apprendi Doctrine; Statutory Maximum Sentencing Limits.",
+    "rule_of_law": "Sixth Amendment Jury Trial Right",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Criminal Law & Procedure"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2004 U.S. LEXIS 4573",
+    "category": "constitutional",
+    "source": "federal"
+  },
+  {
+    "title": "Lawrence v. Texas",
+    "citation": "539 U.S. 558 (2003)",
+    "year": 2003,
+    "court": "SCOTUS",
+    "practice_area": "Civil Rights",
+    "holding": "Fourteenth Amendment Due Process Clause protects private consensual adult intimate conduct from criminal prosecution.",
+    "key_principles": "Substantive Due Process; Liberty Interest; Equal Protection.",
+    "rule_of_law": "Substantive Due Process",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Civil Rights"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2003 U.S. LEXIS 5013",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Grutter v. Bollinger",
+    "citation": "539 U.S. 306 (2003)",
+    "year": 2003,
+    "court": "SCOTUS",
+    "practice_area": "Civil Rights",
+    "holding": "Equal Protection Clause does not prohibit narrow tailoring of race-conscious law school admissions to achieve educational benefits of diversity.",
+    "key_principles": "Fourteenth Amendment Equal Protection; Diversity Compelling Interest; Narrow Tailoring in Admissions.",
+    "rule_of_law": "Fourteenth Amendment Equal Protection",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Civil Rights"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2003 U.S. LEXIS 5025",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Eldred v. Ashcroft",
+    "citation": "537 U.S. 186 (2003)",
+    "year": 2003,
+    "court": "SCOTUS",
+    "practice_area": "Intellectual Property",
+    "holding": "Copyright Term Extension Act (CTEA) extending copyright terms by 20 years complied with the Copyright Clause (limited Times) and First Amendment.",
+    "key_principles": "Copyright Clause Limited Times Standard; CTEA Validity; Congressional Discretion in Copyright.",
+    "rule_of_law": "Copyright Clause Limited Times Standard",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Intellectual Property"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2003 U.S. LEXIS 751",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Circuit City Stores, Inc. v. Adams",
+    "citation": "532 U.S. 67 (2001)",
+    "year": 2001,
+    "court": "SCOTUS",
+    "practice_area": "Employment",
+    "holding": "Federal Arbitration Act \u00a7 1 exemption for employment contracts applies only to transportation workers, enforcing arbitration in standard employment agreements.",
+    "key_principles": "Federal Arbitration Act \u00a7 1 Transportation Worker Exemption; Mandatory Employment Arbitration Clauses.",
+    "rule_of_law": "Federal Arbitration Act \u00a7 1 Transportation Worker Exemption",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Employment"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2001 U.S. LEXIS 2459",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "United States v. Morrison",
+    "citation": "529 U.S. 598 (2000)",
+    "year": 2000,
+    "court": "SCOTUS",
+    "practice_area": "Constitutional Law",
+    "holding": "Violence Against Women Act (VAWA) civil remedy provision unconstitutional under Commerce Clause and Section 5 of Fourteenth Amendment.",
+    "key_principles": "Commerce Clause Non-Economic Activity Limits; Fourteenth Amendment \u00a7 5 State Action Requirement; Federalism Boundaries.",
+    "rule_of_law": "Commerce Clause Non-Economic Activity Limits",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Constitutional Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2000 U.S. LEXIS 3423",
+    "category": "general_precedent",
+    "source": "federal"
+  },
+  {
+    "title": "Bush v. Gore",
+    "citation": "531 U.S. 98 (2000)",
+    "year": 2000,
+    "court": "SCOTUS",
+    "practice_area": "Constitutional Law",
+    "holding": "Use of different standards of manual recount across Florida counties violated the Equal Protection Clause of the Fourteenth Amendment.",
+    "key_principles": "Fourteenth Amendment Equal Protection; Election Law Standards; Presidential Election Recount Limits.",
+    "rule_of_law": "Fourteenth Amendment Equal Protection",
+    "application_notes": "Precedential authority binding in SCOTUS. Review holding and status.",
+    "related_statutes": [],
+    "primary_topics": [
+      "Constitutional Law"
+    ],
+    "status": "Precedential",
+    "lexis_cite": "2000 U.S. LEXIS 8430",
+    "category": "general_precedent",
+    "source": "federal"
+  }
+]

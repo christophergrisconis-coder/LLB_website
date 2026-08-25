@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useRef, useState, type FormEvent, type RefObject } from 'react';
-import { ArrowUpRight, ChevronRight, Menu, Search, X, Plus, LogOut, BriefcaseBusiness } from 'lucide-react';
+import { ArrowUpRight, ChevronRight, Menu, Search, X, Plus, LogOut, BriefcaseBusiness, Bookmark, BookmarkCheck, Wifi, WifiOff, FileText, Scale, Filter } from 'lucide-react';
 import { ErrorBoundary } from '@/components/error-boundary';
 import NotFound from '@/pages/not-found';
+import { offlineCaseLawStore, type CaseAuthority } from '@/lib/caselaw-offline-store';
 
 type Story = {
   id: string;
@@ -628,6 +629,28 @@ function SimpleHome() {
   const featureTabRefs = useRef<Array<HTMLButtonElement | null>>([]);
   const [caseLawQuery, setCaseLawQuery] = useState('');
   const [caseLawFilter, setCaseLawFilter] = useState<'all' | 'state' | 'federal'>('all');
+  const [categoryFilter, setCategoryFilter] = useState<string>('all');
+  const [caseAuthorities, setCaseAuthorities] = useState<CaseAuthority[]>([]);
+  const [selectedCaseDetail, setSelectedCaseDetail] = useState<CaseAuthority | null>(null);
+  const [isOnline, setIsOnline] = useState<boolean>(typeof navigator !== 'undefined' ? navigator.onLine : true);
+  const [bookmarkedCites, setBookmarkedCites] = useState<string[]>([]);
+
+  useEffect(() => {
+    const updateOnlineStatus = () => setIsOnline(navigator.onLine);
+    window.addEventListener('online', updateOnlineStatus);
+    window.addEventListener('offline', updateOnlineStatus);
+    setBookmarkedCites(offlineCaseLawStore.getBookmarks());
+
+    offlineCaseLawStore.getCases().then((cases) => {
+      setCaseAuthorities(cases);
+    });
+
+    return () => {
+      window.removeEventListener('online', updateOnlineStatus);
+      window.removeEventListener('offline', updateOnlineStatus);
+    };
+  }, []);
+
   const submit = (message: string) => (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setSubmitted(message);
@@ -670,17 +693,30 @@ function SimpleHome() {
       featureTabRefs.current[nextIndex]?.focus();
     }
   };
-  const caseLaw = [
-    { citation: '494 U.S. 433 (1990)', title: 'McKoy v. North Carolina', source: 'federal', topic: 'Capital sentencing', outcome: 'Defense-favorable', summary: 'The Court rejected North Carolina’s unanimity requirement for mitigating circumstances in capital sentencing, protecting individualized consideration of mitigation.' },
-    { citation: '400 U.S. 25 (1970)', title: 'North Carolina v. Alford', source: 'federal', topic: 'Guilty pleas', outcome: 'Defense-favorable', summary: 'An NC-origin plea case recognizing that a defendant may plead guilty while maintaining a claim of innocence when the record supports the plea.' },
-    { citation: '363 N.C. 539, 681 S.E.2d 788 (2009)', title: 'State v. Batts', source: 'state', topic: 'Juvenile sentencing', outcome: 'Defense-favorable', summary: 'North Carolina Supreme Court authority addressing the constitutional limits on the harshest sentences for juvenile defendants.' },
-    { citation: '345 N.C. 175, 478 S.E.2d 17 (1996)', title: 'State v. Jones', source: 'state', topic: 'Jury instructions', outcome: 'Defense-favorable', summary: 'A North Carolina appellate authority emphasizing the trial court’s duty to give the jury a complete instruction on a supported defense theory.' },
-  ] as const;
-  const visibleCaseLaw = caseLaw.filter((authority) => {
-    const matchesFilter = caseLawFilter === 'all' || authority.source === caseLawFilter;
-    const term = caseLawQuery.trim().toLowerCase();
-    return matchesFilter && (!term || `${authority.title} ${authority.citation} ${authority.topic} ${authority.summary}`.toLowerCase().includes(term));
-  });
+
+  const visibleCaseLaw = useMemo(() => {
+    const q = caseLawQuery.trim().toLowerCase();
+    return caseAuthorities.filter((item) => {
+      const matchesJurisdiction =
+        caseLawFilter === 'all' ||
+        (caseLawFilter === 'federal' && item.source === 'federal') ||
+        (caseLawFilter === 'state' && item.source === 'state');
+      const matchesCategory =
+        categoryFilter === 'all' || item.category === categoryFilter;
+
+      if (!matchesJurisdiction || !matchesCategory) return false;
+      if (!q) return true;
+
+      return (
+        item.title.toLowerCase().includes(q) ||
+        item.citation.toLowerCase().includes(q) ||
+        item.holding.toLowerCase().includes(q) ||
+        item.key_principles.toLowerCase().includes(q) ||
+        (item.rule_of_law && item.rule_of_law.toLowerCase().includes(q))
+      );
+    });
+  }, [caseAuthorities, caseLawQuery, caseLawFilter, categoryFilter]);
+
   return (
     <main className="full-site" data-testid="app-shell">
       <header className="full-header">
@@ -750,25 +786,285 @@ function SimpleHome() {
 
       <section className="case-law-section" id="case-law">
         <div className="case-law-heading">
-          <div><p className="full-eyebrow">NC AUTHORITY INDEX</p><h2>Find the<br /><em>stronger point.</em></h2></div>
-          <p>Start with a tightly scoped index of North Carolina state authority and NC-origin federal decisions with landmark reversals or defense-favorable holdings.</p>
+          <div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px', flexWrap: 'wrap' }}>
+              <p className="full-eyebrow" style={{ margin: 0 }}>CASE LAW RESEARCH LIBRARY</p>
+              <span
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '6px',
+                  padding: '3px 10px',
+                  borderRadius: '12px',
+                  fontSize: '0.78rem',
+                  fontWeight: 600,
+                  backgroundColor: isOnline ? '#DCFCE7' : '#FEF3C7',
+                  color: isOnline ? '#166534' : '#92400E',
+                  border: isOnline ? '1px solid #BBF7D0' : '1px solid #FDE68A'
+                }}
+              >
+                {isOnline ? <Wifi size={13} /> : <WifiOff size={13} />}
+                {isOnline ? 'Online • Live Sync Active' : `Offline Mode • ${caseAuthorities.length || 179} Precedents Cached`}
+              </span>
+            </div>
+            <h2>Find the<br /><em>stronger point.</em></h2>
+          </div>
+          <p>
+            Comprehensive, searchable database of landmark SCOTUS, 4th Circuit, NC Federal Districts, and State precedents (2000–2026).
+            Fully cached in PWA memory for instant courtroom retrieval without internet access.
+          </p>
         </div>
+
+        <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', margin: '14px 0' }}>
+          {[
+            ['all', 'All Precedents'],
+            ['922g_firearms', '922(g) & Firearms'],
+            ['rico_conspiracy', 'RICO & Enterprise'],
+            ['drug_trafficking', 'Drug Trafficking'],
+            ['murder_homicide', 'Murder & Homicide'],
+            ['constitutional', '4th/5th/6th/8th Const.'],
+            ['nc_federal', '4th Cir & NC Federal']
+          ].map(([catKey, catLabel]) => (
+            <button
+              key={catKey}
+              style={{
+                padding: '6px 14px',
+                borderRadius: '20px',
+                fontSize: '0.85rem',
+                fontWeight: categoryFilter === catKey ? 700 : 500,
+                border: '1px solid ' + (categoryFilter === catKey ? '#8C6D2F' : '#CBD5E1'),
+                backgroundColor: categoryFilter === catKey ? '#8C6D2F' : '#FFFFFF',
+                color: categoryFilter === catKey ? '#FFFFFF' : '#334155',
+                cursor: 'pointer',
+                transition: 'all 0.15s ease'
+              }}
+              onClick={() => setCategoryFilter(catKey)}
+            >
+              {catLabel}
+            </button>
+          ))}
+        </div>
+
         <div className="case-law-tools">
-          <label className="case-law-search"><span className="sr-only">Search North Carolina authorities</span><input type="search" value={caseLawQuery} onChange={(event) => setCaseLawQuery(event.target.value)} placeholder="Search citation, issue, or case name" /><span>⌕</span></label>
+          <label className="case-law-search">
+            <span className="sr-only">Search legal authorities</span>
+            <input
+              type="search"
+              value={caseLawQuery}
+              onChange={(event) => setCaseLawQuery(event.target.value)}
+              placeholder="Search 179+ precedents, citations, holdings, or statutes (e.g. 922(g), Bruen, RICO)"
+            />
+            <span>⌕</span>
+          </label>
           <div className="case-law-filters" role="group" aria-label="Filter by jurisdiction">
-            {(['all', 'state', 'federal'] as const).map((filter) => <button key={filter} className={caseLawFilter === filter ? 'active' : ''} onClick={() => setCaseLawFilter(filter)}>{filter === 'all' ? 'All NC authority' : filter === 'state' ? 'NC state' : 'NC federal'}</button>)}
+            {(['all', 'state', 'federal'] as const).map((filter) => (
+              <button
+                key={filter}
+                className={caseLawFilter === filter ? 'active' : ''}
+                onClick={() => setCaseLawFilter(filter)}
+              >
+                {filter === 'all' ? 'All Jurisdictions' : filter === 'state' ? 'NC State' : 'Federal / SCOTUS'}
+              </button>
+            ))}
           </div>
         </div>
+
         <div className="case-law-list">
-          {visibleCaseLaw.map((authority) => <article className="case-law-card" key={authority.title}>
-            <div className="case-law-card-top"><span className="case-law-source">{authority.source === 'state' ? 'North Carolina state' : 'Federal / NC origin'}</span><span className="case-law-outcome">{authority.outcome}</span></div>
-            <h3>{authority.title}</h3><p className="case-law-citation">{authority.citation} · {authority.topic}</p><p>{authority.summary}</p>
-            <button className="case-law-link" onClick={() => setSubmitted(`Research note saved for ${authority.title}.`)}>Save to case file <ArrowUpRight size={15} /></button>
-          </article>)}
-          {!visibleCaseLaw.length && <p className="case-law-empty">No authority matches that search. Try a citation, issue, or case name.</p>}
+          {visibleCaseLaw.map((authority) => {
+            const isBookmarked = bookmarkedCites.includes(authority.citation);
+            return (
+              <article className="case-law-card" key={authority.citation} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                <div>
+                  <div className="case-law-card-top">
+                    <span className="case-law-source">{authority.court} · {authority.year}</span>
+                    <span className="case-law-outcome" style={{ backgroundColor: '#F1F5F9', color: '#0F1B2D', padding: '2px 8px', borderRadius: '4px', fontSize: '0.75rem', fontWeight: 600 }}>
+                      {authority.status}
+                    </span>
+                  </div>
+                  <h3>{authority.title}</h3>
+                  <p className="case-law-citation">{authority.citation} · {authority.practice_area}</p>
+                  <p style={{ marginTop: '8px', lineHeight: 1.5 }}>
+                    <strong>Holding:</strong> {authority.holding}
+                  </p>
+                  {authority.key_principles && (
+                    <p style={{ fontSize: '0.85rem', color: '#475569', marginTop: '6px', fontStyle: 'italic' }}>
+                      Key Principle: {authority.key_principles}
+                    </p>
+                  )}
+                </div>
+
+                <div style={{ display: 'flex', gap: '8px', marginTop: '16px' }}>
+                  <button
+                    className="case-law-link"
+                    style={{ flex: 1, cursor: 'pointer' }}
+                    onClick={() => setSelectedCaseDetail(authority)}
+                  >
+                    Full Opinion &amp; Notes <ArrowUpRight size={15} />
+                  </button>
+                  <button
+                    style={{
+                      padding: '8px 12px',
+                      borderRadius: '6px',
+                      border: '1px solid #CBD5E1',
+                      backgroundColor: isBookmarked ? '#FEF3C7' : '#FFFFFF',
+                      color: isBookmarked ? '#92400E' : '#475569',
+                      cursor: 'pointer'
+                    }}
+                    title={isBookmarked ? 'Bookmarked Offline' : 'Bookmark Case'}
+                    onClick={() => {
+                      const nowBookmarked = offlineCaseLawStore.toggleBookmark(authority.citation);
+                      setBookmarkedCites(offlineCaseLawStore.getBookmarks());
+                      setSubmitted(nowBookmarked ? `Bookmarked ${authority.title} for offline courtroom access.` : `Removed bookmark for ${authority.title}.`);
+                    }}
+                  >
+                    {isBookmarked ? <BookmarkCheck size={16} color="#92400E" /> : <Bookmark size={16} />}
+                  </button>
+                </div>
+              </article>
+            );
+          })}
+          {!visibleCaseLaw.length && (
+            <p className="case-law-empty">No authority matches that search query or filter. Try searching a citation (e.g. "Bruen"), statute ("922(g)"), or topic ("warrant").</p>
+          )}
         </div>
-        <p className="case-law-disclaimer">Research index only. Confirm current treatment, jurisdiction, and procedural posture in your licensed LexisNexis or official reporter source before relying on any authority.</p>
+
+        <p className="case-law-disclaimer">
+          Research index &amp; offline PWA database. Confirm current treatment, jurisdiction, and procedural posture in your licensed LexisNexis or official reporter source before relying on any authority.
+        </p>
+
+        {selectedCaseDetail && (
+          <div
+            style={{
+              position: 'fixed',
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              backgroundColor: 'rgba(15, 27, 45, 0.75)',
+              backdropFilter: 'blur(4px)',
+              zIndex: 9999,
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '20px'
+            }}
+            onClick={() => setSelectedCaseDetail(null)}
+          >
+            <div
+              style={{
+                backgroundColor: '#FFFFFF',
+                borderRadius: '12px',
+                maxWidth: '750px',
+                width: '100%',
+                maxHeight: '90vh',
+                overflowY: 'auto',
+                padding: '28px',
+                boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.3)',
+                color: '#0F1B2D'
+              }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '16px' }}>
+                <div>
+                  <span style={{ fontSize: '0.8rem', fontWeight: 700, color: '#8C6D2F', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                    {selectedCaseDetail.court} ({selectedCaseDetail.year}) · {selectedCaseDetail.practice_area}
+                  </span>
+                  <h2 style={{ fontSize: '1.6rem', fontWeight: 800, margin: '4px 0 8px 0', color: '#0B132B' }}>{selectedCaseDetail.title}</h2>
+                  <p style={{ fontSize: '1rem', fontWeight: 600, color: '#2C4E7A' }}>
+                    {selectedCaseDetail.citation} {selectedCaseDetail.lexis_cite ? `· ${selectedCaseDetail.lexis_cite}` : ''}
+                  </p>
+                </div>
+                <button
+                  style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '4px' }}
+                  onClick={() => setSelectedCaseDetail(null)}
+                >
+                  <X size={24} color="#64748B" />
+                </button>
+              </div>
+
+              <hr style={{ border: 'none', borderTop: '1px solid #E2E8F0', margin: '16px 0' }} />
+
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                <div>
+                  <h4 style={{ fontSize: '0.9rem', fontWeight: 700, color: '#64748B', textTransform: 'uppercase', marginBottom: '4px' }}>Holding</h4>
+                  <p style={{ fontSize: '1rem', lineHeight: 1.6, color: '#1E293B', backgroundColor: '#F8FAFC', padding: '12px', borderRadius: '8px', borderLeft: '4px solid #2C4E7A' }}>
+                    {selectedCaseDetail.holding}
+                  </p>
+                </div>
+
+                {selectedCaseDetail.rule_of_law && (
+                  <div>
+                    <h4 style={{ fontSize: '0.9rem', fontWeight: 700, color: '#64748B', textTransform: 'uppercase', marginBottom: '4px' }}>Rule of Law</h4>
+                    <p style={{ fontSize: '0.95rem', lineHeight: 1.5, color: '#1E293B' }}>{selectedCaseDetail.rule_of_law}</p>
+                  </div>
+                )}
+
+                {selectedCaseDetail.key_principles && (
+                  <div>
+                    <h4 style={{ fontSize: '0.9rem', fontWeight: 700, color: '#64748B', textTransform: 'uppercase', marginBottom: '4px' }}>Key Principles</h4>
+                    <p style={{ fontSize: '0.95rem', lineHeight: 1.5, color: '#334155', fontStyle: 'italic' }}>{selectedCaseDetail.key_principles}</p>
+                  </div>
+                )}
+
+                {selectedCaseDetail.application_notes && (
+                  <div>
+                    <h4 style={{ fontSize: '0.9rem', fontWeight: 700, color: '#64748B', textTransform: 'uppercase', marginBottom: '4px' }}>Application &amp; Practice Strategy</h4>
+                    <p style={{ fontSize: '0.95rem', lineHeight: 1.5, color: '#334155' }}>{selectedCaseDetail.application_notes}</p>
+                  </div>
+                )}
+
+                {selectedCaseDetail.related_statutes && selectedCaseDetail.related_statutes.length > 0 && (
+                  <div>
+                    <h4 style={{ fontSize: '0.9rem', fontWeight: 700, color: '#64748B', textTransform: 'uppercase', marginBottom: '4px' }}>Related Statutes</h4>
+                    <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
+                      {selectedCaseDetail.related_statutes.map((st) => (
+                        <span key={st} style={{ padding: '2px 8px', borderRadius: '4px', backgroundColor: '#E2E8F0', fontSize: '0.8rem', fontWeight: 600 }}>
+                          {st}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '12px', marginTop: '24px' }}>
+                <button
+                  style={{
+                    padding: '10px 18px',
+                    borderRadius: '6px',
+                    border: '1px solid #CBD5E1',
+                    backgroundColor: '#F1F5F9',
+                    color: '#334155',
+                    fontWeight: 600,
+                    cursor: 'pointer'
+                  }}
+                  onClick={() => setSelectedCaseDetail(null)}
+                >
+                  Close Detail
+                </button>
+                <button
+                  style={{
+                    padding: '10px 18px',
+                    borderRadius: '6px',
+                    border: 'none',
+                    backgroundColor: '#8C6D2F',
+                    color: '#FFFFFF',
+                    fontWeight: 700,
+                    cursor: 'pointer'
+                  }}
+                  onClick={() => {
+                    setSubmitted(`Saved ${selectedCaseDetail.title} to active client case file.`);
+                    setSelectedCaseDetail(null);
+                  }}
+                >
+                  Save to Active Case File
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
       </section>
+
 
       <section className="pricing-section" id="pricing">
         <div className="pricing-header pricing-heading"><p className="full-eyebrow">PRICING &amp; PACKAGING</p><h2>Simple Plans for Every Law Practice</h2><div className="pricing-toggle billing-toggle"><button className={!annual ? 'active' : ''} onClick={() => setAnnual(false)}>Monthly</button><button className={annual ? 'active' : ''} onClick={() => setAnnual(true)}>Annually <span>Save 20%</span></button></div></div>
