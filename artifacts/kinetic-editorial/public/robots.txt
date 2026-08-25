@@ -1,2 +1,1 @@
-User-agent: *
-Allow: /
+VXNlci1hZ2VudDogKgpBbGxvdzogLwo=

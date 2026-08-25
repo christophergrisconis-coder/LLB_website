@@ -1,1 +1,1 @@
-console.log("Hello from @workspace/scripts");
+Y29uc29sZS5sb2coIkhlbGxvIGZyb20gQHdvcmtzcGFjZS9zY3JpcHRzIik7Cg==

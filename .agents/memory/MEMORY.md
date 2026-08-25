@@ -1,1 +1,1 @@
-- [Vite React runtime cache](vite-react-runtime-cache.md) — isolate optimizer caches and bust the entry module when preview-only hook errors appear.
+LSBbVml0ZSBSZWFjdCBydW50aW1lIGNhY2hlXSh2aXRlLXJlYWN0LXJ1bnRpbWUtY2FjaGUubWQpIOKAlCBpc29sYXRlIG9wdGltaXplciBjYWNoZXMgYW5kIGJ1c3QgdGhlIGVudHJ5IG1vZHVsZSB3aGVuIHByZXZpZXctb25seSBob29rIGVycm9ycyBhcHBlYXIu

@@ -1,10 +1,1 @@
-import { Router, type IRouter } from "express";
-import healthRouter from "./health";
-import workspaceRouter from "./workspace";
-
-const router: IRouter = Router();
-
-router.use(healthRouter);
-router.use(workspaceRouter);
-
-export default router;
+aW1wb3J0IHsgUm91dGVyLCB0eXBlIElSb3V0ZXIgfSBmcm9tICJleHByZXNzIjsKaW1wb3J0IGhlYWx0aFJvdXRlciBmcm9tICIuL2hlYWx0aCI7CmltcG9ydCB3b3Jrc3BhY2VSb3V0ZXIgZnJvbSAiLi93b3Jrc3BhY2UiOwoKY29uc3Qgcm91dGVyOiBJUm91dGVyID0gUm91dGVyKCk7Cgpyb3V0ZXIudXNlKGhlYWx0aFJvdXRlcik7CnJvdXRlci51c2Uod29ya3NwYWNlUm91dGVyKTsKCmV4cG9ydCBkZWZhdWx0IHJvdXRlcjsK
