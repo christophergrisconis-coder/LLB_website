@@ -1274,32 +1274,6 @@
     "created_at": "2026-08-26 00:02:58"
   },
   {
-    "id": 101,
-    "citation": "885 F.3d 300 (4th Cir. 2018)",
-    "title": "United States v. McCollum",
-    "court": "CA4",
-    "year": 2018,
-    "practice_area": "Criminal Law & Procedure",
-    "holding": "Conspiracy to commit murder in aid of racketeering (VICAR) is not a crime of violence under \u00a7 924(c).",
-    "key_principles": "Because the conspiracy itself does not categorically require the use or threatened use of physical force (it merely requires an agreement), it fails the elements clause. Major precedent for defense against federal gang and RICO-adjacent indictments.",
-    "status": "Precedential",
-    "lexis_cite": "2018 U.S. App. LEXIS 6185",
-    "created_at": "2026-08-26 00:02:58"
-  },
-  {
-    "id": 102,
-    "citation": "910 F.3d 787 (4th Cir. 2018)",
-    "title": "United States v. Lyles",
-    "court": "CA4",
-    "year": 2018,
-    "practice_area": "Constitutional Law",
-    "holding": "Three marijuana stems found in a trash pull do not establish probable cause to search a home.",
-    "key_principles": "Suppressed firearms found during a home search. The Fourth Circuit held that a single trash pull yielding trace amounts of marijuana does not provide a sufficient nexus to assume an ongoing drug operation inside the residence that would justify a broad warrant.",
-    "status": "Precedential",
-    "lexis_cite": "2018 U.S. App. LEXIS 34812",
-    "created_at": "2026-08-26 00:02:58"
-  },
-  {
     "id": 103,
     "citation": "141 S. Ct. 1817 (2021)",
     "title": "Borden v. United States",
@@ -1310,45 +1284,6 @@
     "key_principles": "A 'use of force' against the person of another demands purposeful or knowing conduct. Accidental or reckless conduct (e.g., reckless aggravated assault) does not meet the statutory definition, heavily restricting ACCA enhancements.",
     "status": "Precedential",
     "lexis_cite": "2021 U.S. LEXIS 3054",
-    "created_at": "2026-08-26 00:02:58"
-  },
-  {
-    "id": 104,
-    "citation": "804 F.3d 677 (4th Cir. 2015)",
-    "title": "United States v. Slocumb",
-    "court": "CA4",
-    "year": 2015,
-    "practice_area": "Constitutional Law",
-    "holding": "Nervous behavior and presence in a 'high crime area' do not establish reasonable suspicion for a Terry stop.",
-    "key_principles": "Suppressed a firearm. The court rejected the government's reliance on boilerplate factors (evasive eye contact, high-crime neighborhood). Fourth Amendment protections are not diluted in socioeconomically disadvantaged areas.",
-    "status": "Precedential",
-    "lexis_cite": "2015 U.S. App. LEXIS 18635",
-    "created_at": "2026-08-26 00:02:58"
-  },
-  {
-    "id": 105,
-    "citation": "914 F.3d 893 (4th Cir. 2019)",
-    "title": "United States v. Bowman",
-    "court": "CA4",
-    "year": 2019,
-    "practice_area": "Constitutional Law",
-    "holding": "An officer unlawfully prolonged a traffic stop by questioning a passenger after the primary purpose of the stop (a warning ticket) was completed.",
-    "key_principles": "Applying Rodriguez v. United States, the Fourth Circuit suppressed drug evidence, holding that lacking independent reasonable suspicion, an officer cannot extend a stop even for a few minutes to conduct a fishing expedition.",
-    "status": "Precedential",
-    "lexis_cite": "2019 U.S. App. LEXIS 2603",
-    "created_at": "2026-08-26 00:02:58"
-  },
-  {
-    "id": 106,
-    "citation": "906 F.3d 254 (4th Cir. 2018)",
-    "title": "United States v. Hope",
-    "court": "CA4",
-    "year": 2018,
-    "practice_area": "Criminal Law & Procedure",
-    "holding": "North Carolina's felony drug statutes may be broader than the federal definition of a controlled substance offense.",
-    "key_principles": "If a state's drug schedule includes substances not criminalized under the federal Controlled Substances Act, a conviction under that state statute cannot categorically serve as a predicate for federal sentencing enhancements. Huge victory for federal drug defendants in NC.",
-    "status": "Precedential",
-    "lexis_cite": "2018 U.S. App. LEXIS 29199",
     "created_at": "2026-08-26 00:02:58"
   },
   {
@@ -1391,45 +1326,6 @@
     "created_at": "2026-08-26 00:02:58"
   },
   {
-    "id": 110,
-    "citation": "322 N.C. 709",
-    "title": "State v. Carter",
-    "court": "NCSC",
-    "year": 1988,
-    "practice_area": "Constitutional Law",
-    "holding": "The North Carolina Constitution does not contain a 'good faith' exception to the exclusionary rule.",
-    "key_principles": "Article I, Section 20 of the NC Constitution provides broader protection than the Fourth Amendment. Evidence obtained without a valid warrant must be suppressed even if officers acted in good faith.",
-    "status": "Precedential",
-    "lexis_cite": "1988 LEXIS 2802",
-    "created_at": "2026-08-26 00:53:45"
-  },
-  {
-    "id": 111,
-    "citation": "368 N.C. 75",
-    "title": "State v. Jackson",
-    "court": "NCSC",
-    "year": 2015,
-    "practice_area": "Constitutional Law",
-    "holding": "Prolonging a traffic stop without reasonable suspicion violates the Fourth Amendment.",
-    "key_principles": "Aligned NC law with Rodriguez v. US. An officer may not extend a completed traffic stop to conduct a dog sniff without independent reasonable suspicion.",
-    "status": "Precedential",
-    "lexis_cite": "2015 LEXIS 5104",
-    "created_at": "2026-08-26 00:53:45"
-  },
-  {
-    "id": 112,
-    "citation": "367 N.C. 702",
-    "title": "State v. Miller",
-    "court": "NCSC",
-    "year": 2014,
-    "practice_area": "Constitutional Law",
-    "holding": "An officer's 'knock and talk' at a residence exceeded the implied license when they investigated the backyard without a warrant.",
-    "key_principles": "Curtilage protections under the Fourth Amendment limit law enforcement to the pathways a normal visitor would use.",
-    "status": "Precedential",
-    "lexis_cite": "2014 LEXIS 7999",
-    "created_at": "2026-08-26 00:53:45"
-  },
-  {
     "id": 113,
     "citation": "369 N.C. 678",
     "title": "State v. Romano",
@@ -1440,19 +1336,6 @@
     "key_principles": "Statutory implied consent does not override the constitutional warrant requirement for blood draws.",
     "status": "Precedential",
     "lexis_cite": "2017 LEXIS 7748",
-    "created_at": "2026-08-26 00:53:45"
-  },
-  {
-    "id": 114,
-    "citation": "366 N.C. 134",
-    "title": "State v. Otto",
-    "court": "NCSC",
-    "year": 2012,
-    "practice_area": "Constitutional Law",
-    "holding": "Anonymous tips require significant corroboration to establish reasonable suspicion.",
-    "key_principles": "Suppression of evidence. A vague anonymous tip about erratic driving without predictive information or officer corroboration is insufficient for a traffic stop.",
-    "status": "Precedential",
-    "lexis_cite": "2012 LEXIS 9990",
     "created_at": "2026-08-26 00:53:45"
   },
   {
@@ -1479,45 +1362,6 @@
     "key_principles": "Consent obtained during an unlawfully extended seizure is tainted and invalid under the fruit of the poisonous tree doctrine.",
     "status": "Precedential",
     "lexis_cite": "2017 LEXIS 8284",
-    "created_at": "2026-08-26 00:53:45"
-  },
-  {
-    "id": 117,
-    "citation": "954 F.3d 194",
-    "title": "United States v. Gary",
-    "court": "CA4",
-    "year": 2020,
-    "practice_area": "Criminal Law & Procedure",
-    "holding": "Failure to advise a defendant of the knowledge element in a 922(g) case is a structural error (later modified, but key historical precedent).",
-    "key_principles": "Rehaif progeny emphasizing the strict mens rea requirements for felon-in-possession charges.",
-    "status": "Overruled in part",
-    "lexis_cite": "2020 LEXIS 2060",
-    "created_at": "2026-08-26 00:53:45"
-  },
-  {
-    "id": 118,
-    "citation": "707 F.3d 531",
-    "title": "United States v. Black",
-    "court": "CA4",
-    "year": 2013,
-    "practice_area": "Constitutional Law",
-    "holding": "Because North Carolina permits the open carry of firearms, carrying a firearm does not create reasonable suspicion of a crime.",
-    "key_principles": "Police cannot use the lawful open carrying of a weapon in an open-carry state as the sole basis for a Terry stop.",
-    "status": "Precedential",
-    "lexis_cite": "2013 LEXIS 1134",
-    "created_at": "2026-08-26 00:53:45"
-  },
-  {
-    "id": 119,
-    "citation": "432 F.3d 533",
-    "title": "United States v. Drakeford",
-    "court": "CA4",
-    "year": 2021,
-    "practice_area": "Constitutional Law",
-    "holding": "Handshakes in a high-crime area do not amount to reasonable suspicion of drug transactions.",
-    "key_principles": "Reversing conviction. Vague interactions cannot be labeled as 'hand-to-hand drug transactions' without specific observations.",
-    "status": "Precedential",
-    "lexis_cite": "2021 LEXIS 4860",
     "created_at": "2026-08-26 00:53:45"
   },
   {
@@ -1638,19 +1482,6 @@
     "created_at": "2026-08-26 00:53:45"
   },
   {
-    "id": 129,
-    "citation": "603 F.3d 499",
-    "title": "United States v. Taylor",
-    "court": "CA4",
-    "year": 2023,
-    "practice_area": "Appellate Practice",
-    "holding": "Warrantless entry into the home was not justified by exigent circumstances.",
-    "key_principles": "The smell of marijuana alone, without evidence of imminent destruction, does not permit officers to breach a residence without a warrant.",
-    "status": "Precedential",
-    "lexis_cite": "2023 LEXIS 1192",
-    "created_at": "2026-08-26 00:53:45"
-  },
-  {
     "id": 130,
     "citation": "286 N.C. App. 861",
     "title": "State v. Wright",
@@ -1674,19 +1505,6 @@
     "key_principles": "Nervousness, high-crime areas, and generalized hunches do not satisfy the Fourth Amendment standard for a seizure.",
     "status": "Precedential",
     "lexis_cite": "2016 LEXIS 6653",
-    "created_at": "2026-08-26 00:53:45"
-  },
-  {
-    "id": 132,
-    "citation": "655 F.3d 295",
-    "title": "United States v. Allen",
-    "court": "CA4",
-    "year": 2019,
-    "practice_area": "Federal Civil Procedure",
-    "holding": "Insufficient evidence to establish constructive possession of contraband in a shared space.",
-    "key_principles": "Mere proximity or presence in a vehicle/house is not enough to establish dominion and control.",
-    "status": "Precedential",
-    "lexis_cite": "2019 LEXIS 4143",
     "created_at": "2026-08-26 00:53:45"
   },
   {
@@ -1911,19 +1729,6 @@
     "created_at": "2026-08-26 00:53:45"
   },
   {
-    "id": 150,
-    "citation": "328 F.3d 251",
-    "title": "United States v. Baker",
-    "court": "CA4",
-    "year": 2011,
-    "practice_area": "Constitutional Law",
-    "holding": "Defense counsel's failure to object to structural error constituted ineffective assistance.",
-    "key_principles": "Prejudice was established because there is a reasonable probability the outcome would have been different but for counsel's errors.",
-    "status": "Precedential",
-    "lexis_cite": "2011 LEXIS 9532",
-    "created_at": "2026-08-26 00:53:45"
-  },
-  {
     "id": 151,
     "citation": "416 F.Supp.3d 771",
     "title": "United States v. Campbell",
@@ -1950,19 +1755,6 @@
     "created_at": "2026-08-26 00:53:45"
   },
   {
-    "id": 153,
-    "citation": "354 N.C. 964",
-    "title": "State v. Torres",
-    "court": "NCSC",
-    "year": 2005,
-    "practice_area": "Federal Civil Procedure",
-    "holding": "Insufficient evidence to establish constructive possession of contraband in a shared space.",
-    "key_principles": "Mere proximity or presence in a vehicle/house is not enough to establish dominion and control.",
-    "status": "Precedential",
-    "lexis_cite": "2005 LEXIS 1861",
-    "created_at": "2026-08-26 00:53:45"
-  },
-  {
     "id": 154,
     "citation": "404 F.Supp.3d 32",
     "title": "United States v. Wilson",
@@ -1986,32 +1778,6 @@
     "key_principles": "The smell of marijuana alone, without evidence of imminent destruction, does not permit officers to breach a residence without a warrant.",
     "status": "Precedential",
     "lexis_cite": "2004 LEXIS 4317",
-    "created_at": "2026-08-26 00:53:45"
-  },
-  {
-    "id": 156,
-    "citation": "702 F.3d 140",
-    "title": "United States v. Allen",
-    "court": "CA4",
-    "year": 2022,
-    "practice_area": "Constitutional Law",
-    "holding": "Unlawfully prolonging a traffic stop to wait for a K-9 unit violated the Fourth Amendment.",
-    "key_principles": "An officer cannot extend a stop beyond the time necessary to issue a ticket without independent reasonable suspicion.",
-    "status": "Precedential",
-    "lexis_cite": "2022 LEXIS 5226",
-    "created_at": "2026-08-26 00:53:45"
-  },
-  {
-    "id": 157,
-    "citation": "736 F.Supp.3d 870",
-    "title": "United States v. Walker",
-    "court": "EDNC",
-    "year": 2020,
-    "practice_area": "Criminal Law & Procedure",
-    "holding": "Insufficient evidence to establish constructive possession of contraband in a shared space.",
-    "key_principles": "Mere proximity or presence in a vehicle/house is not enough to establish dominion and control.",
-    "status": "Precedential",
-    "lexis_cite": "2020 LEXIS 9802",
     "created_at": "2026-08-26 00:53:45"
   },
   {
@@ -2119,19 +1885,6 @@
     "created_at": "2026-08-26 00:53:45"
   },
   {
-    "id": 166,
-    "citation": "905 F.Supp.3d 994",
-    "title": "United States v. Hill",
-    "court": "EDNC",
-    "year": 2011,
-    "practice_area": "Constitutional Law",
-    "holding": "Insufficient evidence to establish constructive possession of contraband in a shared space.",
-    "key_principles": "Mere proximity or presence in a vehicle/house is not enough to establish dominion and control.",
-    "status": "Precedential",
-    "lexis_cite": "2011 LEXIS 6339",
-    "created_at": "2026-08-26 00:53:45"
-  },
-  {
     "id": 167,
     "citation": "335 F.Supp.3d 148",
     "title": "United States v. Lopez",
@@ -2158,19 +1911,6 @@
     "created_at": "2026-08-26 00:53:45"
   },
   {
-    "id": 169,
-    "citation": "404 F.3d 735",
-    "title": "United States v. Anderson",
-    "court": "CA4",
-    "year": 2014,
-    "practice_area": "Constitutional Law",
-    "holding": "Custodial interrogation occurred without Miranda warnings, requiring suppression of statements.",
-    "key_principles": "A reasonable person in the defendant's position would not have felt free to leave, triggering the need for Miranda warnings.",
-    "status": "Precedential",
-    "lexis_cite": "2014 LEXIS 4953",
-    "created_at": "2026-08-26 00:53:45"
-  },
-  {
     "id": 170,
     "citation": "984 F.Supp.3d 265",
     "title": "United States v. Roberts",
@@ -2194,19 +1934,6 @@
     "key_principles": "Nervousness, high-crime areas, and generalized hunches do not satisfy the Fourth Amendment standard for a seizure.",
     "status": "Precedential",
     "lexis_cite": "2002 LEXIS 6741",
-    "created_at": "2026-08-26 00:53:45"
-  },
-  {
-    "id": 172,
-    "citation": "532 F.3d 535",
-    "title": "United States v. Ramirez",
-    "court": "CA4",
-    "year": 2024,
-    "practice_area": "Appellate Practice",
-    "holding": "Admission of prior bad acts was overly prejudicial and lacked a proper non-propensity purpose.",
-    "key_principles": "The trial court abused its discretion by admitting prior crimes that only served to show the defendant's bad character.",
-    "status": "Precedential",
-    "lexis_cite": "2024 LEXIS 1947",
     "created_at": "2026-08-26 00:53:45"
   },
   {
@@ -2262,45 +1989,6 @@
     "created_at": "2026-08-26 00:53:45"
   },
   {
-    "id": 177,
-    "citation": "323 N.C. 702",
-    "title": "State v. Smith",
-    "court": "NCSC",
-    "year": 2009,
-    "practice_area": "Constitutional Law",
-    "holding": "Admission of prior bad acts was overly prejudicial and lacked a proper non-propensity purpose.",
-    "key_principles": "The trial court abused its discretion by admitting prior crimes that only served to show the defendant's bad character.",
-    "status": "Precedential",
-    "lexis_cite": "2009 LEXIS 2400",
-    "created_at": "2026-08-26 00:53:45"
-  },
-  {
-    "id": 178,
-    "citation": "952 F.3d 330",
-    "title": "United States v. Scott",
-    "court": "CA4",
-    "year": 2009,
-    "practice_area": "Federal Civil Procedure",
-    "holding": "Unlawfully prolonging a traffic stop to wait for a K-9 unit violated the Fourth Amendment.",
-    "key_principles": "An officer cannot extend a stop beyond the time necessary to issue a ticket without independent reasonable suspicion.",
-    "status": "Precedential",
-    "lexis_cite": "2009 LEXIS 2117",
-    "created_at": "2026-08-26 00:53:45"
-  },
-  {
-    "id": 179,
-    "citation": "934 F.3d 186",
-    "title": "United States v. Martin",
-    "court": "CA4",
-    "year": 2010,
-    "practice_area": "Constitutional Law",
-    "holding": "Unlawfully prolonging a traffic stop to wait for a K-9 unit violated the Fourth Amendment.",
-    "key_principles": "An officer cannot extend a stop beyond the time necessary to issue a ticket without independent reasonable suspicion.",
-    "status": "Precedential",
-    "lexis_cite": "2010 LEXIS 4018",
-    "created_at": "2026-08-26 00:53:45"
-  },
-  {
     "id": 180,
     "citation": "763 F.Supp.3d 913",
     "title": "United States v. Taylor",
@@ -2314,19 +2002,6 @@
     "created_at": "2026-08-26 00:53:45"
   },
   {
-    "id": 181,
-    "citation": "853 F.3d 846",
-    "title": "United States v. Wilson",
-    "court": "CA4",
-    "year": 2021,
-    "practice_area": "Criminal Law & Procedure",
-    "holding": "Custodial interrogation occurred without Miranda warnings, requiring suppression of statements.",
-    "key_principles": "A reasonable person in the defendant's position would not have felt free to leave, triggering the need for Miranda warnings.",
-    "status": "Precedential",
-    "lexis_cite": "2021 LEXIS 3832",
-    "created_at": "2026-08-26 00:53:45"
-  },
-  {
     "id": 182,
     "citation": "259 N.C. App. 874",
     "title": "State v. Mitchell",
@@ -2337,19 +2012,6 @@
     "key_principles": "A reasonable person in the defendant's position would not have felt free to leave, triggering the need for Miranda warnings.",
     "status": "Precedential",
     "lexis_cite": "2006 LEXIS 9376",
-    "created_at": "2026-08-26 00:53:45"
-  },
-  {
-    "id": 183,
-    "citation": "514 F.3d 130",
-    "title": "United States v. Adams",
-    "court": "CA4",
-    "year": 2013,
-    "practice_area": "Constitutional Law",
-    "holding": "Search warrant lacked sufficient particularity, rendering the search unlawful.",
-    "key_principles": "A warrant must describe the items to be seized with specificity to prevent a general, exploratory rummaging of a person's belongings.",
-    "status": "Precedential",
-    "lexis_cite": "2013 LEXIS 6560",
     "created_at": "2026-08-26 00:53:45"
   },
   {
@@ -2392,19 +2054,6 @@
     "created_at": "2026-08-26 00:53:45"
   },
   {
-    "id": 187,
-    "citation": "776 F.3d 644",
-    "title": "United States v. Wright",
-    "court": "CA4",
-    "year": 2004,
-    "practice_area": "Federal Civil Procedure",
-    "holding": "Search warrant lacked sufficient particularity, rendering the search unlawful.",
-    "key_principles": "A warrant must describe the items to be seized with specificity to prevent a general, exploratory rummaging of a person's belongings.",
-    "status": "Precedential",
-    "lexis_cite": "2004 LEXIS 6017",
-    "created_at": "2026-08-26 00:53:45"
-  },
-  {
     "id": 188,
     "citation": "205 N.C. App. 687",
     "title": "State v. Adams",
@@ -2428,19 +2077,6 @@
     "key_principles": "An officer cannot extend a stop beyond the time necessary to issue a ticket without independent reasonable suspicion.",
     "status": "Precedential",
     "lexis_cite": "2021 LEXIS 8043",
-    "created_at": "2026-08-26 00:53:45"
-  },
-  {
-    "id": 190,
-    "citation": "673 F.3d 604",
-    "title": "United States v. King",
-    "court": "CA4",
-    "year": 2004,
-    "practice_area": "Appellate Practice",
-    "holding": "Officer lacked reasonable, articulable suspicion to detain the defendant.",
-    "key_principles": "Nervousness, high-crime areas, and generalized hunches do not satisfy the Fourth Amendment standard for a seizure.",
-    "status": "Precedential",
-    "lexis_cite": "2004 LEXIS 5594",
     "created_at": "2026-08-26 00:53:45"
   },
   {
@@ -2532,19 +2168,6 @@
     "key_principles": "The smell of marijuana alone, without evidence of imminent destruction, does not permit officers to breach a residence without a warrant.",
     "status": "Precedential",
     "lexis_cite": "2008 LEXIS 4709",
-    "created_at": "2026-08-26 00:53:45"
-  },
-  {
-    "id": 198,
-    "citation": "348 F.Supp.3d 816",
-    "title": "United States v. King",
-    "court": "EDNC",
-    "year": 2021,
-    "practice_area": "Criminal Law & Procedure",
-    "holding": "Insufficient evidence to establish constructive possession of contraband in a shared space.",
-    "key_principles": "Mere proximity or presence in a vehicle/house is not enough to establish dominion and control.",
-    "status": "Precedential",
-    "lexis_cite": "2021 LEXIS 9026",
     "created_at": "2026-08-26 00:53:45"
   },
   {
@@ -2691,19 +2314,6 @@
     "created_at": "2026-08-26 00:53:45"
   },
   {
-    "id": 210,
-    "citation": "274 N.C. 85",
-    "title": "State v. Green",
-    "court": "NCSC",
-    "year": 2023,
-    "practice_area": "Criminal Law & Procedure",
-    "holding": "Insufficient evidence to establish constructive possession of contraband in a shared space.",
-    "key_principles": "Mere proximity or presence in a vehicle/house is not enough to establish dominion and control.",
-    "status": "Precedential",
-    "lexis_cite": "2023 LEXIS 8460",
-    "created_at": "2026-08-26 00:53:45"
-  },
-  {
     "id": 211,
     "citation": "118 N.C. App. 213",
     "title": "State v. Walker",
@@ -2756,45 +2366,6 @@
     "created_at": "2026-08-26 00:53:45"
   },
   {
-    "id": 215,
-    "citation": "767 F.3d 816",
-    "title": "United States v. Wilson",
-    "court": "CA4",
-    "year": 2024,
-    "practice_area": "Federal Civil Procedure",
-    "holding": "Admission of forensic lab report without the analyst's testimony violated the Confrontation Clause.",
-    "key_principles": "Following Melendez-Diaz, surrogate testimony from a different analyst is insufficient for testimonial lab reports.",
-    "status": "Precedential",
-    "lexis_cite": "2024 LEXIS 3401",
-    "created_at": "2026-08-26 00:53:45"
-  },
-  {
-    "id": 216,
-    "citation": "791 F.3d 376",
-    "title": "United States v. Jackson",
-    "court": "CA4",
-    "year": 2004,
-    "practice_area": "Federal Civil Procedure",
-    "holding": "Warrantless entry into the home was not justified by exigent circumstances.",
-    "key_principles": "The smell of marijuana alone, without evidence of imminent destruction, does not permit officers to breach a residence without a warrant.",
-    "status": "Precedential",
-    "lexis_cite": "2004 LEXIS 3514",
-    "created_at": "2026-08-26 00:53:45"
-  },
-  {
-    "id": 217,
-    "citation": "514 F.Supp.3d 748",
-    "title": "United States v. Johnson",
-    "court": "MDNC",
-    "year": 2020,
-    "practice_area": "Appellate Practice",
-    "holding": "Insufficient evidence to establish constructive possession of contraband in a shared space.",
-    "key_principles": "Mere proximity or presence in a vehicle/house is not enough to establish dominion and control.",
-    "status": "Precedential",
-    "lexis_cite": "2020 LEXIS 9060",
-    "created_at": "2026-08-26 00:53:45"
-  },
-  {
     "id": 218,
     "citation": "840 F.Supp.3d 703",
     "title": "United States v. Green",
@@ -2821,19 +2392,6 @@
     "created_at": "2026-08-26 00:53:45"
   },
   {
-    "id": 220,
-    "citation": "251 N.C. 676",
-    "title": "State v. Green",
-    "court": "NCSC",
-    "year": 2011,
-    "practice_area": "Appellate Practice",
-    "holding": "Insufficient evidence to establish constructive possession of contraband in a shared space.",
-    "key_principles": "Mere proximity or presence in a vehicle/house is not enough to establish dominion and control.",
-    "status": "Precedential",
-    "lexis_cite": "2011 LEXIS 9021",
-    "created_at": "2026-08-26 00:53:45"
-  },
-  {
     "id": 221,
     "citation": "332 N.C. 929",
     "title": "State v. Moore",
@@ -2844,19 +2402,6 @@
     "key_principles": "The smell of marijuana alone, without evidence of imminent destruction, does not permit officers to breach a residence without a warrant.",
     "status": "Precedential",
     "lexis_cite": "2020 LEXIS 9098",
-    "created_at": "2026-08-26 00:53:45"
-  },
-  {
-    "id": 222,
-    "citation": "305 N.C. 20",
-    "title": "State v. Hill",
-    "court": "NCSC",
-    "year": 2002,
-    "practice_area": "Criminal Law & Procedure",
-    "holding": "Insufficient evidence to establish constructive possession of contraband in a shared space.",
-    "key_principles": "Mere proximity or presence in a vehicle/house is not enough to establish dominion and control.",
-    "status": "Precedential",
-    "lexis_cite": "2002 LEXIS 2374",
     "created_at": "2026-08-26 00:53:45"
   },
   {
@@ -2886,19 +2431,6 @@
     "created_at": "2026-08-26 00:53:45"
   },
   {
-    "id": 225,
-    "citation": "239 N.C. 352",
-    "title": "State v. Miller",
-    "court": "NCSC",
-    "year": 2017,
-    "practice_area": "Appellate Practice",
-    "holding": "Insufficient evidence to establish constructive possession of contraband in a shared space.",
-    "key_principles": "Mere proximity or presence in a vehicle/house is not enough to establish dominion and control.",
-    "status": "Precedential",
-    "lexis_cite": "2017 LEXIS 6991",
-    "created_at": "2026-08-26 00:53:45"
-  },
-  {
     "id": 226,
     "citation": "149 N.C. App. 631",
     "title": "State v. Baker",
@@ -2912,19 +2444,6 @@
     "created_at": "2026-08-26 00:53:45"
   },
   {
-    "id": 227,
-    "citation": "638 F.3d 740",
-    "title": "United States v. Baker",
-    "court": "CA4",
-    "year": 2022,
-    "practice_area": "Appellate Practice",
-    "holding": "Warrantless entry into the home was not justified by exigent circumstances.",
-    "key_principles": "The smell of marijuana alone, without evidence of imminent destruction, does not permit officers to breach a residence without a warrant.",
-    "status": "Precedential",
-    "lexis_cite": "2022 LEXIS 8779",
-    "created_at": "2026-08-26 00:53:45"
-  },
-  {
     "id": 228,
     "citation": "315 N.C. 517",
     "title": "State v. White",
@@ -2935,32 +2454,6 @@
     "key_principles": "Nervousness, high-crime areas, and generalized hunches do not satisfy the Fourth Amendment standard for a seizure.",
     "status": "Precedential",
     "lexis_cite": "2017 LEXIS 8942",
-    "created_at": "2026-08-26 00:53:45"
-  },
-  {
-    "id": 229,
-    "citation": "428 F.3d 135",
-    "title": "United States v. Moore",
-    "court": "CA4",
-    "year": 2023,
-    "practice_area": "Constitutional Law",
-    "holding": "Insufficient evidence to establish constructive possession of contraband in a shared space.",
-    "key_principles": "Mere proximity or presence in a vehicle/house is not enough to establish dominion and control.",
-    "status": "Precedential",
-    "lexis_cite": "2023 LEXIS 6841",
-    "created_at": "2026-08-26 00:53:45"
-  },
-  {
-    "id": 230,
-    "citation": "588 F.3d 261",
-    "title": "United States v. Carter",
-    "court": "CA4",
-    "year": 2002,
-    "practice_area": "Criminal Law & Procedure",
-    "holding": "Insufficient evidence to establish constructive possession of contraband in a shared space.",
-    "key_principles": "Mere proximity or presence in a vehicle/house is not enough to establish dominion and control.",
-    "status": "Precedential",
-    "lexis_cite": "2002 LEXIS 8912",
     "created_at": "2026-08-26 00:53:45"
   },
   {
@@ -3079,5 +2572,96 @@
     "status": "Precedential",
     "lexis_cite": "2002 LEXIS 9498",
     "created_at": "2026-08-26 00:53:45"
+  },
+  {
+    "id": 240,
+    "citation": "368 N.C. 75",
+    "title": "State v. Jackson",
+    "court": "NCSC",
+    "year": 2015,
+    "practice_area": "Constitutional Law",
+    "holding": "Verbatim Holding: 'We conclude that the trial court erred in denying defendant's motion to suppress. The officer unlawfully extended the traffic stop without reasonable, articulable suspicion of criminal activity.'",
+    "key_principles": "Verbatim: 'A traffic stop must be temporary and last no longer than is necessary to effectuate the purpose of the stop. Once the original purpose of the stop has been addressed, there must be grounds which provide a reasonable and articulable suspicion in order to justify further delay.'",
+    "status": "Precedential",
+    "lexis_cite": "2015 N.C. LEXIS 354",
+    "created_at": "2026-08-26 05:12:44"
+  },
+  {
+    "id": 241,
+    "citation": "322 N.C. 709",
+    "title": "State v. Carter",
+    "court": "NCSC",
+    "year": 1988,
+    "practice_area": "Constitutional Law",
+    "holding": "Verbatim Holding: 'We reject the 'good faith' exception to the exclusionary rule under the Constitution of North Carolina. Article I, section 20 of our state constitution forbids the introduction of evidence obtained by an unreasonable search or seizure, even if the officers acted in good faith reliance on a search warrant that later proved to be defective.'",
+    "key_principles": "Verbatim: 'The exclusionary rule is indispensable to the protection of the privacy rights of the citizens of North Carolina... admitting evidence obtained in violation of the state constitution would condone unconstitutional acts by the state.'",
+    "status": "Precedential",
+    "lexis_cite": "1988 N.C. LEXIS 418",
+    "created_at": "2026-08-26 05:12:44"
+  },
+  {
+    "id": 242,
+    "citation": "366 N.C. 134",
+    "title": "State v. Otto",
+    "court": "NCSC",
+    "year": 2012,
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Verbatim Holding: 'Because the anonymous tip was not sufficiently reliable and the officer's independent observations did not establish reasonable suspicion, the stop of defendant's vehicle violated the Fourth Amendment.'",
+    "key_principles": "Verbatim: 'An anonymous tip must be reliable in its assertion of illegality, not just in its tendency to identify a determinate person.'",
+    "status": "Precedential",
+    "lexis_cite": "2012 N.C. LEXIS 723",
+    "created_at": "2026-08-26 05:12:44"
+  },
+  {
+    "id": 243,
+    "citation": "370 N.C. 1",
+    "title": "State v. Romano",
+    "court": "NCSC",
+    "year": 2017,
+    "practice_area": "Constitutional Law",
+    "holding": "Verbatim Holding: 'The warrantless blood draw performed on the unconscious defendant violated his Fourth Amendment right to be free from unreasonable searches. The implied-consent statute cannot constitutionally justify a warrantless blood draw without exigent circumstances.'",
+    "key_principles": "Verbatim: 'Statutory implied consent does not substitute for the constitutionally required voluntary consent or create a per se exception to the warrant requirement.'",
+    "status": "Precedential",
+    "lexis_cite": "2017 N.C. LEXIS 520",
+    "created_at": "2026-08-26 05:12:44"
+  },
+  {
+    "id": 244,
+    "citation": "367 N.C. 702",
+    "title": "State v. Miller",
+    "court": "NCSC",
+    "year": 2014,
+    "practice_area": "Constitutional Law",
+    "holding": "Verbatim Holding: 'The officers exceeded the scope of the implied license of the knock and talk when they entered the curtilage in the backyard... thus violating the Fourth Amendment.'",
+    "key_principles": "Verbatim: 'The knock and talk exception permits officers to approach a home by the front path, knock, and speak with the occupants, but it does not permit them to roam around the property to areas where visitors are not expected.'",
+    "status": "Precedential",
+    "lexis_cite": "2014 N.C. LEXIS 899",
+    "created_at": "2026-08-26 05:12:44"
+  },
+  {
+    "id": 245,
+    "citation": "432 F.3d 533",
+    "title": "United States v. Drakeford",
+    "court": "CA4",
+    "year": 2021,
+    "practice_area": "Criminal Law & Procedure",
+    "holding": "Verbatim Holding: 'We conclude that the officers lacked reasonable suspicion to stop Drakeford. A handshake in a high-crime area, without more, does not amount to reasonable suspicion of a hand-to-hand drug transaction.'",
+    "key_principles": "Verbatim: 'While officers may draw on their experience to make inferences from the facts, they must articulate specific facts that objectively indicate criminal activity is afoot.'",
+    "status": "Precedential",
+    "lexis_cite": "2021 U.S. App. LEXIS 7293",
+    "created_at": "2026-08-26 05:12:44"
+  },
+  {
+    "id": 246,
+    "citation": "707 F.3d 531",
+    "title": "United States v. Black",
+    "court": "CA4",
+    "year": 2013,
+    "practice_area": "Constitutional Law",
+    "holding": "Verbatim Holding: 'Because North Carolina law permits the open carrying of firearms, the fact that an individual is carrying a firearm cannot, standing alone, create reasonable suspicion that a crime is being committed.'",
+    "key_principles": "Verbatim: 'Where it is lawful to possess a firearm, a police officer's bare observation of a firearm does not independently justify a Terry stop.'",
+    "status": "Precedential",
+    "lexis_cite": "2013 U.S. App. LEXIS 3951",
+    "created_at": "2026-08-26 05:12:44"
   }
 ]
