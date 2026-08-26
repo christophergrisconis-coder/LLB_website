@@ -164,15 +164,27 @@ importers:
       '@esbuild/darwin-arm64':
         specifier: 0.27.3
         version: 0.27.3
+      '@esbuild/linux-x64':
+        specifier: 0.27.3
+        version: 0.27.3
       '@rollup/rollup-darwin-arm64':
-        specifier: 4.62.3
-        version: 4.62.3
+        specifier: ^4.62.5
+        version: 4.62.5
+      '@rollup/rollup-linux-x64-gnu':
+        specifier: ^4.62.5
+        version: 4.62.5
       '@tailwindcss/oxide-darwin-arm64':
-        specifier: '*'
+        specifier: ^4.3.3
+        version: 4.3.3
+      '@tailwindcss/oxide-linux-x64-gnu':
+        specifier: ^4.3.3
         version: 4.3.3
       lightningcss-darwin-arm64:
-        specifier: '*'
+        specifier: ^1.32.0
         version: 1.33.0
+      lightningcss-linux-x64-gnu:
+        specifier: ^1.32.0
+        version: 1.32.0
       prettier:
         specifier: ^3.9.6
         version: 3.9.6
@@ -1587,8 +1599,8 @@ packages:
   '@rolldown/pluginutils@1.0.0-rc.3':
     resolution: {integrity: sha512-eybk3TjzzzV97Dlj5c+XrBFW57eTNhzod66y9HrBlzJ6NsCrWCp/2kaPS3K9wJmurBC0Tdw4yPjXKZqlznim3Q==}
 
-  '@rollup/rollup-darwin-arm64@4.62.3':
-    resolution: {integrity: sha512-Pch2pFNOxxz1hTjypIdPyRTR6riiwRl84+VcN9djS680fw+Co1nAJINrdpqp7KV0NvyuU8ilZXZCjd7ykJl1GQ==}
+  '@rollup/rollup-darwin-arm64@4.62.5':
+    resolution: {integrity: sha512-bW7B8xMEq8n99Q3ieEcPRGuphurdZAaFzQc9Efyyw3FL6DZO6pMy9xhdN+kBoD7Sy05xNXSr4OyPPnpkYriS/A==}
     cpu: [arm64]
     os: [darwin]
 
@@ -1673,7 +1685,6 @@ packages:
     engines: {node: '>= 20'}
     cpu: [x64]
     os: [linux]
-    libc: [glibc]
 
   '@tailwindcss/oxide-wasm32-wasi@4.3.3':
     resolution: {integrity: sha512-jx1+rPhY/5Ympkktd656HBWEBLxP7dH06losBLjjf5vgCODXvi9KhtftWcMIwTFIDqBr7cRnQkdLnAG+IOlGvQ==}
@@ -2642,7 +2653,6 @@ packages:
     engines: {node: '>= 12.0.0'}
     cpu: [x64]
     os: [linux]
-    libc: [glibc]
 
   lightningcss@1.32.0:
     resolution: {integrity: sha512-NXYBzinNrblfraPGyrbPoD19C1h9lfI/1mzgWYvXUTe414Gz/X1FD2XBZSZM7rRTrMA8JL3OtAaGifrIKhQ5yQ==}
@@ -3726,8 +3736,7 @@ snapshots:
 
   '@esbuild/darwin-arm64@0.27.3': {}
 
-  '@esbuild/linux-x64@0.27.3':
-    optional: true
+  '@esbuild/linux-x64@0.27.3': {}
 
   '@exodus/bytes@1.15.1': {}
 
@@ -4600,10 +4609,9 @@ snapshots:
 
   '@rolldown/pluginutils@1.0.0-rc.3': {}
 
-  '@rollup/rollup-darwin-arm64@4.62.3': {}
+  '@rollup/rollup-darwin-arm64@4.62.5': {}
 
-  '@rollup/rollup-linux-x64-gnu@4.62.5':
-    optional: true
+  '@rollup/rollup-linux-x64-gnu@4.62.5': {}
 
   '@scalar/helpers@0.10.0': {}
 
@@ -4682,8 +4690,7 @@ snapshots:
 
   '@tailwindcss/oxide-darwin-arm64@4.3.3': {}
 
-  '@tailwindcss/oxide-linux-x64-gnu@4.3.3':
-    optional: true
+  '@tailwindcss/oxide-linux-x64-gnu@4.3.3': {}
 
   '@tailwindcss/oxide-wasm32-wasi@4.3.3':
     optional: true
@@ -5548,8 +5555,7 @@ snapshots:
 
   lightningcss-darwin-arm64@1.33.0: {}
 
-  lightningcss-linux-x64-gnu@1.32.0:
-    optional: true
+  lightningcss-linux-x64-gnu@1.32.0: {}
 
   lightningcss@1.32.0:
     dependencies:
