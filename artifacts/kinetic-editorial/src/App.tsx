@@ -262,7 +262,7 @@ function SimpleHome() {
         <div className="full-nav-container">
           <a href="/" className="full-logo" data-testid="link-brand"><span>✦</span> L.L.B</a>
           <nav className="full-nav-links" aria-label="Main navigation">
-            <a href="#features">Solutions ⌄</a><a onClick={(e) => { e.preventDefault(); window.history.pushState({}, '', '/legal-research'); window.dispatchEvent(new PopStateEvent('popstate')); }} href="/legal-research" style={{cursor:'pointer'}}>Case Database ↗</a><a href="#about">About</a><a href="#insights">Blog</a><a href="#faq">Support ⌄</a>
+            <a href="#features">Solutions ⌄</a><a onClick={(e) => { e.preventDefault(); window.history.pushState({}, '', '/legal-research'); window.dispatchEvent(new PopStateEvent('popstate')); }} href="/legal-research" style={{cursor:'pointer'}}>Case Database (Pro 🔒)</a><a href="#pricing">Pricing</a><a href="#about">About</a><a href="#insights">Blog</a><a href="#faq">Support ⌄</a>
           </nav>
           <a href="/start" className="full-primary-button" data-testid="link-get-started">Get started</a>
         </div>
