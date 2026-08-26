@@ -1,0 +1,110 @@
+[
+  {
+    "case_name": "Rehaif v. United States",
+    "citation": "139 S. Ct. 2191",
+    "year": 2019,
+    "court": "U.S. Supreme Court",
+    "primary_topics": ["18 U.S.C. § 922(g)", "Firearm by Felon", "Mens Rea", "Knowledge"],
+    "jurisdiction": "Federal",
+    "summary": "The Supreme Court held that in a prosecution under 18 U.S.C. § 922(g) and § 924(a)(2), the Government must prove both that the defendant knew they possessed a firearm and that they knew they belonged to the relevant category of persons barred from possessing a firearm.",
+    "rule_of_law": "To convict under 922(g), the government must prove the defendant knew of their status as a prohibited person at the time of the firearm possession.",
+    "application_notes": "Crucial for defending 922(g) charges where the defendant may not have realized their prior conviction qualified as a felony, or their immigration status was technically unlawful.",
+    "related_statutes": ["18 U.S.C. § 922(g)", "18 U.S.C. § 924(a)(2)"]
+  },
+  {
+    "case_name": "Boyle v. United States",
+    "citation": "556 U.S. 938",
+    "year": 2009,
+    "court": "U.S. Supreme Court",
+    "primary_topics": ["RICO", "18 U.S.C. § 1962(c)", "Association-in-Fact Enterprise"],
+    "jurisdiction": "Federal",
+    "summary": "The Court clarified the definition of an 'association-in-fact' enterprise under the Racketeer Influenced and Corrupt Organizations Act (RICO). It held that an enterprise must have a structure, but it does not need to have a hierarchical structure or a chain of command.",
+    "rule_of_law": "An association-in-fact enterprise must have at least three structural features: a purpose, relationships among those associated with the enterprise, and longevity sufficient to permit these associates to pursue the enterprise's purpose.",
+    "application_notes": "Used heavily in state and federal RICO cases to prove or disprove whether a loose gang, crew, or group of individuals qualifies as a legal 'enterprise'.",
+    "related_statutes": ["18 U.S.C. § 1961(4)", "18 U.S.C. § 1962(c)"]
+  },
+  {
+    "case_name": "New York State Rifle & Pistol Association, Inc. v. Bruen",
+    "citation": "142 S. Ct. 2111",
+    "year": 2022,
+    "court": "U.S. Supreme Court",
+    "primary_topics": ["Second Amendment", "Firearms", "Concealed Carry", "Historical Tradition"],
+    "jurisdiction": "Federal",
+    "summary": "The Court struck down New York's 'proper cause' requirement for carrying a handgun in public. More importantly for 922(g) cases, it established a new test for Second Amendment challenges: the government must affirmatively prove that its firearms regulation is part of the historical tradition that delimits the outer bounds of the right to keep and bear arms.",
+    "rule_of_law": "Firearm regulations are unconstitutional unless the government can demonstrate the regulation is consistent with the Nation's historical tradition of firearm regulation.",
+    "application_notes": "This case has triggered thousands of challenges to 922(g)(1) (felons) and 922(g)(3) (drug users), making it the most important foundational case for challenging modern gun charges.",
+    "related_statutes": ["U.S. Const. amend. II", "18 U.S.C. § 922"]
+  },
+  {
+    "case_name": "United States v. Rahimi",
+    "citation": "144 S. Ct. 1889",
+    "year": 2024,
+    "court": "U.S. Supreme Court",
+    "primary_topics": ["Second Amendment", "Firearms", "18 U.S.C. § 922(g)(8)", "Domestic Violence Restraining Orders"],
+    "jurisdiction": "Federal",
+    "summary": "Clarifying Bruen, the Court ruled that disarming individuals subject to domestic violence restraining orders under 18 U.S.C. § 922(g)(8) does not violate the Second Amendment. The historical tradition of disarming 'dangerous' individuals justifies this specific restriction.",
+    "rule_of_law": "When a restraining order contains a finding that an individual poses a credible threat to the physical safety of an intimate partner, that individual may be temporarily disarmed consistent with the Second Amendment.",
+    "application_notes": "Defines the limits of Bruen challenges. Helpful for prosecutors and compliance officers, as it saves the constitutionality of disarming those deemed actively dangerous.",
+    "related_statutes": ["18 U.S.C. § 922(g)(8)"]
+  },
+  {
+    "case_name": "Alleyne v. United States",
+    "citation": "570 U.S. 99",
+    "year": 2013,
+    "court": "U.S. Supreme Court",
+    "primary_topics": ["Mandatory Minimums", "Drug Trafficking", "21 U.S.C. § 841", "Sixth Amendment"],
+    "jurisdiction": "Federal",
+    "summary": "The Supreme Court held that any fact that increases the mandatory minimum sentence for a crime is an 'element' of the crime, not a sentencing factor, and must be submitted to the jury and found beyond a reasonable doubt.",
+    "rule_of_law": "Facts that increase mandatory minimum sentences must be submitted to the jury and found beyond a reasonable doubt.",
+    "application_notes": "Critical for drug trafficking and firearms cases where prosecutors attempt to use drug weight or firearm possession to trigger mandatory minimums without jury findings.",
+    "related_statutes": ["21 U.S.C. § 841", "U.S. Const. amend. VI"]
+  },
+  {
+    "case_name": "Mathis v. United States",
+    "citation": "136 S. Ct. 2243",
+    "year": 2016,
+    "court": "U.S. Supreme Court",
+    "primary_topics": ["Categorical Approach", "Predicate Offenses", "ACCA", "Drug Trafficking"],
+    "jurisdiction": "Federal",
+    "summary": "The Court clarified how to determine if a past state conviction qualifies as a predicate offense under federal law (like the Armed Career Criminal Act). It held that courts must use the categorical approach, looking only to the statutory elements of the prior state offense, not the actual facts of the defendant's conduct.",
+    "rule_of_law": "A prior state crime cannot qualify as a federal predicate if its statutory elements are broader than those of a listed generic offense, regardless of the underlying facts of the case.",
+    "application_notes": "Used heavily in Superior Court and Federal courts to argue that a defendant's prior state drug or violence convictions cannot be used to enhance their federal sentence.",
+    "related_statutes": ["18 U.S.C. § 924(e)"]
+  },
+  {
+    "case_name": "Crawford v. Washington",
+    "citation": "541 U.S. 36",
+    "year": 2004,
+    "court": "U.S. Supreme Court",
+    "primary_topics": ["Murder", "Confrontation Clause", "Evidence", "Sixth Amendment"],
+    "jurisdiction": "Federal and State Superior",
+    "summary": "The Court reformulated the standard for determining when the admission of hearsay statements in criminal cases violates the Sixth Amendment. It ruled that 'testimonial' out-of-court statements are inadmissible unless the witness is unavailable and the defendant had a prior opportunity to cross-examine them.",
+    "rule_of_law": "The Confrontation Clause prohibits the introduction of testimonial out-of-court statements against a criminal defendant unless the declarant is unavailable and the defendant had a prior opportunity for cross-examination.",
+    "application_notes": "Essential for trial prep in murder and major conspiracy cases (both state and federal) to block prosecutors from using police interrogations, 911 calls, or accomplice confessions if that person does not testify at trial.",
+    "related_statutes": ["U.S. Const. amend. VI"]
+  },
+  {
+    "case_name": "Gamble v. United States",
+    "citation": "139 S. Ct. 1960",
+    "year": 2019,
+    "court": "U.S. Supreme Court",
+    "primary_topics": ["Double Jeopardy", "Dual Sovereignty", "Firearm by Felon", "State and Federal Overlap"],
+    "jurisdiction": "Federal and State Superior",
+    "summary": "The Court reaffirmed the 'dual-sovereignty' doctrine, which allows a state government and the federal government to prosecute a defendant for the same underlying conduct without violating the Double Jeopardy Clause.",
+    "rule_of_law": "Under the dual-sovereignty doctrine, two offenses are not the 'same offence' for double jeopardy purposes if they are prosecuted by different sovereigns (e.g., State Superior Court and Federal District Court).",
+    "application_notes": "Highly relevant when a defendant is charged with murder, drugs, or gun possession in State Superior Court, and the Federal government picks up the exact same incident as a 922(g) or VICAR/RICO charge.",
+    "related_statutes": ["U.S. Const. amend. V"]
+  },
+  {
+    "case_name": "United States v. Banks",
+    "citation": "514 F.3d 959",
+    "year": 2008,
+    "court": "U.S. Court of Appeals for the Ninth Circuit",
+    "primary_topics": ["VICAR", "Murder", "18 U.S.C. § 1959", "Racketeering"],
+    "jurisdiction": "Federal",
+    "summary": "The court analyzed the motive requirement under the Violent Crimes in Aid of Racketeering (VICAR) statute, determining whether a murder or assault was committed for the purpose of gaining entrance to or maintaining status in a racketeering enterprise.",
+    "rule_of_law": "To prove a VICAR violation, the government must show that the defendant committed the violent crime as an integral aspect of membership in the enterprise, though it need not be the sole or principal motive.",
+    "application_notes": "Used to defend state murder charges that get elevated to federal VICAR cases. The defense often argues the violence was a personal dispute, not for 'maintaining status' in the gang or enterprise.",
+    "related_statutes": ["18 U.S.C. § 1959"]
+  }
+]

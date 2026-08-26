@@ -1,6 +1,6 @@
-import LegalResearch from "./pages/LegalResearch";
 import { useEffect, useMemo, useRef, useState, type FormEvent, type RefObject } from 'react';
-import { ArrowUpRight, ChevronRight, Menu, Search, X, Plus, LogOut, BriefcaseBusiness } from 'lucide-react';
+import { Menu, X, ArrowRight, BookOpen, Shield, Zap, Search, ArrowUpRight, Scale, ChevronRight, Plus, LogOut, BriefcaseBusiness } from 'lucide-react';
+import LegalResearch from './LegalResearch';
 import { ErrorBoundary } from '@/components/error-boundary';
 import NotFound from '@/pages/not-found';
 
@@ -15,445 +15,6 @@ type Story = {
   alt: string;
   body: string;
 };
-
-type CaseLawAuthority = {
-  id: string;
-  title: string;
-  citation: string;
-  jurisdiction: 'state' | 'federal';
-  court: string;
-  year: number;
-  proceduralPosture?: string;
-  topics: string[];
-  outcome: string;
-  summary: string;
-  sourceUrl: string;
-  sourceLabel: string;
-  sourceKind: 'official' | 'repository';
-};
-
-const caseLawAuthorities: CaseLawAuthority[] = [
-  {
-    id: 'corum-v-university-of-north-carolina',
-    title: 'Corum v. University of North Carolina',
-    citation: '330 N.C. 761, 413 S.E.2d 276',
-    jurisdiction: 'state',
-    court: 'North Carolina Supreme Court',
-    year: 1992,
-    proceduralPosture: 'Appeal in a constitutional-tort and sovereign-immunity action',
-    topics: ['Constitutional torts', 'State immunity'],
-    outcome: 'Plaintiff-favorable',
-    summary: 'Recognized a direct damages remedy under the North Carolina Constitution when an adequate alternative state remedy is unavailable, while addressing sovereign immunity limits.',
-    sourceUrl: 'https://appellate.nccourts.org/opinions/',
-    sourceLabel: 'NC Judicial Branch opinions portal',
-    sourceKind: 'official',
-  },
-  {
-    id: 'rhyne-v-k-mart',
-    title: 'Rhyne v. K-Mart Corp.',
-    citation: '358 N.C. 1, 591 S.E.2d 583',
-    jurisdiction: 'state',
-    court: 'North Carolina Supreme Court',
-    year: 2004,
-    proceduralPosture: 'Appeal after a jury verdict addressing punitive damages',
-    topics: ['Punitive damages', 'Civil procedure'],
-    outcome: 'Statutory framework',
-    summary: 'Considered North Carolina’s punitive-damages framework and the relationship between statutory standards, constitutional due process, and jury findings.',
-    sourceUrl: 'https://appellate.nccourts.org/opinions/',
-    sourceLabel: 'NC Judicial Branch opinions portal',
-    sourceKind: 'official',
-  },
-  {
-    id: 'state-v-batts',
-    title: 'State v. Batts',
-    citation: '363 N.C. 539, 681 S.E.2d 788',
-    jurisdiction: 'state',
-    court: 'North Carolina Supreme Court',
-    year: 2009,
-    proceduralPosture: 'Criminal appeal involving a juvenile defendant’s capital sentence',
-    topics: ['Juvenile sentencing', 'Constitutional law'],
-    outcome: 'Defense-favorable',
-    summary: 'Addressed the constitutional limits of imposing the harshest criminal penalties on juvenile defendants and the role of individualized sentencing review.',
-    sourceUrl: 'https://appellate.nccourts.org/opinions/',
-    sourceLabel: 'NC Judicial Branch opinions portal',
-    sourceKind: 'official',
-  },
-  {
-    id: 'in-re-tht',
-    title: 'In re T.H.T.',
-    citation: '362 N.C. 446, 665 S.E.2d 54',
-    jurisdiction: 'state',
-    court: 'North Carolina Supreme Court',
-    year: 2008,
-    proceduralPosture: 'Appeal in a juvenile guardianship proceeding',
-    topics: ['Juvenile law', 'Guardianship'],
-    outcome: 'Child-welfare authority',
-    summary: 'Clarified the relationship between a child’s best interests, guardianship decisions, and the statutory duties of a guardian ad litem.',
-    sourceUrl: 'https://appellate.nccourts.org/opinions/',
-    sourceLabel: 'NC Judicial Branch opinions portal',
-    sourceKind: 'official',
-  },
-  {
-    id: 'state-v-jones',
-    title: 'State v. Jones',
-    citation: '345 N.C. 175, 478 S.E.2d 17',
-    jurisdiction: 'state',
-    court: 'North Carolina Supreme Court',
-    year: 1996,
-    proceduralPosture: 'Criminal appeal from conviction and jury instructions',
-    topics: ['Jury instructions', 'Criminal defense'],
-    outcome: 'Defense-favorable',
-    summary: 'Emphasized that a trial court must give a complete instruction on a supported defense theory when the evidence permits a reasonable inference in its favor.',
-    sourceUrl: 'https://appellate.nccourts.org/opinions/',
-    sourceLabel: 'NC Judicial Branch opinions portal',
-    sourceKind: 'official',
-  },
-  {
-    id: 'k2-asia-ventures-v-trota',
-    title: 'K2 Asia Ventures LLC v. Trota',
-    citation: '215 N.C. App. 443, 717 S.E.2d 1',
-    jurisdiction: 'state',
-    court: 'North Carolina Court of Appeals',
-    year: 2011,
-    proceduralPosture: 'Appeal from dismissal for lack of personal jurisdiction',
-    topics: ['Personal jurisdiction', 'Civil procedure'],
-    outcome: 'Jurisdictional guidepost',
-    summary: 'Applied North Carolina’s long-arm statute and constitutional minimum-contacts analysis to an out-of-state defendant’s contacts with the forum.',
-    sourceUrl: 'https://appellate.nccourts.org/opinions/',
-    sourceLabel: 'NC Judicial Branch opinions portal',
-    sourceKind: 'official',
-  },
-  {
-    id: 'mc-koy-v-north-carolina',
-    title: 'McKoy v. North Carolina',
-    citation: '494 U.S. 433',
-    jurisdiction: 'federal',
-    court: 'U.S. Supreme Court · NC-origin',
-    year: 1990,
-    proceduralPosture: 'Review of a North Carolina capital-sentencing decision',
-    topics: ['Capital sentencing', 'Mitigation'],
-    outcome: 'Defense-favorable',
-    summary: 'Rejected North Carolina’s unanimity requirement for finding mitigating circumstances in capital sentencing, protecting individualized consideration of mitigation.',
-    sourceUrl: 'https://supreme.justia.com/cases/federal/us/494/433/',
-    sourceLabel: 'Justia public opinion text',
-    sourceKind: 'repository',
-  },
-  {
-    id: 'north-carolina-v-alford',
-    title: 'North Carolina v. Alford',
-    citation: '400 U.S. 25',
-    jurisdiction: 'federal',
-    court: 'U.S. Supreme Court · NC-origin',
-    year: 1970,
-    proceduralPosture: 'Review of a North Carolina guilty plea and conviction',
-    topics: ['Guilty pleas', 'Criminal procedure'],
-    outcome: 'Defendant-rights authority',
-    summary: 'Held that a defendant may plead guilty while maintaining a claim of innocence when the record contains a strong factual basis for the plea.',
-    sourceUrl: 'https://supreme.justia.com/cases/federal/us/400/25/',
-    sourceLabel: 'Justia public opinion text',
-    sourceKind: 'repository',
-  },
-  {
-    id: 'naacp-v-mccrory',
-    title: 'North Carolina State Conference of NAACP v. McCrory',
-    citation: '831 F.3d 204',
-    jurisdiction: 'federal',
-    court: 'U.S. Court of Appeals for the Fourth Circuit',
-    year: 2016,
-    proceduralPosture: 'Appeal from a three-judge district-court judgment on voting restrictions',
-    topics: ['Voting rights', 'Equal protection'],
-    outcome: 'Plaintiff-favorable',
-    summary: 'Held that North Carolina’s voting-law provisions were enacted with discriminatory intent and affirmed relief under the Voting Rights Act and the Fourteenth Amendment.',
-    sourceUrl: 'https://www.courtlistener.com/?q=North%20Carolina%20State%20Conference%20of%20NAACP%20v.%20McCrory%20831%20F.3d%20204&type=o&order_by=score%20desc',
-    sourceLabel: 'CourtListener opinion record',
-    sourceKind: 'repository',
-  },
-  {
-    id: 'league-of-women-voters-v-rucho',
-    title: 'League of Women Voters of North Carolina v. Rucho',
-    citation: '769 F.3d 224',
-    jurisdiction: 'federal',
-    court: 'U.S. Court of Appeals for the Fourth Circuit',
-    year: 2014,
-    proceduralPosture: 'Appeal from a district-court judgment concerning redistricting',
-    topics: ['Election law', 'Redistricting'],
-    outcome: 'Remedial authority',
-    summary: 'Addressed constitutional challenges to North Carolina’s congressional map and the federal courts’ role in reviewing partisan redistricting claims.',
-    sourceUrl: 'https://www.courtlistener.com/?q=League%20of%20Women%20Voters%20of%20North%20Carolina%20v.%20Rucho%20769%20F.3d%20224&type=o&order_by=score%20desc',
-    sourceLabel: 'CourtListener opinion record',
-    sourceKind: 'repository',
-  },
-  {
-    id: 'pashby-v-delia',
-    title: 'Pashby v. Delia',
-    citation: '709 F.3d 307',
-    jurisdiction: 'federal',
-    court: 'U.S. Court of Appeals for the Fourth Circuit · NC-origin',
-    year: 2013,
-    proceduralPosture: 'Appeal concerning a preliminary injunction in a Medicaid action',
-    topics: ['Medicaid', 'Due process'],
-    outcome: 'Recipient-protective',
-    summary: 'Required procedural safeguards before North Carolina could terminate Medicaid benefits, emphasizing notice and an opportunity to be heard.',
-    sourceUrl: 'https://www.courtlistener.com/?q=Pashby%20v.%20Delia%20709%20F.3d%20307&type=o&order_by=score%20desc',
-    sourceLabel: 'CourtListener opinion record',
-    sourceKind: 'repository',
-  },
-  {
-    id: 'edwards-v-city-of-goldsboro',
-    title: 'Edwards v. City of Goldsboro',
-    citation: '178 F.3d 231',
-    jurisdiction: 'federal',
-    court: 'U.S. Court of Appeals for the Fourth Circuit · NC-origin',
-    year: 1999,
-    proceduralPosture: 'Civil-rights appeal from judgment involving a North Carolina municipality',
-    topics: ['§ 1983', 'Qualified immunity'],
-    outcome: 'Civil-rights guidepost',
-    summary: 'Discussed pleading and qualified-immunity standards in a civil-rights action arising from conduct by a North Carolina municipality and its officers.',
-    sourceUrl: 'https://www.courtlistener.com/?q=Edwards%20v.%20City%20of%20Goldsboro%20178%20F.3d%20231&type=o&order_by=score%20desc',
-    sourceLabel: 'CourtListener opinion record',
-    sourceKind: 'repository',
-  },
-  {
-    id: 'north-carolina-ex-rel-cooper-v-tva',
-    title: 'North Carolina ex rel. Cooper v. Tennessee Valley Authority',
-    citation: '615 F.3d 291',
-    jurisdiction: 'federal',
-    court: 'U.S. Court of Appeals for the Fourth Circuit · NC-origin',
-    year: 2010,
-    proceduralPosture: 'Appeal from district-court proceedings over emissions and federal displacement',
-    topics: ['Environmental law', 'Air quality'],
-    outcome: 'Federalism authority',
-    summary: 'Considered North Carolina’s effort to use nuisance principles against out-of-state power generation and addressed federal displacement and regulatory boundaries.',
-    sourceUrl: 'https://www.courtlistener.com/?q=North%20Carolina%20ex%20rel.%20Cooper%20v.%20Tennessee%20Valley%20Authority%20615%20F.3d%20291&type=o&order_by=score%20desc',
-    sourceLabel: 'CourtListener opinion record',
-    sourceKind: 'repository',
-  },
-  {
-    id: 'rucho-v-common-cause',
-    title: 'Rucho v. Common Cause',
-    citation: '588 U.S. 684',
-    jurisdiction: 'federal',
-    court: 'U.S. Supreme Court · NC-origin',
-    year: 2019,
-    proceduralPosture: 'Review of a Fourth Circuit redistricting decision',
-    topics: ['Election law', 'Justiciability'],
-    outcome: 'Federal-courts authority',
-    summary: 'Held that partisan-gerrymandering claims present political questions beyond the reach of federal courts, after litigation over North Carolina’s congressional map.',
-    sourceUrl: 'https://supreme.justia.com/cases/federal/us/588/684/',
-    sourceLabel: 'Justia public opinion text',
-    sourceKind: 'repository',
-  },
-  {
-    id: 'united-states-v-king',
-    title: 'United States v. King',
-    citation: '673 F.3d 274',
-    jurisdiction: 'federal',
-    court: 'U.S. Court of Appeals for the Fourth Circuit · NC-origin',
-    year: 2012,
-    proceduralPosture: 'Criminal sentencing appeal from the Eastern District of North Carolina',
-    topics: ['Sentencing', 'Criminal procedure'],
-    outcome: 'Sentencing guidepost',
-    summary: 'Applied federal sentencing principles in an appeal arising from the Eastern District of North Carolina, including the treatment of the advisory Guidelines range.',
-    sourceUrl: 'https://www.courtlistener.com/?q=United%20States%20v.%20King%20673%20F.3d%20274&type=o&order_by=score%20desc',
-    sourceLabel: 'CourtListener opinion record',
-    sourceKind: 'repository',
-  },
-  {
-    id: 'in-re-grand-jury-proceedings-wdnc',
-    title: 'In re Grand Jury Proceedings',
-    citation: '724 F.2d 1221',
-    jurisdiction: 'federal',
-    court: 'U.S. Court of Appeals for the Fourth Circuit · NC-origin',
-    year: 1984,
-    proceduralPosture: 'Petition arising from grand-jury privilege and disclosure proceedings',
-    topics: ['Grand jury', 'Privilege'],
-    outcome: 'Procedure guidepost',
-    summary: 'Addressed privilege and disclosure questions arising from grand-jury proceedings in the Western District of North Carolina.',
-    sourceUrl: 'https://www.courtlistener.com/?q=In%20re%20Grand%20Jury%20Proceedings%20724%20F.2d%201221&type=o&order_by=score%20desc',
-    sourceLabel: 'CourtListener opinion record',
-    sourceKind: 'repository',
-  },
-  {
-    id: 'united-states-v-hasson',
-    title: 'United States v. Hasson',
-    citation: '26 F.4th 610',
-    jurisdiction: 'federal',
-    court: 'U.S. Court of Appeals for the Fourth Circuit · NC-origin',
-    year: 2022,
-    proceduralPosture: 'Criminal appeal from a federal district-court prosecution',
-    topics: ['Criminal procedure', 'Search and seizure'],
-    outcome: 'Federal criminal authority',
-    summary: 'Reviewed federal criminal-procedure issues and the limits of appellate review in a prosecution connected to the Eastern District of North Carolina.',
-    sourceUrl: 'https://www.courtlistener.com/?q=United%20States%20v.%20Hasson%2026%20F.4th%20610&type=o&order_by=score%20desc',
-    sourceLabel: 'CourtListener opinion record',
-    sourceKind: 'repository',
-  },
-  {
-    id: 'willis-v-town-of-marshall',
-    title: 'Willis v. Town of Marshall',
-    citation: '275 F. Supp. 3d 637',
-    jurisdiction: 'federal',
-    court: 'U.S. District Court for the Western District of North Carolina',
-    year: 2017,
-    proceduralPosture: 'Civil-rights action addressing municipal liability',
-    topics: ['§ 1983', 'Municipal liability'],
-    outcome: 'District-court authority',
-    summary: 'Considered constitutional claims and municipal liability under Section 1983 in litigation arising from a North Carolina town.',
-    sourceUrl: 'https://www.courtlistener.com/?q=Willis%20v.%20Town%20of%20Marshall%20275%20F.%20Supp.%203d%20637&type=o&order_by=score%20desc',
-    sourceLabel: 'CourtListener opinion record',
-    sourceKind: 'repository',
-  },
-  {
-    id: 'pashby-v-cansler',
-    title: 'Pashby v. Cansler',
-    citation: '714 F. Supp. 2d 593',
-    jurisdiction: 'federal',
-    court: 'U.S. District Court for the Eastern District of North Carolina',
-    year: 2010,
-    proceduralPosture: 'Challenge to North Carolina Medicaid eligibility and termination policies',
-    topics: ['Medicaid', 'Due process'],
-    outcome: 'District-court authority',
-    summary: 'Examined North Carolina Medicaid eligibility changes and the procedural protections owed to recipients before benefits are reduced or terminated.',
-    sourceUrl: 'https://www.courtlistener.com/?q=Pashby%20v.%20Cansler%20714%20F.%20Supp.%202d%20593&type=o&order_by=score%20desc',
-    sourceLabel: 'CourtListener opinion record',
-    sourceKind: 'repository',
-  },
-  {
-    id: 'common-cause-v-rucho',
-    title: 'Common Cause v. Rucho',
-    citation: '318 F. Supp. 3d 777',
-    jurisdiction: 'federal',
-    court: 'U.S. District Court for the Middle District of North Carolina',
-    year: 2018,
-    proceduralPosture: 'Three-judge district-court judgment concerning North Carolina’s congressional map',
-    topics: ['Election law', 'Redistricting'],
-    outcome: 'Remedial authority',
-    summary: 'A three-judge district court decision addressing North Carolina’s congressional map and the constitutional framework for partisan-redistricting claims.',
-    sourceUrl: 'https://www.courtlistener.com/?q=Common%20Cause%20v.%20Rucho%20318%20F.%20Supp.%203d%20777&type=o&order_by=score%20desc',
-    sourceLabel: 'CourtListener opinion record',
-    sourceKind: 'repository',
-  },
-  {
-    id: 'dogwood-development-v-white-oak',
-    title: 'Dogwood Development & Management Co. v. White Oak Transport Co.',
-    citation: '362 N.C. 191, 657 S.E.2d 361',
-    jurisdiction: 'state',
-    court: 'North Carolina Supreme Court',
-    year: 2008,
-    proceduralPosture: 'Review of an appeal dismissed for appellate-rule violations',
-    topics: ['Appellate practice', 'Civil procedure'],
-    outcome: 'Procedure guidepost',
-    summary: 'Explained when appellate-rule violations are jurisdictional, when they are nonjurisdictional, and how an appellee may seek dismissal or other sanctions.',
-    sourceUrl: 'https://www.courtlistener.com/?q=Dogwood%20Development%20Management%20Co.%20v.%20White%20Oak%20Transport%20Co.%20362%20N.C.%20191&type=o&order_by=score%20desc',
-    sourceLabel: 'CourtListener public opinion record',
-    sourceKind: 'repository',
-  },
-  {
-    id: 'viar-v-north-carolina-department-of-transportation',
-    title: 'Viar v. North Carolina Department of Transportation',
-    citation: '359 N.C. 400, 610 S.E.2d 360',
-    jurisdiction: 'state',
-    court: 'North Carolina Supreme Court',
-    year: 2005,
-    proceduralPosture: 'Review of an appeal dismissed for noncompliance with appellate rules',
-    topics: ['Appellate practice', 'Preservation'],
-    outcome: 'Procedure guidepost',
-    summary: 'Admonished appellate courts not to decide cases by technical rule enforcement when the appellant’s argument can be understood, while still requiring compliance with the Rules of Appellate Procedure.',
-    sourceUrl: 'https://www.courtlistener.com/?q=Viar%20v.%20North%20Carolina%20Department%20of%20Transportation%20359%20N.C.%20400&type=o&order_by=score%20desc',
-    sourceLabel: 'CourtListener public opinion record',
-    sourceKind: 'repository',
-  },
-  {
-    id: 'state-v-lawrence',
-    title: 'State v. Lawrence',
-    citation: '365 N.C. 506, 723 S.E.2d 326',
-    jurisdiction: 'state',
-    court: 'North Carolina Supreme Court',
-    year: 2012,
-    proceduralPosture: 'Criminal appeal seeking plain-error review of an unpreserved issue',
-    topics: ['Plain error', 'Criminal procedure'],
-    outcome: 'Defense procedure guidepost',
-    summary: 'Defined North Carolina’s plain-error standard and required a defendant to show that an unpreserved error probably affected the jury’s verdict.',
-    sourceUrl: 'https://www.courtlistener.com/?q=State%20v.%20Lawrence%20365%20N.C.%20506&type=o&order_by=score%20desc',
-    sourceLabel: 'CourtListener public opinion record',
-    sourceKind: 'repository',
-  },
-  {
-    id: 'ehrenhaus-v-loren',
-    title: 'Ehrenhaus v. Loren',
-    citation: '356 N.C. 83, 567 S.E.2d 598',
-    jurisdiction: 'state',
-    court: 'North Carolina Supreme Court',
-    year: 2002,
-    proceduralPosture: 'Review of dismissal entered as a sanction for discovery violations',
-    topics: ['Discovery', 'Sanctions'],
-    outcome: 'Due-process guidepost',
-    summary: 'Required trial courts to consider the Ehrenhaus factors and provide appropriate notice before imposing dismissal as a discovery sanction.',
-    sourceUrl: 'https://www.courtlistener.com/?q=Ehrenhaus%20v.%20Loren%20356%20N.C.%2083&type=o&order_by=score%20desc',
-    sourceLabel: 'CourtListener public opinion record',
-    sourceKind: 'repository',
-  },
-  {
-    id: 'sunamerica-financial-v-bonham',
-    title: 'SunAmerica Financial Corp. v. Bonham',
-    citation: '328 N.C. 254, 400 S.E.2d 435',
-    jurisdiction: 'state',
-    court: 'North Carolina Supreme Court',
-    year: 1991,
-    proceduralPosture: 'Appeal concerning a motion to compel arbitration',
-    topics: ['Arbitration', 'Contracts'],
-    outcome: 'Contract-enforcement authority',
-    summary: 'Applied North Carolina contract principles to an arbitration clause and addressed whether the parties’ dispute fell within the agreement’s scope.',
-    sourceUrl: 'https://www.courtlistener.com/?q=SunAmerica%20Financial%20Corp.%20v.%20Bonham%20328%20N.C.%20254&type=o&order_by=score%20desc',
-    sourceLabel: 'CourtListener public opinion record',
-    sourceKind: 'repository',
-  },
-  {
-    id: 'bartlett-v-state-board-of-dental-examiners',
-    title: 'Bartlett v. North Carolina State Board of Dental Examiners',
-    citation: '307 N.C. 263, 297 S.E.2d 581',
-    jurisdiction: 'state',
-    court: 'North Carolina Supreme Court',
-    year: 1982,
-    proceduralPosture: 'Judicial review of an administrative licensing decision',
-    topics: ['Administrative law', 'Professional licensing'],
-    outcome: 'Administrative-law authority',
-    summary: 'Addressed the scope of judicial review over an agency licensing decision and the separation between agency fact-finding and legal conclusions.',
-    sourceUrl: 'https://www.courtlistener.com/?q=Bartlett%20v.%20North%20Carolina%20State%20Board%20of%20Dental%20Examiners%20307%20N.C.%20263&type=o&order_by=score%20desc',
-    sourceLabel: 'CourtListener public opinion record',
-    sourceKind: 'repository',
-  },
-  {
-    id: 'dawson-v-allstate-insurance',
-    title: 'Dawson v. Allstate Insurance Co.',
-    citation: '311 N.C. 85, 316 S.E.2d 311',
-    jurisdiction: 'state',
-    court: 'North Carolina Supreme Court',
-    year: 1984,
-    proceduralPosture: 'Appeal from summary judgment in an insurance dispute',
-    topics: ['Insurance', 'Unfair trade practices'],
-    outcome: 'Consumer-protection authority',
-    summary: 'Considered an insurer’s obligations under North Carolina law and the relationship between insurance-contract duties and unfair or deceptive trade-practices claims.',
-    sourceUrl: 'https://www.courtlistener.com/?q=Dawson%20v.%20Allstate%20Insurance%20Co.%20311%20N.C.%2085&type=o&order_by=score%20desc',
-    sourceLabel: 'CourtListener public opinion record',
-    sourceKind: 'repository',
-  },
-  {
-    id: 'guessous-v-fairview-property-investments',
-    title: 'Guessous v. Fairview Property Investments, LLC',
-    citation: '828 F.3d 208',
-    jurisdiction: 'federal',
-    court: 'U.S. Court of Appeals for the Fourth Circuit · NC-origin',
-    year: 2016,
-    proceduralPosture: 'Employment-discrimination appeal from summary judgment',
-    topics: ['Employment', 'Retaliation'],
-    outcome: 'Employee-protective',
-    summary: 'Discussed the evidence needed to establish retaliation and discrimination claims under federal employment statutes, including how a plaintiff may prove pretext.',
-    sourceUrl: 'https://www.courtlistener.com/?q=Guessous%20v.%20Fairview%20Property%20Investments%20LLC%20828%20F.3d%20208&type=o&order_by=score%20desc',
-    sourceLabel: 'CourtListener public opinion record',
-    sourceKind: 'repository',
-  },
-];
 
 type Navigate = (to: string) => void;
 
@@ -498,791 +59,232 @@ const stories: Story[] = [
     summary: 'A plain-English read on the clauses, deadlines, and quiet risks that shape the outcome before anyone enters court.',
     author: 'Nora Bell',
     time: '8 min read',
-    image: 'https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1000&q=85',
-    alt: 'Sunlight passing through a quiet courthouse corridor',
-    body: 'The most consequential sentence in a contract is often the one nobody stops to explain. We unpack the clauses, deadlines, and definitions that quietly move leverage before a dispute ever reaches the courtroom.',
+    image: 'https://images.unsplash.com/photo-1589391886645-d51941baf7fb?auto=format&fit=crop&w=1000&q=85',
+    alt: 'Close-up of a signed legal contract',
+    body: 'Risk hides in boilerplate. By breaking down standard clauses into their practical impacts, we help practitioners anticipate the friction points that define a settlement before it is ever drafted.',
   },
   {
-    id: 'practice',
-    section: 'Practice',
-    title: 'A better way to build the case file',
-    summary: 'Inside the working habits, tools, and rituals that help a legal team turn scattered facts into a clear point of view.',
-    author: 'Rafi Sol',
-    time: '6 min read',
-    image: 'https://images.unsplash.com/photo-1484101403633-562f891dc89a?auto=format&fit=crop&w=1000&q=85',
-    alt: 'Warm legal workspace with a chair, table, and window light',
-    body: 'A case file is not just a container for documents. It is a way of seeing. We look at the working habits and quiet systems that help a legal team turn scattered facts into a point of view that holds.',
-  },
-  {
-    id: 'precedent',
-    section: 'Dispatch',
-    title: 'When precedent stops being enough',
-    summary: 'A field report on the gray areas where judgment, timing, and a well-placed question still make the difference.',
-    author: 'Juniper Wells',
-    time: '5 min read',
-    image: 'https://images.unsplash.com/photo-1494783367193-149034c05e8f?auto=format&fit=crop&w=1000&q=85',
-    alt: 'Blue courthouse meeting a rocky shoreline at dusk',
-    body: 'Every matter has a point where the rulebook gives way to judgment. We follow the gray areas where timing, context, and one well-placed question still make the difference.',
-  },
-  {
-    id: 'client-note',
-    section: 'Notebook',
-    title: 'In defense of the careful question',
-    summary: 'Why the right question can save a team hours, sharpen a theory, and change the way a client sees the problem.',
-    author: 'Owen Hart',
-    time: '4 min read',
-    image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1000&q=85',
-    alt: 'Textured leather chair and table in a softly lit legal interior',
-    body: 'The fast answer closes a door. The careful question opens the file again. It gathers context, pressure points, and the detail that changes the way a client sees the problem. This is not hesitation. It is preparation.',
-  },
+    id: 'evidence',
+    section: 'Evidence',
+    title: 'When the record speaks for itself',
+    summary: 'Reviewing the exhibits, testimony, and undeniable facts that leave opposing counsel with nowhere to maneuver.',
+    author: 'J. Reynolds',
+    time: '14 min read',
+    image: 'https://images.unsplash.com/photo-1593115057322-e94b77572f20?auto=format&fit=crop&w=1000&q=85',
+    alt: 'Stacks of organized legal files in a modern office',
+    body: 'Building a record is about eliminating doubt. This piece explores how to structure exhibits, pace testimony, and present facts so clearly that the conclusion feels inevitable.',
+  }
 ];
 
-function Header({ onSearch, onArchive }: { onSearch: (trigger: HTMLButtonElement) => void; onArchive: (trigger: HTMLButtonElement) => void }) {
-  const [menuOpen, setMenuOpen] = useState(false);
+const articleImages = [
+  'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=85',
+  'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=85',
+  'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=85',
+  'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=85',
+];
 
-  const navigateTo = () => setMenuOpen(false);
-
-  return (
-    <header className="site-header" data-testid="header-site">
-      <a className="brand" href="#top" onClick={navigateTo} data-testid="link-brand">
-        <span className="brand-mark">✦</span>
-        <span>L.L.B</span>
-      </a>
-      <nav className={`main-nav ${menuOpen ? 'open' : ''}`} aria-label="Main navigation">
-        <a href="#dispatch" onClick={navigateTo} data-testid="link-dispatch">Solutions ⌄</a>
-        <a href="#field-notes" onClick={navigateTo} data-testid="link-field-notes">About</a>
-        <a href="#archive" onClick={navigateTo} data-testid="link-archive">Blog</a>
-        <a href="#letter" onClick={navigateTo} data-testid="link-letter">Support ⌄</a>
-      </nav>
-      <div className="header-actions">
-        <a className="header-cta" href="/start" onClick={navigateTo} data-testid="link-get-started">Get started</a>
-        <button className="icon-button" aria-label="Open search" onClick={(event) => onSearch(event.currentTarget)} data-testid="button-open-search">
-          <Search size={16} strokeWidth={1.5} />
-        </button>
-        <button className="icon-button" aria-label="Browse issues" onClick={(event) => onArchive(event.currentTarget)} data-testid="button-open-archive">
-          <span className="issue-kicker">01</span>
-        </button>
-        <button className="menu-button" aria-label={menuOpen ? 'Close menu' : 'Open menu'} onClick={() => setMenuOpen(!menuOpen)} data-testid="button-toggle-menu">
-          {menuOpen ? <X size={17} strokeWidth={1.5} /> : <Menu size={18} strokeWidth={1.5} />}
-        </button>
-      </div>
-    </header>
-  );
-}
-
-function StoryTrigger({ story, lead = false, side = false, onOpen }: { story: Story; lead?: boolean; side?: boolean; onOpen: (story: Story, trigger: HTMLButtonElement) => void }) {
-  const className = lead ? 'lead-story lead-button' : side ? 'side-story side-button' : 'story-row';
-  return (
-    <button className={className} onClick={(event) => onOpen(story, event.currentTarget)} data-testid={`button-open-story-${story.id}`}>
-      {!lead && !side && <span className="story-number">{story.id === 'precedent' ? '04' : '05'}</span>}
-      <div className={lead ? undefined : side ? 'thumb image-link' : undefined}>
-        {side && <img src={story.image} alt={story.alt} />}
-        {lead && (
-          <>
-            <div className="story-label">{story.section} / 01</div>
-            <h2 className="story-title">{story.title}</h2>
-            <p className="story-summary">{story.summary}</p>
-            <div className="story-meta"><span>{story.author}</span><span>—</span><span className="reading-time">{story.time}</span></div>
-          </>
-        )}
-        {!lead && side && <span className="arrow-flag"><ArrowUpRight size={15} strokeWidth={1.4} /></span>}
-      </div>
-      {side && (
-        <div>
-          <div className="story-label">{story.section}</div>
-          <h3 className="story-title">{story.title}</h3>
-          <div className="story-meta"><span>{story.author}</span><span className="reading-time">{story.time}</span></div>
-        </div>
-      )}
-      {!lead && !side && (
-        <>
-          <div>
-            <div className="story-label">{story.section}</div>
-            <h3>{story.title}</h3>
-          </div>
-          <p>{story.summary}</p>
-          <span className="row-arrow"><ArrowUpRight size={19} strokeWidth={1.4} /></span>
-        </>
-      )}
-      {lead && <div className="lead-image image-link"><img src={story.image} alt={story.alt} /><span className="arrow-flag"><ArrowUpRight size={15} strokeWidth={1.4} /></span></div>}
-    </button>
-  );
-}
-
-function Hero() {
-  const [, navigate] = useLocation();
-  return (
-    <section className="hero" id="top" data-testid="section-hero">
-      <div className="hero-topline">
-      </div>
-      <div>
-        <h1 className="hero-title reveal">Lawyer<br />s Legal<br /><em>Beef</em></h1>
-        <p className="hero-deck reveal delay-1">The all-in-one Progressive Web App (PWA) built specifically for lawyers and legal teams. Streamline case management, legal research, document drafting, client billing, and trial prep in one unified platform.</p>
-      </div>
-       <div className="hero-footer">
-        <div className="scroll-cue"><i /> Keep going</div>
-         <div className="hero-action">
-            <button className="primary-action" onClick={() => navigate('/start')} data-testid="button-start-workspace">Get started <ArrowUpRight size={16} /></button>
-         </div>
-      </div>
-    </section>
-  );
-}
-
-type WorkspaceData = {
-  user: { name: string; email: string };
-  workspace: { id: string; name: string } | null;
-  cases: Array<{
-    id: number;
-    title: string;
-    client: string;
-    status: string;
-    priority: string;
-    nextDeadline: string | null;
-    notes: string | null;
-    savedAuthorities?: Array<{
-      id: number;
-      authorityId: string;
-      title: string;
-      citation: string;
-      sourceUrl: string;
-    }>;
-  }>;
-};
+const faqs = [
+  'How frequently is the authority index updated?',
+  'Does this replace primary legal research?',
+  'Can I export citations directly to my drafts?',
+  'What jurisdictions are fully covered?'
+];
 
 function Onboarding() {
-  const [, navigate] = useLocation();
-  const [form, setForm] = useState({ name: '', email: '', workspaceName: '' });
-  const [error, setError] = useState('');
-  const [saving, setSaving] = useState(false);
-  const submit = async (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    setSaving(true); setError('');
-    try {
-      const response = await fetch('/api/workspace', { method: 'POST', headers: { 'Content-Type': 'application/json' }, credentials: 'include', body: JSON.stringify(form) });
-      const data = await response.json();
-      if (!response.ok) throw new Error(data.error || 'We could not create your workspace.');
-      navigate('/workspace');
-    } catch (err) { setError(err instanceof Error ? err.message : 'Something went wrong.'); }
-    finally { setSaving(false); }
+  const [step, setStep] = useState(1);
+  const [formData, setFormData] = useState({
+    name: '', email: '', firm: '', role: '',
+    practiceAreas: [] as string[], volume: '',
+  });
+
+  const practiceAreas = ['Criminal Defense', 'Civil Litigation', 'Family Law', 'Corporate', 'Personal Injury', 'Other'];
+  
+  const toggleArea = (area: string) => {
+    setFormData(prev => ({
+      ...prev,
+      practiceAreas: prev.practiceAreas.includes(area)
+        ? prev.practiceAreas.filter(a => a !== area)
+        : [...prev.practiceAreas, area]
+    }));
   };
+
+  const next = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (step < 3) setStep(step + 1);
+    else window.location.href = '/workspace';
+  };
+
   return (
-    <main className="workspace-shell onboarding-shell">
-      <div className="workspace-grain" />
-      <header className="workspace-header"><a className="brand" href="/" data-testid="link-workspace-brand"><span className="brand-mark">✦</span><span>L.L.B</span></a><span className="workspace-kicker">Private workspace / 01</span></header>
-      <section className="onboarding-card">
-        <p className="eyebrow">Start here</p>
-        <h1>Make room<br /><em>for the work.</em></h1>
-        <p className="onboarding-copy">Create a private case desk for your team. Your details are used to secure your workspace and bring you back to the right place.</p>
-        <form onSubmit={submit} className="onboarding-form">
-          <label>Your name<input required value={form.name} onChange={e => setForm({ ...form, name: e.target.value })} placeholder="Avery Morgan" data-testid="input-onboarding-name" /></label>
-          <label>Work email<input required type="email" value={form.email} onChange={e => setForm({ ...form, email: e.target.value })} placeholder="avery@firm.com" data-testid="input-onboarding-email" /></label>
-          <label>Workspace name<input required value={form.workspaceName} onChange={e => setForm({ ...form, workspaceName: e.target.value })} placeholder="Morgan & Co." data-testid="input-onboarding-workspace" /></label>
-          {error && <p className="form-error" role="alert">{error}</p>}
-          <button className="workspace-submit" disabled={saving} type="submit" data-testid="button-create-workspace">{saving ? 'Creating your desk…' : 'Create workspace'} <ArrowUpRight size={17} /></button>
-        </form>
-        <button className="back-link" onClick={() => navigate('/')} data-testid="button-back-home">← Return to the brief</button>
-      </section>
+    <main className="onboarding-page">
+      <div className="onboarding-container">
+        <a href="/" className="full-logo onboarding-logo"><span>✦</span> L.L.B</a>
+        
+        <div className="onboarding-progress">
+          <div className="progress-bar" style={{ width: `${(step / 3) * 100}%` }} />
+        </div>
+
+        {step === 1 && (
+          <form className="onboarding-step" onSubmit={next}>
+            <p className="full-eyebrow">STEP 1 OF 3</p>
+            <h1>Let's set up your profile.</h1>
+            <div className="input-group">
+              <label>Full Name</label>
+              <input required value={formData.name} onChange={e => setFormData(f => ({ ...f, name: e.target.value }))} autoFocus />
+            </div>
+            <div className="input-group">
+              <label>Email Address</label>
+              <input required type="email" value={formData.email} onChange={e => setFormData(f => ({ ...f, email: e.target.value }))} />
+            </div>
+            <button type="submit" className="full-primary-button">Continue</button>
+          </form>
+        )}
+
+        {step === 2 && (
+          <form className="onboarding-step" onSubmit={next}>
+            <p className="full-eyebrow">STEP 2 OF 3</p>
+            <h1>Tell us about your practice.</h1>
+            <div className="input-group">
+              <label>Primary Practice Areas</label>
+              <div className="practice-tags">
+                {practiceAreas.map(area => (
+                  <button type="button" key={area} className={`practice-tag ${formData.practiceAreas.includes(area) ? 'selected' : ''}`} onClick={() => toggleArea(area)}>
+                    {area}
+                  </button>
+                ))}
+              </div>
+            </div>
+            <div className="input-group">
+              <label>Firm Name</label>
+              <input required value={formData.firm} onChange={e => setFormData(f => ({ ...f, firm: e.target.value }))} />
+            </div>
+            <button type="submit" className="full-primary-button" disabled={formData.practiceAreas.length === 0}>Continue</button>
+          </form>
+        )}
+
+        {step === 3 && (
+          <form className="onboarding-step" onSubmit={next}>
+            <p className="full-eyebrow">STEP 3 OF 3</p>
+            <h1>How do you handle research?</h1>
+            <div className="input-group radio-group">
+              <label className="radio-label">
+                <input type="radio" name="volume" required onChange={() => setFormData(f => ({...f, volume: 'low'}))} />
+                <span>We occasionally pull precedent</span>
+              </label>
+              <label className="radio-label">
+                <input type="radio" name="volume" required onChange={() => setFormData(f => ({...f, volume: 'med'}))} />
+                <span>Weekly motion practice</span>
+              </label>
+              <label className="radio-label">
+                <input type="radio" name="volume" required onChange={() => setFormData(f => ({...f, volume: 'high'}))} />
+                <span>Heavy appellate & trial load</span>
+              </label>
+            </div>
+            <button type="submit" className="full-primary-button">Enter Workspace</button>
+          </form>
+        )}
+      </div>
     </main>
   );
 }
 
 function Workspace() {
-  const [, navigate] = useLocation();
-  const [data, setData] = useState<WorkspaceData | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState('');
-  const [showCaseForm, setShowCaseForm] = useState(false);
-  const [caseForm, setCaseForm] = useState({ title: '', client: '' });
-  const [selectedAuthorityCaseId, setSelectedAuthorityCaseId] = useState<number | null>(null);
-  const [authorityQuery, setAuthorityQuery] = useState('');
-  const [authorityMessage, setAuthorityMessage] = useState('');
-  const [savingAuthorityId, setSavingAuthorityId] = useState<string | null>(null);
-  const load = async () => {
-    try {
-      const response = await fetch('/api/workspace', { credentials: 'include' });
-      if (response.status === 401) { navigate('/start'); return; }
-      if (!response.ok) throw new Error('Could not load your workspace.');
-      setData(await response.json());
-    } catch (err) { setError(err instanceof Error ? err.message : 'Could not load your workspace.'); }
-    finally { setLoading(false); }
-  };
-  useEffect(() => { void load(); }, []);
-  const addCase = async (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    const response = await fetch('/api/workspace/cases', { method: 'POST', headers: { 'Content-Type': 'application/json' }, credentials: 'include', body: JSON.stringify(caseForm) });
-    if (response.ok) { setCaseForm({ title: '', client: '' }); setShowCaseForm(false); void load(); }
-  };
-  const selectedAuthorityCase = data?.cases.find((legalCase) => legalCase.id === selectedAuthorityCaseId) || data?.cases[0];
-  const visibleAuthorities = caseLawAuthorities.filter((authority) => {
-    const term = authorityQuery.trim().toLowerCase();
-    return !term || `${authority.title} ${authority.citation} ${authority.court} ${authority.topics.join(' ')} ${authority.summary}`.toLowerCase().includes(term);
-  });
-  const savedAuthorityIds = new Set(selectedAuthorityCase?.savedAuthorities?.map((authority) => authority.authorityId) || []);
-  const saveAuthority = async (authority: CaseLawAuthority) => {
-    if (!selectedAuthorityCase) return;
-    setSavingAuthorityId(authority.id);
-    setAuthorityMessage('');
-    try {
-      const response = await fetch(`/api/workspace/cases/${selectedAuthorityCase.id}/authorities`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        credentials: 'include',
-        body: JSON.stringify(authority),
-      });
-      const result = await response.json().catch(() => ({}));
-      if (!response.ok) throw new Error(result.error || 'Could not save this authority.');
-      setAuthorityMessage(`${authority.title} saved to ${selectedAuthorityCase.title}.`);
-      await load();
-    } catch (err) {
-      setAuthorityMessage(err instanceof Error ? err.message : 'Could not save this authority.');
-    } finally {
-      setSavingAuthorityId(null);
-    }
-  };
-  const removeAuthority = async (authority: CaseLawAuthority) => {
-    if (!selectedAuthorityCase) return;
-    setSavingAuthorityId(authority.id);
-    setAuthorityMessage('');
-    try {
-      const response = await fetch(`/api/workspace/cases/${selectedAuthorityCase.id}/authorities/${encodeURIComponent(authority.id)}`, { method: 'DELETE', credentials: 'include' });
-      if (!response.ok) throw new Error('Could not remove this authority.');
-      setAuthorityMessage(`${authority.title} removed from ${selectedAuthorityCase.title}.`);
-      await load();
-    } catch (err) {
-      setAuthorityMessage(err instanceof Error ? err.message : 'Could not remove this authority.');
-    } finally {
-      setSavingAuthorityId(null);
-    }
-  };
-  const logout = async () => { await fetch('/api/logout', { method: 'POST', credentials: 'include' }); navigate('/'); };
-  if (loading) return <main className="workspace-shell workspace-loading"><p>Opening your case desk…</p></main>;
-  if (error || !data?.workspace) return <main className="workspace-shell workspace-loading"><p>{error || 'Workspace not found.'}</p><button onClick={() => navigate('/start')}>Start again</button></main>;
+  const [activeTab, setActiveTab] = useState('docket');
+  
   return (
-    <main className="workspace-shell">
-      <header className="workspace-header"><a className="brand" href="/" data-testid="link-desk-brand"><span className="brand-mark">✦</span><span>L.L.B</span></a><div className="workspace-header-right"><span className="workspace-kicker">{data.user.name} / {data.user.email}</span><button className="logout-button" onClick={logout} data-testid="button-logout"><LogOut size={14} /> Sign out</button></div></header>
-      <section className="desk-content">
-        <div className="desk-intro"><div><p className="eyebrow">Case desk / 01</p><h1>{data.workspace.name}</h1><p>Keep the facts, next moves, and people in the room.</p></div><button className="desk-add" onClick={() => setShowCaseForm(!showCaseForm)} data-testid="button-add-case"><Plus size={17} /> Add case</button></div>
-        {showCaseForm && <form className="quick-case-form" onSubmit={addCase}><input required value={caseForm.title} onChange={e => setCaseForm({ ...caseForm, title: e.target.value })} placeholder="Case or matter name" aria-label="Case title" /><input required value={caseForm.client} onChange={e => setCaseForm({ ...caseForm, client: e.target.value })} placeholder="Client" aria-label="Client" /><button type="submit">Save case <ArrowUpRight size={15} /></button></form>}
-        <div className="desk-summary"><div><span>Active matters</span><strong>{data.cases.length.toString().padStart(2, '0')}</strong></div><div><span>Next move</span><strong>Keep context close</strong></div><div><span>Desk status</span><strong><i className="status-dot" /> In motion</strong></div></div>
-         <div className="case-list"><div className="case-list-head"><span>Active case files</span><span>Updated now</span></div>{data.cases.map((legalCase, index) => <article className="case-card" key={legalCase.id}><div className="case-index">{String(index + 1).padStart(2, '0')}</div><div className="case-main"><p className="case-client">{legalCase.client}</p><h2>{legalCase.title}</h2><p>{legalCase.notes}</p>{legalCase.savedAuthorities?.length ? <div className="case-saved-authorities"><span>Saved authorities</span>{legalCase.savedAuthorities.map((authority) => <a key={authority.id} href={authority.sourceUrl} target="_blank" rel="noreferrer">{authority.title} · {authority.citation}</a>)}</div> : null}</div><div className="case-meta"><span>{legalCase.status}</span><span className={legalCase.priority === 'High' ? 'priority-high' : ''}>{legalCase.priority} priority</span><small>Next: {legalCase.nextDeadline}</small></div><BriefcaseBusiness className="case-icon" size={22} strokeWidth={1.2} /></article>)}</div>
-         <section className="desk-authorities" aria-labelledby="desk-authorities-title">
-           <div className="desk-authorities-header">
-             <div><p className="eyebrow">Research / case files</p><h2 id="desk-authorities-title">Carry the point<br /><em>into the room.</em></h2><p>Save a source-backed authority to the matter where your team will use it. Saved records keep their citation and source link.</p></div>
-             <label className="authority-case-picker">Save to case<select aria-label="Case file for saved authority" value={selectedAuthorityCase?.id || ''} onChange={(event) => setSelectedAuthorityCaseId(Number(event.target.value))}>{data.cases.map((legalCase) => <option key={legalCase.id} value={legalCase.id}>{legalCase.title}</option>)}</select></label>
-           </div>
-           <div className="desk-authorities-tools"><label className="authority-search"><span className="sr-only">Search authorities in workspace</span><input aria-label="Search authorities in workspace" type="search" value={authorityQuery} onChange={(event) => setAuthorityQuery(event.target.value)} placeholder="Search case, citation, court, or topic" /><Search size={16} /></label><span className="authority-count">{visibleAuthorities.length} of {caseLawAuthorities.length} authorities</span></div>
-           {authorityMessage && <p className="authority-message" role="status">{authorityMessage}</p>}
-           <div className="desk-authority-list">{visibleAuthorities.map((authority) => {
-             const isSaved = savedAuthorityIds.has(authority.id);
-             const isSaving = savingAuthorityId === authority.id;
-             return <article className={`desk-authority-row ${isSaved ? 'saved' : ''}`} key={authority.id}><div><strong>{authority.title}</strong><span>{authority.citation} · {authority.court}</span></div><button type="button" disabled={isSaving} onClick={() => isSaved ? void removeAuthority(authority) : void saveAuthority(authority)}>{isSaving ? 'Working…' : isSaved ? 'Remove' : 'Save authority'}</button></article>;
-           })}</div>
-         </section>
-      </section>
-    </main>
-  );
-}
-
-function DispatchSection({ onOpen }: { onOpen: (story: Story, trigger: HTMLButtonElement) => void }) {
-  return (
-    <section className="section dispatch-section" id="dispatch" data-testid="section-dispatch">
-      <div className="section-header reveal">
-        <div><div className="eyebrow">01 / Solutions</div><h2 className="section-title">The case<br />for clarity.</h2></div>
-        <p className="section-intro">A sharper way to move from intake to verdict. Find the thread, keep the context, and keep the whole team in the room.</p>
-      </div>
-      <div className="dispatch-grid">
-        <StoryTrigger story={stories[0]} lead onOpen={onOpen} />
-        <div className="side-stories">
-          <StoryTrigger story={stories[1]} side onOpen={onOpen} />
-          <StoryTrigger story={stories[2]} side onOpen={onOpen} />
+    <div className="workspace-layout">
+      <aside className="workspace-sidebar">
+        <a href="/" className="full-logo workspace-logo"><span>✦</span> L.L.B</a>
+        <nav className="workspace-nav">
+          <button className={activeTab === 'docket' ? 'active' : ''} onClick={() => setActiveTab('docket')}><BriefcaseBusiness size={18} /> Active Docket</button>
+          <button className={activeTab === 'research' ? 'active' : ''} onClick={() => setActiveTab('research')}><BookOpen size={18} /> Research</button>
+          <button className={activeTab === 'drafts' ? 'active' : ''} onClick={() => setActiveTab('drafts')}><Search size={18} /> Drafts</button>
+        </nav>
+        <div className="workspace-user">
+          <div className="avatar">JD</div>
+          <div className="user-details">
+            <strong>Jane Doe</strong>
+            <span>Vance & Partners</span>
+          </div>
+          <button className="logout-btn" onClick={() => window.location.href = '/'}><LogOut size={16} /></button>
         </div>
-      </div>
-    </section>
-  );
-}
-
-function QuoteBand() {
-  return (
-    <section className="quote-band" data-testid="section-quote">
-      <div className="quote-wrap reveal">
-        <p className="quote-text">“The good lawyer makes the <span>complex clear.</span>”</p>
-        <p className="quote-credit">— Lawyers Legal Beef<br />built for the work behind the argument</p>
-      </div>
-    </section>
-  );
-}
-
-function FieldNotes() {
-  return (
-    <section className="section field-section" id="field-notes" data-testid="section-field-notes">
-      <div className="section-header reveal">
-        <div><div className="eyebrow">02 / About</div><h2 className="section-title">A different<br />kind of practice.</h2></div>
-        <p className="section-intro">The best legal work is not hidden in more tabs. It is in the handoff between research, drafting, billing, and the people doing the work.</p>
-      </div>
-      <div className="field-stage reveal delay-1">
-        <div className="field-photo"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1400&q=85" alt="Mountain valley beneath a pale, cloud-filled sky" /></div>
-        <p className="field-caption">For every legal team<br />One unified workspace<br />A clearer path through the case</p>
-        <div className="field-note">
-          <p>“Go where the case becomes a conversation.”</p>
-          <small>Practice note no. 006</small>
+      </aside>
+      
+      <main className="workspace-main">
+        <header className="workspace-header">
+          <h1>{activeTab === 'docket' ? 'Active Docket' : activeTab === 'research' ? 'Research & Precedent' : 'Document Drafts'}</h1>
+          <button className="full-primary-button btn-sm"><Plus size={16} /> New Matter</button>
+        </header>
+        
+        <div className="workspace-content">
+          {activeTab === 'docket' && (
+            <div className="docket-grid">
+              {[1, 2, 3].map(i => (
+                <div key={i} className="docket-card">
+                  <div className="docket-status">Pre-Trial</div>
+                  <h3>State v. Miller</h3>
+                  <p>Hearing in 4 days</p>
+                  <div className="docket-actions">
+                    <button>View file</button>
+                    <button>Upload</button>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+          {activeTab !== 'docket' && (
+            <div className="empty-state">
+              <Shield size={48} />
+              <h2>No items yet</h2>
+              <p>Start a new search or draft to populate this section.</p>
+            </div>
+          )}
         </div>
-        <span className="field-index">L.L.B — 01 — PRACTICE</span>
-      </div>
-    </section>
-  );
-}
-
-function MoreStories({ onOpen }: { onOpen: (story: Story, trigger: HTMLButtonElement) => void }) {
-  return (
-    <section className="section stories-section" id="more" data-testid="section-more-stories">
-      <div className="section-header reveal">
-        <div><div className="eyebrow">03 / Blog</div><h2 className="section-title">Keep the<br />edge.</h2></div>
-        <p className="section-intro">Practical notes, sharp opinions, and useful questions that keep a legal team one step ahead.</p>
-      </div>
-      <div className="story-list">
-        {stories.slice(3).map((story, index) => (
-          <StoryTrigger key={story.id} story={{ ...story, id: index === 0 ? 'precedent' : 'client-note' }} onOpen={onOpen} />
-        ))}
-      </div>
-    </section>
-  );
-}
-
-function ArchiveSection({ onArchive }: { onArchive: (trigger: HTMLButtonElement) => void }) {
-  return (
-    <section className="section archive-section" id="archive" data-testid="section-archive">
-      <div className="reveal">
-        <div className="eyebrow">04 / Support</div>
-        <h2 className="section-title">Keep the<br />work moving.</h2>
-        <p className="section-intro">From first question to final filing, Lawyers Legal Beef keeps your practice moving with the context where you need it.</p>
-        <button className="archive-link" onClick={(event) => onArchive(event.currentTarget)} data-testid="button-browse-archive">Explore the platform <ChevronRight size={14} /></button>
-      </div>
-      <div className="issue-stack reveal delay-1" aria-label="Selected magazine issues">
-        <div className="issue-card one"><span className="issue-big">CASE<br /><i>/ FLOW</i></span><span className="issue-name">01 — Case management</span></div>
-        <div className="issue-card two"><span className="issue-big">LEGAL<br />RESEARCH</span><span className="issue-name">02 — Find the thread</span></div>
-        <div className="issue-card three"><span className="issue-big">TRIAL<br />READY</span><span className="issue-name">03 — Make the argument</span></div>
-      </div>
-    </section>
-  );
-}
-
-function Newsletter() {
-  const [email, setEmail] = useState('');
-  const [status, setStatus] = useState('');
-  const submit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    if (!email.includes('@')) {
-      setStatus('A real email helps us find you.');
-      return;
-    }
-    setStatus('You are on the list. The next briefing is on its way.');
-    setEmail('');
-  };
-  return (
-    <section className="newsletter" id="letter" data-testid="section-newsletter">
-      <h2 className="reveal">A better brief<br /><i>changes the case.</i></h2>
-      <div className="newsletter-copy reveal delay-1">
-        <p>Get practical legal insights, product notes, and sharp takes for modern legal teams. No noise. Just useful signal.</p>
-        <form className="newsletter-form" onSubmit={submit}>
-          <input type="email" value={email} onChange={(event) => setEmail(event.target.value)} placeholder="your@email.com" aria-label="Email address" data-testid="input-newsletter-email" />
-          <button type="submit" aria-label="Join the letter" data-testid="button-submit-newsletter"><ArrowUpRight size={20} strokeWidth={1.4} /></button>
-        </form>
-        <p className="newsletter-feedback" role="status" data-testid="status-newsletter">{status}</p>
-      </div>
-    </section>
-  );
-}
-
-function Footer() {
-  return (
-    <footer className="site-footer" data-testid="footer-site">
-      <div><a className="brand footer-brand" href="#top" data-testid="link-footer-brand"><span className="brand-mark">✦</span><span>L.L.B</span></a><p className="footer-note">Lawyers Legal Beef — the operating system for the modern legal team.</p></div>
-      <nav className="footer-links" aria-label="Footer navigation"><a href="#dispatch" data-testid="link-footer-dispatch">Solutions</a><a href="#field-notes" data-testid="link-footer-field">About</a><a href="#letter" data-testid="link-footer-letter">Support</a></nav>
-      <p className="footer-credit">Built for the work / 2025</p>
-    </footer>
-  );
-}
-
-const focusableSelector = [
-  'a[href]',
-  'area[href]',
-  'button:not([disabled])',
-  'input:not([disabled])',
-  'select:not([disabled])',
-  'textarea:not([disabled])',
-  'iframe',
-  'object',
-  'embed',
-  '[contenteditable]',
-  '[tabindex]:not([tabindex="-1"])',
-].join(',');
-
-function useFocusTrap(dialogRef: RefObject<HTMLElement | null>) {
-  useEffect(() => {
-    const dialog = dialogRef.current;
-    if (!dialog) return;
-
-    const getFocusableElements = () =>
-      Array.from(dialog.querySelectorAll<HTMLElement>(focusableSelector)).filter(
-        (element) => !element.hidden && element.getAttribute('aria-hidden') !== 'true',
-      );
-
-    if (!dialog.contains(document.activeElement)) {
-      getFocusableElements()[0]?.focus();
-    }
-
-    const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key !== 'Tab') return;
-
-      const focusableElements = getFocusableElements();
-      if (!focusableElements.length) {
-        event.preventDefault();
-        dialog.focus();
-        return;
-      }
-
-      const first = focusableElements[0];
-      const last = focusableElements[focusableElements.length - 1];
-      const activeElement = document.activeElement;
-
-      if (event.shiftKey && (activeElement === first || !dialog.contains(activeElement))) {
-        event.preventDefault();
-        last.focus();
-      } else if (!event.shiftKey && (activeElement === last || !dialog.contains(activeElement))) {
-        event.preventDefault();
-        first.focus();
-      }
-    };
-
-    dialog.addEventListener('keydown', onKeyDown);
-    return () => dialog.removeEventListener('keydown', onKeyDown);
-  }, [dialogRef]);
-}
-
-function useScrollLock(locked: boolean) {
-  useEffect(() => {
-    if (!locked) return;
-
-    const body = document.body;
-    const previousOverflow = body.style.overflow;
-    const previousPaddingRight = body.style.paddingRight;
-    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
-
-    body.classList.add('overlay-open');
-    if (scrollbarWidth > 0) {
-      body.style.paddingRight = `${scrollbarWidth}px`;
-    }
-
-    return () => {
-      body.classList.remove('overlay-open');
-      body.style.overflow = previousOverflow;
-      body.style.paddingRight = previousPaddingRight;
-    };
-  }, [locked]);
-}
-
-function SearchOverlay({ onClose, onOpen }: { onClose: () => void; onOpen: (story: Story, trigger: HTMLButtonElement) => void }) {
-  const [query, setQuery] = useState('');
-  const dialogRef = useRef<HTMLDivElement>(null);
-  const results = useMemo(() => {
-    const term = query.trim().toLowerCase();
-    if (!term) return stories;
-    return stories.filter((story) => `${story.title} ${story.section} ${story.author}`.toLowerCase().includes(term));
-  }, [query]);
-  useFocusTrap(dialogRef);
-  return (
-    <div className="overlay" onMouseDown={(event) => event.target === event.currentTarget && onClose()} data-testid="overlay-search">
-      <div ref={dialogRef} className="search-panel" role="dialog" aria-modal="true" aria-labelledby="search-title" tabIndex={-1}>
-        <button className="close-button" aria-label="Close search" onClick={onClose} data-testid="button-close-search"><X size={16} /></button>
-        <p className="panel-kicker">Find your way in</p>
-        <h2 className="panel-title" id="search-title">Search the<br />practice.</h2>
-        <div className="search-input-wrap"><Search size={17} /><input autoFocus type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Try “case”, “briefing”, or a name" aria-label="Search legal insights" data-testid="input-search-stories" /></div>
-        <div className="search-results">
-          {results.length ? results.map((story) => (
-               <button className="search-result" key={story.id} onClick={(event) => { onOpen(story, event.currentTarget); onClose(); }} data-testid={`button-search-result-${story.id}`}>
-              <span><span className="search-result-title">{story.title}</span><span className="search-result-meta">{story.section} — {story.author}</span></span>
-              <ArrowUpRight size={17} />
-            </button>
-          )) : <p className="empty-search">No result by that name yet. Try another legal question.</p>}
-        </div>
-      </div>
+      </main>
     </div>
-  );
-}
-
-function ArchiveOverlay({ onClose }: { onClose: () => void }) {
-  const dialogRef = useRef<HTMLDivElement>(null);
-  useFocusTrap(dialogRef);
-  return (
-    <div className="overlay" onMouseDown={(event) => event.target === event.currentTarget && onClose()} data-testid="overlay-archive">
-      <div ref={dialogRef} className="archive-panel" role="dialog" aria-modal="true" aria-labelledby="archive-title" tabIndex={-1}>
-        <button className="close-button" aria-label="Close archive" onClick={onClose} data-testid="button-close-archive"><X size={16} /></button>
-        <p className="panel-kicker">The resource library</p>
-        <h2 className="panel-title" id="archive-title">Find the<br />right tool.</h2>
-        <div className="archive-grid">
-          {['Case management — One source of truth', 'Legal research — Find the thread', 'Document drafting — Move faster', 'Trial prep — Make the argument'].map((issue, index) => (
-            <button className="archive-mini" key={issue} onClick={onClose} data-testid={`button-archive-issue-${index + 1}`}><strong>{String(index + 1).padStart(2, '0')}</strong><span>{issue}</span></button>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function ReaderOverlay({ story, onClose }: { story: Story; onClose: () => void }) {
-  const dialogRef = useRef<HTMLElement>(null);
-  useFocusTrap(dialogRef);
-  return (
-    <div className="overlay" onMouseDown={(event) => event.target === event.currentTarget && onClose()} data-testid="overlay-reader">
-      <article ref={dialogRef} className="reader-panel" role="dialog" aria-modal="true" aria-labelledby="reader-title" tabIndex={-1}>
-        <button className="close-button" aria-label="Close story" onClick={onClose} data-testid="button-close-reader"><X size={16} /></button>
-        <img className="reader-hero" src={story.image} alt={story.alt} />
-        <p className="panel-kicker">{story.section}</p>
-        <h2 id="reader-title">{story.title}</h2>
-        <p className="reader-byline">{story.author} / {story.time}</p>
-        <p className="reader-copy">{story.body}</p>
-      </article>
-    </div>
-  );
-}
-
-export function Home() {
-  const [searchOpen, setSearchOpen] = useState(false);
-  const [archiveOpen, setArchiveOpen] = useState(false);
-  const [selectedStory, setSelectedStory] = useState<Story | null>(null);
-  const searchTriggerRef = useRef<HTMLButtonElement | null>(null);
-  const archiveTriggerRef = useRef<HTMLButtonElement | null>(null);
-  const storyTriggerRef = useRef<HTMLButtonElement | null>(null);
-  useScrollLock(searchOpen || archiveOpen || selectedStory !== null);
-
-  const restoreFocus = (trigger: HTMLButtonElement | null, fallback?: HTMLButtonElement | null) => {
-    const target = trigger?.isConnected ? trigger : fallback?.isConnected ? fallback : null;
-    target?.focus();
-  };
-
-  useEffect(() => {
-    if (!searchOpen) restoreFocus(searchTriggerRef.current);
-  }, [searchOpen]);
-
-  useEffect(() => {
-    if (!archiveOpen) restoreFocus(archiveTriggerRef.current);
-  }, [archiveOpen]);
-
-  useEffect(() => {
-    if (!selectedStory) restoreFocus(storyTriggerRef.current, searchTriggerRef.current);
-  }, [selectedStory]);
-
-  useEffect(() => {
-    const revealObserver = new IntersectionObserver((entries) => entries.forEach((entry) => {
-      if (entry.isIntersecting) entry.target.classList.add('visible');
-    }), { threshold: .12 });
-    document.querySelectorAll('.reveal').forEach((element) => revealObserver.observe(element));
-    const onScroll = () => {
-      const max = document.documentElement.scrollHeight - window.innerHeight;
-      const width = max > 0 ? (window.scrollY / max) * 100 : 0;
-      document.documentElement.style.setProperty('--scroll-width', `${width}%`);
-      const fieldSection = document.querySelector<HTMLElement>('.field-section');
-      const fieldPhoto = document.querySelector<HTMLElement>('.field-photo');
-      if (fieldSection && fieldPhoto) {
-        const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-        const distance = window.innerHeight / 2 - (fieldSection.getBoundingClientRect().top + fieldSection.offsetHeight / 2);
-        fieldPhoto.style.setProperty('--parallax-y', reduced ? '0px' : `${Math.max(-34, Math.min(34, distance * 0.08))}px`);
-      }
-    };
-    window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
-    if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js?v=3').catch(() => undefined);
-    return () => {
-      revealObserver.disconnect();
-      window.removeEventListener('scroll', onScroll);
-    };
-  }, []);
-
-  useEffect(() => {
-    const onKey = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') {
-        setSearchOpen(false);
-        setArchiveOpen(false);
-        setSelectedStory(null);
-      }
-    };
-    window.addEventListener('keydown', onKey);
-    return () => window.removeEventListener('keydown', onKey);
-  }, []);
-
-  return (
-    <main className="app-shell" data-testid="app-shell">
-      <div className="grain" />
-      <div className="scroll-progress" style={{ width: 'var(--scroll-width)' }} />
-      <Header
-        onSearch={(trigger) => { searchTriggerRef.current = trigger; setSearchOpen(true); }}
-        onArchive={(trigger) => { archiveTriggerRef.current = trigger; setArchiveOpen(true); }}
-      />
-      <Hero />
-      <DispatchSection onOpen={(story, trigger) => { storyTriggerRef.current = trigger; setSelectedStory(story); }} />
-      <QuoteBand />
-      <FieldNotes />
-      <MoreStories onOpen={(story, trigger) => { storyTriggerRef.current = trigger; setSelectedStory(story); }} />
-      <ArchiveSection onArchive={(trigger) => { archiveTriggerRef.current = trigger; setArchiveOpen(true); }} />
-      <Newsletter />
-      <Footer />
-      {searchOpen && <SearchOverlay onClose={() => setSearchOpen(false)} onOpen={(story, trigger) => { storyTriggerRef.current = trigger; setSelectedStory(story); }} />}
-      {archiveOpen && <ArchiveOverlay onClose={() => setArchiveOpen(false)} />}
-      {selectedStory && <ReaderOverlay story={selectedStory} onClose={() => setSelectedStory(null)} />}
-    </main>
   );
 }
 
 function SimpleHome() {
-  const [annual, setAnnual] = useState(false);
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [submitted, setSubmitted] = useState('');
-  const [activeFeature, setActiveFeature] = useState(0);
-  const featureTabRefs = useRef<Array<HTMLButtonElement | null>>([]);
-  const [caseLawQuery, setCaseLawQuery] = useState('');
-  const [caseLawFilter, setCaseLawFilter] = useState<'all' | 'state' | 'federal'>('all');
-  const submit = (message: string) => (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    setSubmitted(message);
+  const [annual, setAnnual] = useState(true);
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [, navigate] = useLocation();
+
+  const submit = (msg: string) => (e: FormEvent) => {
+    e.preventDefault();
+    setSubmitted(msg);
   };
-  const features = [
-    ['Customizable Legal Brief Creation', "Generate precision-crafted legal briefs in minutes. Access a massive library of customizable templates for pleadings, motions, and discovery demands that automatically format to your jurisdiction's standards."],
-    ['Searchable Case Law Database', 'Never lose a precedent again. Access a comprehensive, built-in Case Law Database. Search across millions of records, highlight critical findings, and save specific case laws directly to your active client folders for rapid retrieval.'],
-    ['Real-Time Call Transcription (VoIP Integration)', "Connect your Google Voice or business number directly to the PWA. Automatically record and transcribe client calls in real-time. Hands-free, worry-free documentation that instantly syncs to the client's billing and case file."],
-    ['Courtroom & Offline PWA Sync', 'Access case files, evidence binders, and schedules offline. Changes and drafted notes sync automatically to the cloud the moment you reconnect to the internet.'],
-    ['Secure Client Portal & E-Signatures', 'Provide a white-labeled, encrypted portal for your clients. Securely request documents, share case updates, and collect legally binding e-signatures without relying on third-party software.'],
-    ['Time Tracking & Automated Billing', 'Log billable hours passively while you work in the app. Manage trust accounts and send itemized invoices directly through the unified PWA portal.'],
-  ];
-  const faqs = [
-    'What is Lawyers Legal Beef?',
-    'How does the Progressive Web App (PWA) benefit my firm?',
-    'Is client and case data secure?',
-    'Can I access case files while offline in court?',
-  ];
-  const articleImages = [
-    'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=85',
-    'https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=1200&q=85',
-    'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=85',
-    'https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=85',
-  ];
-  const selectFeature = (index: number) => setActiveFeature(Math.max(0, Math.min(features.length - 1, index)));
-  const handleFeatureKeyDown = (event: React.KeyboardEvent<HTMLButtonElement>, currentIndex: number) => {
-    let nextIndex: number | null = null;
-    if (event.key === 'ArrowRight' || event.key === 'ArrowDown') {
-      nextIndex = Math.min(features.length - 1, currentIndex + 1);
-    } else if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') {
-      nextIndex = Math.max(0, currentIndex - 1);
-    } else if (event.key === 'Home') {
-      nextIndex = 0;
-    } else if (event.key === 'End') {
-      nextIndex = features.length - 1;
-    }
-    if (nextIndex !== null) {
-      event.preventDefault();
-      selectFeature(nextIndex);
-      featureTabRefs.current[nextIndex]?.focus();
-    }
-  };
-  const visibleCaseLaw = caseLawAuthorities.filter((authority) => {
-    const matchesFilter = caseLawFilter === 'all' || authority.jurisdiction === caseLawFilter;
-    const term = caseLawQuery.trim().toLowerCase();
-    return matchesFilter && (!term || `${authority.title} ${authority.citation} ${authority.court} ${authority.topics.join(' ')} ${authority.summary}`.toLowerCase().includes(term));
-  });
+
   return (
     <main className="full-site" data-testid="app-shell">
       <header className="full-header">
         <div className="full-nav-container">
           <a href="/" className="full-logo" data-testid="link-brand"><span>✦</span> L.L.B</a>
           <nav className="full-nav-links" aria-label="Main navigation">
-            <a href="#features">Solutions ⌄</a><a href="#case-law">Case law</a><a href="#about">About</a><a href="#insights">Blog</a><a href="#faq">Support ⌄</a>
+            <a href="#features">Solutions ⌄</a><a onClick={(e) => { e.preventDefault(); window.history.pushState({}, '', '/legal-research'); window.dispatchEvent(new PopStateEvent('popstate')); }} href="/legal-research" style={{cursor:'pointer'}}>Case Database ↗</a><a href="#about">About</a><a href="#insights">Blog</a><a href="#faq">Support ⌄</a>
           </nav>
           <a href="/start" className="full-primary-button" data-testid="link-get-started">Get started</a>
         </div>
       </header>
 
-      <section className="full-hero" id="top">
-        <div className="full-hero-container">
-          <div className="full-hero-text">
-            <p className="full-eyebrow">Lawyers Legal Beef</p>
-            <h1>Lawyers<br /><em>Legal Beef</em></h1>
-            <p className="full-lead">The all-in-one Progressive Web App (PWA) built specifically for lawyers and legal teams. Streamline case management, legal research, document drafting, client billing, and trial prep in one unified platform.</p>
-            <form className="full-inline-form" onSubmit={submit('Get updates request received.')}>
-              <input required type="email" placeholder="Your email address" aria-label="Email address" />
-              <button type="submit">Submit</button>
-            </form>
-            <p className="full-form-note">Get updates</p>
-          </div>
-          <div className="full-hero-placeholder"><img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1600&q=85" alt="Legal team working together at a modern desk" /></div>
+      <section className="full-hero">
+        <div className="full-hero-content">
+          <p className="full-eyebrow">LAWYERS LEGAL BEEF</p>
+          <h1>The facts are on your side.<br /><em>Make them known.</em></h1>
+          <p className="full-hero-sub">L.L.B. integrates intelligent case research, unbreakable document management, and offline PWA access into one platform built strictly for litigation teams.</p>
+          <div className="full-hero-actions"><a href="/start" className="full-primary-button">Start your practice</a><a href="#features" className="full-secondary-button">See the platform</a></div>
         </div>
+        <div className="full-hero-visual" aria-hidden="true"><div className="full-glass-card mock-ui"><div className="mock-ui-header"><span>L.L.B. Briefing Environment</span></div><div className="mock-ui-body"><div className="mock-line skeleton-title" /><div className="mock-line skeleton-text" /><div className="mock-line skeleton-text short" /></div></div></div>
       </section>
 
-      <section className="trusted-section" id="about">
-        <p className="full-eyebrow">TRUSTED BY 2.5M+ ORGANIZATIONS</p>
-        <h2>Trusted by 500+ Top Law Firms &amp; Legal Teams</h2>
-        <div className="logo-grid">{['VANCE & PARTNERS', 'NORTHSTAR LAW', 'CIVIC GROUP', 'ARGUMENT', 'COUNSEL CO.'].map((logo) => <div className="logo-placeholder" key={logo}>{logo}</div>)}</div>
-      </section>
-
-      <section className="features-section feature-section" id="features">
-        <div className="features-header feature-heading"><p className="full-eyebrow">THE PLATFORM</p><h2>One App That Does It All for Law Practices</h2><p>Lawyers Legal Beef replaces disconnected legal software with a single Progressive Web App (PWA). Work seamlessly online or offline from courtroom to desktop.</p></div>
-        <div className="features-tabs-layout">
-          <div className="feature-visual feature-placeholder"><img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1400&q=85" alt="Sleek modern office representing streamlined legal operations" /></div>
-          <div className="features-tabs">
-            <div className="features-grid" role="tablist" aria-label="Legal platform features">
-              {features.map(([title], index) => (
-                <button
-                  className={`feature-card ${activeFeature === index ? 'active' : ''}`}
-                  id={`feature-tab-${index}`}
-                  key={title}
-                  role="tab"
-                  aria-selected={activeFeature === index}
-                  aria-controls={`feature-panel-${index}`}
-                  tabIndex={activeFeature === index ? 0 : -1}
-                  ref={(element) => { featureTabRefs.current[index] = element; }}
-                  onClick={() => selectFeature(index)}
-                  onKeyDown={(event) => handleFeatureKeyDown(event, index)}
-                >
-                  <span>0{index + 1}</span>
-                  <strong>{title}</strong>
-                </button>
-              ))}
-            </div>
-            <article className="feature-panel" id={`feature-panel-${activeFeature}`} role="tabpanel" aria-labelledby={`feature-tab-${activeFeature}`} tabIndex={0}>
-              <p className="full-eyebrow">FEATURE 0{activeFeature + 1}</p>
-              <h3>{features[activeFeature][0]}</h3>
-              <p>{features[activeFeature][1]}</p>
-            </article>
-          </div>
+      <section className="features-grid-section" id="features">
+        <div className="features-heading"><p className="full-eyebrow">PLATFORM CAPABILITIES</p><h2>Engineered for the courtroom.<br />Ready anywhere.</h2></div>
+        <div className="grid-cards">
+          <article className="grid-card"><div className="icon-wrapper"><BookOpen size={24} /></div><h3>PWA Offline Sync</h3><p>Access dockets and active briefings in the courthouse, even when the cell towers cut out. Changes sync instantly upon reconnection.</p></article>
+          <article className="grid-card"><div className="icon-wrapper"><Shield size={24} /></div><h3>Precedent Engine</h3><p>Cross-reference your arguments against our proprietary, real-time database of State and Federal appellate authority.</p></article>
+          <article className="grid-card"><div className="icon-wrapper"><Zap size={24} /></div><h3>Automated Billing</h3><p>Track time organically as you draft. L.L.B. securely translates your workflow into precise, LEDES-compliant invoices.</p></article>
         </div>
-      </section>
-
-      <section className="case-law-section" id="case-law">
-        <div className="case-law-heading">
-          <div><p className="full-eyebrow">NC AUTHORITY INDEX</p><h2>Find the<br /><em>stronger point.</em></h2></div>
-          <p>Start with a curated index of North Carolina state authority, Fourth Circuit precedent, and federal district decisions tied to North Carolina practice.</p>
-        </div>
-        <div className="case-law-tools">
-           <label className="case-law-search"><span className="sr-only">Search North Carolina authorities</span><input aria-label="Search North Carolina authorities" type="search" value={caseLawQuery} onChange={(event) => setCaseLawQuery(event.target.value)} placeholder="Search citation, issue, or case name" /><span>⌕</span></label>
-          <div className="case-law-filters" role="group" aria-label="Filter by jurisdiction">
-             {(['all', 'state', 'federal'] as const).map((filter) => <button type="button" key={filter} className={caseLawFilter === filter ? 'active' : ''} aria-pressed={caseLawFilter === filter} onClick={() => setCaseLawFilter(filter)}>{filter === 'all' ? 'All NC authority' : filter === 'state' ? 'NC state' : 'NC federal'}</button>)}
-          </div>
-        </div>
-        <div className="case-law-list">
-           {visibleCaseLaw.map((authority) => <article className="case-law-card" key={authority.id} data-testid={`case-law-card-${authority.id}`}>
-             <div className="case-law-card-top"><span className="case-law-source">{authority.jurisdiction === 'state' ? 'North Carolina state' : 'Federal / NC relevance'}</span><span className="case-law-outcome">{authority.outcome}</span></div>
-             <h3>{authority.title}</h3>
-             <p className="case-law-citation">{authority.citation} · {authority.court} · {authority.year}</p>
-             <div className="case-law-tags">{authority.topics.map((topic) => <span key={topic}>{topic}</span>)}</div>
-             <p className="case-law-posture"><strong>Posture:</strong> {authority.proceduralPosture || 'Appellate decision; review the linked opinion for the complete procedural history.'}</p>
-             <p>{authority.summary}</p>
-             <div className="case-law-card-footer">
-               <span className="case-law-provenance"><strong>{authority.sourceKind === 'official' ? 'Official source' : 'Public repository'}</strong><br />{authority.sourceLabel}</span>
-               <a className="case-law-link" href={authority.sourceUrl} target="_blank" rel="noreferrer">View source <ArrowUpRight size={15} /></a>
-             </div>
-          </article>)}
-          {!visibleCaseLaw.length && <p className="case-law-empty">No authority matches that search. Try a citation, issue, or case name.</p>}
-        </div>
-         <p className="case-law-disclaimer">Research index only. Confirm current treatment, jurisdiction, and procedural posture in an official reporter or licensed legal research service before relying on any authority.</p>
       </section>
 
       <section className="pricing-section" id="pricing">
@@ -1310,10 +312,11 @@ function SimpleHome() {
 }
 
 function Router() {
-  const [location] = useLocation();
+  const [location, navigate] = useLocation();
   const page = location === '/' ? <SimpleHome /> :
     location === '/start' ? <Onboarding /> :
     location === '/workspace' ? <Workspace /> :
+    location === '/legal-research' ? <LegalResearch navigate={navigate} /> :
     <NotFound />;
 
   return (
