@@ -1,1 +1,33 @@
-ewogICJuYW1lIjogIkxhd3llcnMgTGVnYWwgQmVlZiIsCiAgInNob3J0X25hbWUiOiAiTC5MLkIiLAogICJkZXNjcmlwdGlvbiI6ICJUaGUgYWxsLWluLW9uZSBQcm9ncmVzc2l2ZSBXZWIgQXBwIChQV0EpIGJ1aWx0IHNwZWNpZmljYWxseSBmb3IgbGF3eWVycyBhbmQgbGVnYWwgdGVhbXMuIFN0cmVhbWxpbmUgY2FzZSBtYW5hZ2VtZW50LCBsZWdhbCByZXNlYXJjaCwgZG9jdW1lbnQgZHJhZnRpbmcsIGNsaWVudCBiaWxsaW5nLCBhbmQgdHJpYWwgcHJlcCBpbiBvbmUgdW5pZmllZCBwbGF0Zm9ybS4iLAogICJzdGFydF91cmwiOiAiLyIsCiAgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIsCiAgImJhY2tncm91bmRfY29sb3IiOiAiI2YxZWNkZiIsCiAgInRoZW1lX2NvbG9yIjogIiMyNTIzMWYiLAogICJsYW5nIjogImVuIiwKICAiaWNvbnMiOiBbCiAgICB7CiAgICAgICJzcmMiOiAiL2Zhdmljb24uc3ZnIiwKICAgICAgInNpemVzIjogImFueSIsCiAgICAgICJ0eXBlIjogImltYWdlL3N2Zyt4bWwiLAogICAgICAicHVycG9zZSI6ICJhbnkgbWFza2FibGUiCiAgICB9CiAgXQp9
+{
+  "name": "Lawyers Legal Beef",
+  "short_name": "L.L.B",
+  "description": "The all-in-one Progressive Web App (PWA) built specifically for litigation defense teams.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#06070a",
+  "theme_color": "#06070a",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
