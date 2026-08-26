@@ -1,1 +1,45 @@
-PHN2ZyB3aWR0aD0iMTgwIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE4MCAxODAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHJlY3Qgd2lkdGg9IjE4MCIgaGVpZ2h0PSIxODAiIHJ4PSIzMiIgZmlsbD0iIzI1MjMxRiIvPgogIDxjaXJjbGUgY3g9IjkwIiBjeT0iOTAiIHI9IjUzIiBzdHJva2U9IiNGMUVDREYiIHN0cm9rZS13aWR0aD0iMyIvPgogIDxwYXRoIGQ9Ik0xMTYgNjkuNUMxMTAuNSA2Mi41IDEwMiA1OCA5Mi41IDU4Qzc1LjYgNTggNjMgNzEuNiA2MyA5MC41QzYzIDEwOS40IDc1LjYgMTIyIDkyLjUgMTIyQzEwMiAxMjIgMTEwLjUgMTE3LjUgMTE2IDExMC41IiBzdHJva2U9IiNEMDY5NDYiIHN0cm9rZS13aWR0aD0iMTAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4K
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="llb-gold" x1="64" y1="64" x2="448" y2="448" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FCEBA7"/>
+      <stop offset="35%" stop-color="#D4AF37"/>
+      <stop offset="70%" stop-color="#AA7C11"/>
+      <stop offset="100%" stop-color="#E5C07B"/>
+    </linearGradient>
+    <linearGradient id="llb-glow" x1="256" y1="0" x2="256" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1E2433"/>
+      <stop offset="100%" stop-color="#0A0C10"/>
+    </linearGradient>
+    <filter id="gold-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#D4AF37" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background Shield Container -->
+  <rect width="512" height="512" rx="128" fill="url(#llb-glow)"/>
+  <rect x="16" y="16" width="480" height="480" rx="112" stroke="url(#llb-gold)" stroke-opacity="0.4" stroke-width="8"/>
+
+  <!-- Legal Scales & Apex Geometry -->
+  <g filter="url(#gold-glow)">
+    <!-- Central Pillar -->
+    <path d="M256 120V380" stroke="url(#llb-gold)" stroke-width="18" stroke-linecap="round"/>
+    
+    <!-- Top Sparkle / Star Marker -->
+    <path d="M256 90L266 110L286 120L266 130L256 150L246 130L226 120L246 110Z" fill="url(#llb-gold)"/>
+
+    <!-- Crossbeam Balance Bar -->
+    <path d="M140 180C190 170 322 170 372 180" stroke="url(#llb-gold)" stroke-width="16" stroke-linecap="round"/>
+
+    <!-- Left Scale Strings & Pan -->
+    <path d="M140 180L105 270H175L140 180Z" stroke="url(#llb-gold)" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M90 270C90 270 140 295 190 270" stroke="url(#llb-gold)" stroke-width="14" stroke-linecap="round" fill="none"/>
+
+    <!-- Right Scale Strings & Pan -->
+    <path d="M372 180L337 270H407L372 180Z" stroke="url(#llb-gold)" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M322 270C322 270 372 295 422 270" stroke="url(#llb-gold)" stroke-width="14" stroke-linecap="round" fill="none"/>
+
+    <!-- Base Stand -->
+    <path d="M190 380H322" stroke="url(#llb-gold)" stroke-width="20" stroke-linecap="round"/>
+    <path d="M216 410H296" stroke="url(#llb-gold)" stroke-width="14" stroke-linecap="round"/>
+  </g>
+</svg>
