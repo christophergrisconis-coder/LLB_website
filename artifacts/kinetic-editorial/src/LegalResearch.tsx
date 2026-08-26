@@ -1,6 +1,6 @@
-import { useMemo, useState, useEffect } from 'react';
+import { useMemo, useState, useEffect, useRef } from 'react';
 import caseLawData from './legal_database.json';
-import { Search, ArrowUpRight, Lock, ShieldCheck, CheckCircle2, KeyRound, Sparkles } from 'lucide-react';
+import { Search, ArrowUpRight, Lock, ShieldCheck, CheckCircle2, KeyRound, Sparkles, Scale, BookOpen, Clock } from 'lucide-react';
 
 type CaseRecord = {
   case_name: string;
@@ -35,14 +35,25 @@ export default function LegalResearch({ navigate }: { navigate: (to: string) => 
   const [saved, setSaved] = useState<string[]>([]);
   const raw = caseLawData as CaseRecord[];
 
+  // Parallax ambient cursor state
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+  const containerRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     localStorage.setItem('llb_paid_member', isUnlocked ? 'true' : 'false');
   }, [isUnlocked]);
 
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (!containerRef.current) return;
+    const rect = containerRef.current.getBoundingClientRect();
+    const x = (e.clientX - rect.left - rect.width / 2) / (rect.width / 2);
+    const y = (e.clientY - rect.top - rect.height / 2) / (rect.height / 2);
+    setMousePos({ x, y });
+  };
+
   const handleUnlockWithCode = (e: React.FormEvent) => {
     e.preventDefault();
     const clean = accessCode.trim().toLowerCase();
-    // Allow any standard active license format or keywords
     if (clean === 'admin' || clean === 'pro' || clean === 'premium' || clean === 'llb2026' || clean.length >= 6) {
       setIsUnlocked(true);
       setShowCodeInput(false);
@@ -66,29 +77,59 @@ export default function LegalResearch({ navigate }: { navigate: (to: string) => 
   }, [query, jurisdiction, court, raw]);
 
   return (
-    <div className="lr-page">
-      <header className="lr-header">
-        <button className="lr-back" onClick={() => navigate('/')}>&#8592; Back to L.L.B</button>
-        <div className="lr-header-top-tag">
-          {isUnlocked ? (
-            <span className="lr-tag-unlocked"><ShieldCheck size={14} /> Active Subscriber License</span>
-          ) : (
-            <span className="lr-tag-locked"><Lock size={13} /> Paid Plan Exclusive Feature</span>
-          )}
+    <div 
+      className="cinematic-shell min-h-screen text-[#f3f4f6]" 
+      ref={containerRef}
+      onMouseMove={handleMouseMove}
+    >
+      {/* Ambient Lighting Orbs with Parallax */}
+      <div className="ambient-cinematic-bg pointer-events-none" aria-hidden="true">
+        <div 
+          className="ambient-orb ambient-orb-primary" 
+          style={{ transform: `translate(${mousePos.x * 24}px, ${mousePos.y * 24}px)` }}
+        />
+        <div 
+          className="ambient-orb ambient-orb-secondary" 
+          style={{ transform: `translate(${-mousePos.x * 30}px, ${-mousePos.y * 30}px)` }}
+        />
+        <div className="ambient-film-grain" />
+      </div>
+
+      {/* Header & Editorial Hero */}
+      <header className="cinematic-header">
+        <div className="cinematic-header-top">
+          <button className="lr-back" onClick={() => navigate('/')}>
+            ← Back to L.L.B
+          </button>
+          <div className="header-badge-wrap">
+            {isUnlocked ? (
+              <span className="lr-tag-unlocked"><ShieldCheck size={14} /> Active Pro Member License</span>
+            ) : (
+              <span className="lr-tag-locked"><Lock size={13} /> Pro &amp; Premium Exclusive Suite</span>
+            )}
+          </div>
         </div>
-        <h1>Criminal Defense<br /><em>Case Law Database</em></h1>
-        <p className="lr-subtitle">
-          {raw.length} defense-favorable precedents covering the 4th Circuit, North Carolina, Virginia, South Carolina, West Virginia, and Maryland.
-        </p>
+
+        <div className="editorial-hero-banner">
+          <p className="magazine-eyebrow">VOLUME 01 / 4TH CIRCUIT &amp; STATE AUTHORITY INDEX</p>
+          <h1 className="magazine-headline">
+            Criminal Defense<br />
+            <em>Case Law Precedent</em>
+          </h1>
+          <p className="magazine-lead">
+            {raw.length} defense-favorable rulings spanning Fourth Amendment suppression, sentencing overturns, probation revocations, and statutory reversals across NC, VA, SC, WV, and MD courts.
+          </p>
+        </div>
       </header>
 
+      {/* Paywall vs Full Precedent Engine */}
       {!isUnlocked ? (
         <div className="lr-paywall-container">
           <div className="lr-paywall-card">
             <div className="lr-paywall-badge"><Lock size={20} /></div>
             <h2>Member Subscription Required</h2>
             <p className="lr-paywall-desc">
-              The full <strong>4th Circuit Precedent &amp; Sentencing Authority Database</strong> is strictly available to active <strong>Pro</strong> and <strong>Premium Firm</strong> subscribers.
+              The full <strong>250 Case Law Authority Database &amp; Precedent Index</strong> is restricted to active <strong>Pro</strong> and <strong>Premium Firm</strong> subscribers.
             </p>
 
             <div className="lr-paywall-perks">
@@ -146,27 +187,35 @@ export default function LegalResearch({ navigate }: { navigate: (to: string) => 
           </div>
         </div>
       ) : (
-        <>
+        <div className="template-dashboard-container">
           <div className="lr-member-banner">
             <div>
-              <strong>✓ Pro License Active</strong> — Full database unlocked.
+              <strong>✓ Pro License Active</strong> — Full 250 Precedent Engine Unlocked.
             </div>
             <button className="lr-lock-btn" onClick={() => setIsUnlocked(false)}>Lock session</button>
           </div>
 
-          <div className="lr-controls">
-            <div className="lr-search-wrap">
-              <Search size={18} className="lr-search-icon" />
-              <input type="search" className="lr-search" placeholder="Search case name, citation, court, topic, holding…" value={query} onChange={(e) => setQuery(e.target.value)} />
+          <div className="template-filter-bar">
+            <div className="template-search-wrap">
+              <Search size={18} className="template-search-icon" />
+              <input 
+                type="search" 
+                className="template-search-input" 
+                placeholder="Search case name, citation, court, topic, holding…" 
+                value={query} 
+                onChange={(e) => setQuery(e.target.value)} 
+              />
             </div>
-            <div className="lr-filters">
-              <div className="lr-pills">
-                {(['all', 'federal', 'state'] as const).map((j) => (
-                  <button key={j} className={`lr-pill${jurisdiction === j ? ' active' : ''}`} onClick={() => setJurisdiction(j)}>
-                    {j === 'all' ? 'All Jurisdictions' : j === 'federal' ? '4th Circuit & Districts' : 'State Courts'}
-                  </button>
-                ))}
-              </div>
+            <div className="template-category-pills">
+              {(['all', 'federal', 'state'] as const).map((j) => (
+                <button 
+                  key={j} 
+                  className={`template-pill ${jurisdiction === j ? 'active' : ''}`} 
+                  onClick={() => setJurisdiction(j)}
+                >
+                  {j === 'all' ? 'All Jurisdictions' : j === 'federal' ? '4th Circuit & Districts' : 'State Courts'}
+                </button>
+              ))}
               <select className="lr-select" value={court} onChange={(e) => setCourt(e.target.value)}>
                 {COURTS.map((c) => <option key={c} value={c}>{c}</option>)}
               </select>
@@ -175,31 +224,46 @@ export default function LegalResearch({ navigate }: { navigate: (to: string) => 
           </div>
 
           <div className="lr-results">
-            {cases.length === 0 ? <p className="lr-empty">No cases match. Try a different citation, court, or keyword.</p> : cases.map((c) => {
-              const isFederal = c.jurisdiction?.toLowerCase().includes('federal') || !c.jurisdiction;
-              const isSaved = saved.includes(c.case_name);
-              return (
-                <article className="lr-card" key={c.case_name + c.citation}>
-                  <div className="lr-card-top">
-                    <span className={`lr-badge ${isFederal ? 'lr-badge-fed' : 'lr-badge-state'}`}>{isFederal ? '4th Circuit / Federal' : 'State Court'}</span>
-                    <span className="lr-court-year">{c.court} · {c.year}</span>
-                  </div>
-                  <h2 className="lr-case-name">{c.case_name}</h2>
-                  <p className="lr-citation">{c.citation}{c.primary_topics?.[0] && ` · ${c.primary_topics[0]}`}</p>
-                  <p className="lr-summary">{c.summary}</p>
-                  {c.rule_of_law && c.rule_of_law !== c.summary && <p className="lr-rule"><strong>Rule:</strong> {c.rule_of_law}</p>}
-                  {c.application_notes && <p className="lr-notes"><strong>Application:</strong> {c.application_notes}</p>}
-                  <button className={`lr-save-btn${isSaved ? ' saved' : ''}`} onClick={() => setSaved((p) => p.includes(c.case_name) ? p : [...p, c.case_name])}>
-                    {isSaved ? '✓ Saved' : 'Save to case file'} {!isSaved && <ArrowUpRight size={14} />}
-                  </button>
-                </article>
-              );
-            })}
+            {cases.length === 0 ? (
+              <p className="lr-empty">No cases match your query. Try another citation, keyword, or court.</p>
+            ) : (
+              cases.map((c) => {
+                const isFederal = c.jurisdiction?.toLowerCase().includes('federal') || !c.jurisdiction;
+                const isSaved = saved.includes(c.case_name);
+                return (
+                  <article className="lr-card" key={c.case_name + c.citation}>
+                    <div className="lr-card-top">
+                      <span className={`lr-badge ${isFederal ? 'lr-badge-fed' : 'lr-badge-state'}`}>
+                        {isFederal ? '4th Circuit / Federal' : 'State Court'}
+                      </span>
+                      <span className="lr-court-year">{c.court} · {c.year}</span>
+                    </div>
+                    <h2 className="lr-case-name">{c.case_name}</h2>
+                    <p className="lr-citation">{c.citation}{c.primary_topics?.[0] && ` · ${c.primary_topics[0]}`}</p>
+                    <p className="lr-summary">{c.summary}</p>
+                    {c.rule_of_law && c.rule_of_law !== c.summary && (
+                      <p className="lr-rule"><strong>Rule:</strong> {c.rule_of_law}</p>
+                    )}
+                    {c.application_notes && (
+                      <p className="lr-notes"><strong>Application:</strong> {c.application_notes}</p>
+                    )}
+                    <button 
+                      className={`lr-save-btn ${isSaved ? 'saved' : ''}`} 
+                      onClick={() => setSaved((p) => p.includes(c.case_name) ? p : [...p, c.case_name])}
+                    >
+                      {isSaved ? '✓ Saved to Case File' : 'Save to case file'} {!isSaved && <ArrowUpRight size={14} />}
+                    </button>
+                  </article>
+                );
+              })
+            )}
           </div>
-        </>
+        </div>
       )}
 
-      <p className="lr-disclaimer">Research index only. Confirm current treatment in licensed sources before relying on any authority.</p>
+      <footer className="cinematic-footer">
+        <p>L.L.B Research Systems &bull; Research Index Only &bull; Confirm current treatment in licensed citators prior to citation in court.</p>
+      </footer>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState, type FormEvent, type RefObject } from 'react';
 import { Menu, X, ArrowRight, BookOpen, Shield, Zap, Search, ArrowUpRight, Scale, ChevronRight, Plus, LogOut, BriefcaseBusiness } from 'lucide-react';
 import LegalResearch from './LegalResearch';
+import LegalTemplates from './LegalTemplates';
 import { ErrorBoundary } from '@/components/error-boundary';
 import NotFound from '@/pages/not-found';
 
@@ -262,7 +263,13 @@ function SimpleHome() {
         <div className="full-nav-container">
           <a href="/" className="full-logo" data-testid="link-brand"><span>✦</span> L.L.B</a>
           <nav className="full-nav-links" aria-label="Main navigation">
-            <a href="#features">Solutions ⌄</a><a onClick={(e) => { e.preventDefault(); window.history.pushState({}, '', '/legal-research'); window.dispatchEvent(new PopStateEvent('popstate')); }} href="/legal-research" style={{cursor:'pointer'}}>Case Database (Pro 🔒)</a><a href="#pricing">Pricing</a><a href="#about">About</a><a href="#insights">Blog</a><a href="#faq">Support ⌄</a>
+            <a href="#features">Solutions ⌄</a>
+            <a onClick={(e) => { e.preventDefault(); window.history.pushState({}, '', '/templates'); window.dispatchEvent(new PopStateEvent('popstate')); }} href="/templates" style={{cursor:'pointer'}}>Templates (Pro 🔒)</a>
+            <a onClick={(e) => { e.preventDefault(); window.history.pushState({}, '', '/legal-research'); window.dispatchEvent(new PopStateEvent('popstate')); }} href="/legal-research" style={{cursor:'pointer'}}>Case Database (Pro 🔒)</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#about">About</a>
+            <a href="#insights">Blog</a>
+            <a href="#faq">Support ⌄</a>
           </nav>
           <a href="/start" className="full-primary-button" data-testid="link-get-started">Get started</a>
         </div>
@@ -317,6 +324,7 @@ function Router() {
     location === '/start' ? <Onboarding /> :
     location === '/workspace' ? <Workspace /> :
     location === '/legal-research' ? <LegalResearch navigate={navigate} /> :
+    location === '/templates' || location === '/legal-templates' ? <LegalTemplates navigate={navigate} /> :
     <NotFound />;
 
   return (
