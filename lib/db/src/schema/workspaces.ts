@@ -1,1 +1,55 @@
-aW1wb3J0IHsgYm9vbGVhbiwgaW50ZWdlciwgcGdUYWJsZSwgc2VyaWFsLCB0ZXh0LCB0aW1lc3RhbXAsIHZhcmNoYXIgfSBmcm9tICJkcml6emxlLW9ybS9wZy1jb3JlIjsKCmV4cG9ydCBjb25zdCB1c2Vyc1RhYmxlID0gcGdUYWJsZSgid29ya3NwYWNlX3VzZXJzIiwgewogIGlkOiB2YXJjaGFyKCJpZCIpLnByaW1hcnlLZXkoKSwKICBlbWFpbDogdmFyY2hhcigiZW1haWwiKS5ub3ROdWxsKCkudW5pcXVlKCksCiAgbmFtZTogdmFyY2hhcigibmFtZSIpLm5vdE51bGwoKSwKICBjcmVhdGVkQXQ6IHRpbWVzdGFtcCgiY3JlYXRlZF9hdCIsIHsgd2l0aFRpbWV6b25lOiB0cnVlIH0pLm5vdE51bGwoKS5kZWZhdWx0Tm93KCksCn0pOwoKZXhwb3J0IGNvbnN0IHNlc3Npb25zVGFibGUgPSBwZ1RhYmxlKCJ3b3Jrc3BhY2Vfc2Vzc2lvbnMiLCB7CiAgaWQ6IHZhcmNoYXIoImlkIikucHJpbWFyeUtleSgpLAogIHVzZXJJZDogdmFyY2hhcigidXNlcl9pZCIpLm5vdE51bGwoKS5yZWZlcmVuY2VzKCgpID0+IHVzZXJzVGFibGUuaWQsIHsgb25EZWxldGU6ICJjYXNjYWRlIiB9KSwKICBleHBpcmVzQXQ6IHRpbWVzdGFtcCgiZXhwaXJlc19hdCIsIHsgd2l0aFRpbWV6b25lOiB0cnVlIH0pLm5vdE51bGwoKSwKfSk7CgpleHBvcnQgY29uc3Qgd29ya3NwYWNlc1RhYmxlID0gcGdUYWJsZSgid29ya3NwYWNlcyIsIHsKICBpZDogdmFyY2hhcigiaWQiKS5wcmltYXJ5S2V5KCksCiAgdXNlcklkOiB2YXJjaGFyKCJ1c2VyX2lkIikubm90TnVsbCgpLnJlZmVyZW5jZXMoKCkgPT4gdXNlcnNUYWJsZS5pZCwgeyBvbkRlbGV0ZTogImNhc2NhZGUiIH0pLAogIG5hbWU6IHZhcmNoYXIoIm5hbWUiKS5ub3ROdWxsKCksCiAgY3JlYXRlZEF0OiB0aW1lc3RhbXAoImNyZWF0ZWRfYXQiLCB7IHdpdGhUaW1lem9uZTogdHJ1ZSB9KS5ub3ROdWxsKCkuZGVmYXVsdE5vdygpLAp9KTsKCmV4cG9ydCBjb25zdCBjYXNlc1RhYmxlID0gcGdUYWJsZSgiY2FzZXMiLCB7CiAgaWQ6IHNlcmlhbCgiaWQiKS5wcmltYXJ5S2V5KCksCiAgd29ya3NwYWNlSWQ6IHZhcmNoYXIoIndvcmtzcGFjZV9pZCIpLm5vdE51bGwoKS5yZWZlcmVuY2VzKCgpID0+IHdvcmtzcGFjZXNUYWJsZS5pZCwgeyBvbkRlbGV0ZTogImNhc2NhZGUiIH0pLAogIHRpdGxlOiB2YXJjaGFyKCJ0aXRsZSIpLm5vdE51bGwoKSwKICBjbGllbnQ6IHZhcmNoYXIoImNsaWVudCIpLm5vdE51bGwoKSwKICBzdGF0dXM6IHZhcmNoYXIoInN0YXR1cyIpLm5vdE51bGwoKS5kZWZhdWx0KCJJbnRha2UiKSwKICBwcmlvcml0eTogdmFyY2hhcigicHJpb3JpdHkiKS5ub3ROdWxsKCkuZGVmYXVsdCgiTm9ybWFsIiksCiAgbmV4dERlYWRsaW5lOiB2YXJjaGFyKCJuZXh0X2RlYWRsaW5lIiksCiAgYXJjaGl2ZWQ6IGJvb2xlYW4oImFyY2hpdmVkIikubm90TnVsbCgpLmRlZmF1bHQoZmFsc2UpLAogIGNyZWF0ZWRBdDogdGltZXN0YW1wKCJjcmVhdGVkX2F0IiwgeyB3aXRoVGltZXpvbmU6IHRydWUgfSkubm90TnVsbCgpLmRlZmF1bHROb3coKSwKICB1cGRhdGVkQXQ6IHRpbWVzdGFtcCgidXBkYXRlZF9hdCIsIHsgd2l0aFRpbWV6b25lOiB0cnVlIH0pLm5vdE51bGwoKS5kZWZhdWx0Tm93KCksCiAgbm90ZXM6IHRleHQoIm5vdGVzIiksCn0pOwoKZXhwb3J0IGNvbnN0IHNhdmVkQXV0aG9yaXRpZXNUYWJsZSA9IHBnVGFibGUoInNhdmVkX2Nhc2VfYXV0aG9yaXRpZXMiLCB7CiAgaWQ6IHNlcmlhbCgiaWQiKS5wcmltYXJ5S2V5KCksCiAgY2FzZUlkOiBpbnRlZ2VyKCJjYXNlX2lkIikubm90TnVsbCgpLnJlZmVyZW5jZXMoKCkgPT4gY2FzZXNUYWJsZS5pZCwgeyBvbkRlbGV0ZTogImNhc2NhZGUiIH0pLAogIGF1dGhvcml0eUlkOiB2YXJjaGFyKCJhdXRob3JpdHlfaWQiKS5ub3ROdWxsKCksCiAgdGl0bGU6IHZhcmNoYXIoInRpdGxlIikubm90TnVsbCgpLAogIGNpdGF0aW9uOiB2YXJjaGFyKCJjaXRhdGlvbiIpLm5vdE51bGwoKSwKICBjb3VydDogdmFyY2hhcigiY291cnQiKS5ub3ROdWxsKCksCiAgeWVhcjogaW50ZWdlcigieWVhciIpLm5vdE51bGwoKSwKICBzdW1tYXJ5OiB0ZXh0KCJzdW1tYXJ5Iikubm90TnVsbCgpLAogIHNvdXJjZVVybDogdGV4dCgic291cmNlX3VybCIpLm5vdE51bGwoKSwKICBzb3VyY2VMYWJlbDogdmFyY2hhcigic291cmNlX2xhYmVsIikubm90TnVsbCgpLAogIHNvdXJjZUtpbmQ6IHZhcmNoYXIoInNvdXJjZV9raW5kIikubm90TnVsbCgpLAogIGNyZWF0ZWRBdDogdGltZXN0YW1wKCJjcmVhdGVkX2F0IiwgeyB3aXRoVGltZXpvbmU6IHRydWUgfSkubm90TnVsbCgpLmRlZmF1bHROb3coKSwKfSk7CgpleHBvcnQgdHlwZSBXb3Jrc3BhY2VVc2VyID0gdHlwZW9mIHVzZXJzVGFibGUuJGluZmVyU2VsZWN0OwpleHBvcnQgdHlwZSBXb3Jrc3BhY2UgPSB0eXBlb2Ygd29ya3NwYWNlc1RhYmxlLiRpbmZlclNlbGVjdDsKZXhwb3J0IHR5cGUgTGVnYWxDYXNlID0gdHlwZW9mIGNhc2VzVGFibGUuJGluZmVyU2VsZWN0OwpleHBvcnQgdHlwZSBTYXZlZEF1dGhvcml0eSA9IHR5cGVvZiBzYXZlZEF1dGhvcml0aWVzVGFibGUuJGluZmVyU2VsZWN0Ow==
+import { boolean, integer, pgTable, serial, text, timestamp, varchar } from "drizzle-orm/pg-core";
+
+export const usersTable = pgTable("workspace_users", {
+  id: varchar("id").primaryKey(),
+  email: varchar("email").notNull().unique(),
+  name: varchar("name").notNull(),
+  createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+});
+
+export const sessionsTable = pgTable("workspace_sessions", {
+  id: varchar("id").primaryKey(),
+  userId: varchar("user_id").notNull().references(() => usersTable.id, { onDelete: "cascade" }),
+  expiresAt: timestamp("expires_at", { withTimezone: true }).notNull(),
+});
+
+export const workspacesTable = pgTable("workspaces", {
+  id: varchar("id").primaryKey(),
+  userId: varchar("user_id").notNull().references(() => usersTable.id, { onDelete: "cascade" }),
+  name: varchar("name").notNull(),
+  createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+});
+
+export const casesTable = pgTable("cases", {
+  id: serial("id").primaryKey(),
+  workspaceId: varchar("workspace_id").notNull().references(() => workspacesTable.id, { onDelete: "cascade" }),
+  title: varchar("title").notNull(),
+  client: varchar("client").notNull(),
+  status: varchar("status").notNull().default("Intake"),
+  priority: varchar("priority").notNull().default("Normal"),
+  nextDeadline: varchar("next_deadline"),
+  archived: boolean("archived").notNull().default(false),
+  createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
+  notes: text("notes"),
+});
+
+export const savedAuthoritiesTable = pgTable("saved_case_authorities", {
+  id: serial("id").primaryKey(),
+  caseId: integer("case_id").notNull().references(() => casesTable.id, { onDelete: "cascade" }),
+  authorityId: varchar("authority_id").notNull(),
+  title: varchar("title").notNull(),
+  citation: varchar("citation").notNull(),
+  court: varchar("court").notNull(),
+  year: integer("year").notNull(),
+  summary: text("summary").notNull(),
+  sourceUrl: text("source_url").notNull(),
+  sourceLabel: varchar("source_label").notNull(),
+  sourceKind: varchar("source_kind").notNull(),
+  createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+});
+
+export type WorkspaceUser = typeof usersTable.$inferSelect;
+export type Workspace = typeof workspacesTable.$inferSelect;
+export type LegalCase = typeof casesTable.$inferSelect;
+export type SavedAuthority = typeof savedAuthoritiesTable.$inferSelect;

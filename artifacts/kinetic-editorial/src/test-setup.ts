@@ -1,1 +1,16 @@
-aW1wb3J0ICdAdGVzdGluZy1saWJyYXJ5L2plc3QtZG9tL3ZpdGVzdCc7CmltcG9ydCB7IGFmdGVyRWFjaCwgdmkgfSBmcm9tICd2aXRlc3QnOwppbXBvcnQgeyBjbGVhbnVwIH0gZnJvbSAnQHRlc3RpbmctbGlicmFyeS9yZWFjdCc7CgpjbGFzcyBJbnRlcnNlY3Rpb25PYnNlcnZlck1vY2sgewogIG9ic2VydmUoKSB7fQogIGRpc2Nvbm5lY3QoKSB7fQogIHVub2JzZXJ2ZSgpIHt9Cn0KCnZpLnN0dWJHbG9iYWwoJ0ludGVyc2VjdGlvbk9ic2VydmVyJywgSW50ZXJzZWN0aW9uT2JzZXJ2ZXJNb2NrKTsKCmFmdGVyRWFjaCgoKSA9PiB7CiAgY2xlYW51cCgpOwogIHdpbmRvdy5oaXN0b3J5LnJlcGxhY2VTdGF0ZSh7fSwgJycsICcvJyk7Cn0pOw==
+import '@testing-library/jest-dom/vitest';
+import { afterEach, vi } from 'vitest';
+import { cleanup } from '@testing-library/react';
+
+class IntersectionObserverMock {
+  observe() {}
+  disconnect() {}
+  unobserve() {}
+}
+
+vi.stubGlobal('IntersectionObserver', IntersectionObserverMock);
+
+afterEach(() => {
+  cleanup();
+  window.history.replaceState({}, '', '/');
+});

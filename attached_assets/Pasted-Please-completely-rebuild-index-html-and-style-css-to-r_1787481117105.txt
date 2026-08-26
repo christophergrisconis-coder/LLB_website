@@ -1,1 +1,64 @@
-UGxlYXNlIGNvbXBsZXRlbHkgcmVidWlsZCBgaW5kZXguaHRtbGAgYW5kIGBzdHlsZS5jc3NgIHRvIHJlY3JlYXRlIG15IGZ1bGwgbGFuZGluZyBwYWdlLiBUaGUgcHJldmlvdXMgdXBkYXRlIHN0cmlwcGVkIGF3YXkgdG9vIG11Y2guIEkgbmVlZCBhIGNvbXBsZXRlLCByZXNwb25zaXZlLCBzaW5nbGUtcGFnZSBsYXlvdXQgd2l0aCB0aGUgZXhhY3Qgc2VjdGlvbnMgYW5kIGNvcHkgcHJvdmlkZWQgYmVsb3cuIAoKIyMjIERlc2lnbiBTeXN0ZW0gJiBHbG9iYWwgU3R5bGVzCiogICAqKkJhY2tncm91bmQ6KiogV2FybSBiZWlnZSAoYCNGNkY0RThgKSBmb3IgbW9zdCBzZWN0aW9ucy4KKiAgICoqVGV4dCBDb2xvcnM6KiogRGFyayBlc3ByZXNzbyBicm93biAoYCMzMzJCMjZgKSBmb3IgcHJpbWFyeSB0ZXh0IGFuZCBoZWFkaW5ncy4KKiAgICoqQnV0dG9ucyAmIEFjY2VudHM6KiogUnVzdC9kYXJrIGJyb3duIChgIzcyM0MyQWApIGZvciBwcmltYXJ5IGJ1dHRvbnMgYW5kIENUQXMuCiogICAqKlR5cG9ncmFwaHk6KiogTW9kZXJuIHNhbnMtc2VyaWYuIFVzZSBvdmVyc2l6ZWQsIGJydXRhbGlzdCB0eXBvZ3JhcGh5IGZvciBtYWluIHNlY3Rpb24gaGVhZGluZ3MuCiogICAqKkltYWdlczoqKiBVc2UgaW5saW5lIHBsYWNlaG9sZGVycyBmb3IgYWxsIGltYWdlcyB0byBwcmV2ZW50IGJyb2tlbiBsaW5rcyBpbiBwcmV2aWV3IChlLmcuLCBgaHR0cHM6Ly92aWEucGxhY2Vob2xkZXIuY29tLy4uLmApLiBBZGQgc3VidGxlIGJvcmRlci1yYWRpdXMgdG8gaW1hZ2VzLgoKIyMjIFNlY3Rpb24gMTogTmF2aWdhdGlvbgoqICAgKipMb2dvOioqIOKcpiBMLkwuQgoqICAgKipMaW5rczoqKiBTb2x1dGlvbnMg4oyELCBBYm91dCwgQmxvZywgU3VwcG9ydCDijIQKKiAgICoqQnV0dG9uOioqIEdldCBzdGFydGVkCgojIyMgU2VjdGlvbiAyOiBIZXJvIFNlY3Rpb24gKFNwbGl0IExheW91dCkKKiAgICoqTGVmdCBDb2x1bW46KioKICAgICogICAqKkhlYWRsaW5lOioqICJMYXd5ZXI8YnI+cyBMZWdhbDxicj5CZWVmIiAoVXNlIHRpZ2h0IGxpbmUtaGVpZ2h0IGFuZCBtYXNzaXZlIGZvbnQgc2l6ZSkuCiAgICAqICAgKipTdWJ0ZXh0OioqICJUaGUgYWxsLWluLW9uZSBQcm9ncmVzc2l2ZSBXZWIgQXBwIChQV0EpIGJ1aWx0IHNwZWNpZmljYWxseSBmb3IgbGF3eWVycyBhbmQgbGVnYWwgdGVhbXMuIFN0cmVhbWxpbmUgY2FzZSBtYW5hZ2VtZW50LCBsZWdhbCByZXNlYXJjaCwgZG9jdW1lbnQgZHJhZnRpbmcsIGNsaWVudCBiaWxsaW5nLCBhbmQgdHJpYWwgcHJlcCBpbiBvbmUgdW5pZmllZCBwbGF0Zm9ybS4iCiAgICAqICAgKipGb3JtOioqIEVtYWlsIGlucHV0IGFuZCBhICJTdWJtaXQiIGJ1dHRvbi4gQWRkICJHZXQgdXBkYXRlcyIgdGV4dCBiZWxvdy4KKiAgICoqUmlnaHQgQ29sdW1uOioqIFBsYWNlaG9sZGVyIGltYWdlIG9mIGEgcHJvZmVzc2lvbmFsIGxhd3llciBzaXR0aW5nIGF0IGEgZGVzay4KCiMjIyBTZWN0aW9uIDM6IFRydXN0ZWQgQnkKKiAgICoqVGV4dDoqKiAiVFJVU1RFRCBCWSAyLjVNKyBPUkdBTklaQVRJT05TIgoqICAgKipIZWFkbGluZToqKiAiVHJ1c3RlZCBieSA1MDArIFRvcCBMYXcgRmlybXMgJiBMZWdhbCBUZWFtcyIKKiAgICoqTGF5b3V0OioqIFBsYWNlIHRoaXMgYWJvdmUgYSBncmlkIG9mIHBsYWNlaG9sZGVyIGxvZ29zLgoKIyMjIFNlY3Rpb24gNDogRmVhdHVyZXMKKiAgICoqSGVhZGxpbmU6KiogIk9uZSBBcHAgVGhhdCBEb2VzIEl0IEFsbCBmb3IgTGF3IFByYWN0aWNlcyIKKiAgICoqU3VidGV4dDoqKiAiTGF3eWVycyBMZWdhbCBCZWVmIHJlcGxhY2VzIGRpc2Nvbm5lY3RlZCBsZWdhbCBzb2Z0d2FyZSB3aXRoIGEgc2luZ2xlIFByb2dyZXNzaXZlIFdlYiBBcHAgKFBXQSkuIFdvcmsgc2VhbWxlc3NseSBvbmxpbmUgb3Igb2ZmbGluZSBmcm9tIGNvdXJ0cm9vbSB0byBkZXNrdG9wLiIKKiAgICoqQ29udGVudCBHcmlkOioqIEluY2x1ZGUgYSBmZWF0dXJlIGltYWdlIG9uIG9uZSBzaWRlLCBhbmQgYSBsaXN0IG9mIGZlYXR1cmVzIG9uIHRoZSBvdGhlcjoKICAgIDEuICAqKkNvdXJ0cm9vbSAmIE9mZmxpbmUgUFdBIFN5bmM6KiogQWNjZXNzIGNhc2UgZmlsZXMsIGV2aWRlbmNlIGJpbmRlcnMsIGFuZCBzY2hlZHVsZXMgb2ZmbGluZS4gQ2hhbmdlcyBzeW5jIGF1dG9tYXRpY2FsbHkgd2hlbiByZWNvbm5lY3RlZC4KICAgIDIuICAqKkFJIExlZ2FsIFJlc2VhcmNoICYgQnJpZWZzOioqIFN1bW1hcml6ZSBwcmVjZWRlbnRzLCByZXNlYXJjaCBjYXNlIGxhdywgYW5kIGRyYWZ0IGZpbGluZ3MgaW4gc2Vjb25kcyB1c2luZyBidWlsdC1pbiBsZWdhbCBBSSBhc3Npc3RhbmNlLgogICAgMy4gICoqQXV0b21hdGVkIExlZ2FsIERvY3VtZW50IERyYWZ0aW5nOioqIEdlbmVyYXRlIHBsZWFkaW5ncywgY29udHJhY3RzLCBhbmQgZGlzY292ZXJ5IGRlbWFuZHMgcmFwaWRseSB3aXRoIHNtYXJ0IGN1c3RvbWl6YWJsZSBsZWdhbCB0ZW1wbGF0ZXMuCiAgICA0LiAgKipUaW1lIFRyYWNraW5nICYgQ2xpZW50IEJpbGxpbmc6KiogTG9nIGJpbGxhYmxlIGhvdXJzLCBtYW5hZ2UgdHJ1c3QgYWNjb3VudHMsIGFuZCBzZW5kIGludm9pY2VzIGRpcmVjdGx5IHRocm91Z2ggdGhlIHVuaWZpZWQgUFdBIHBvcnRhbC4KCiMjIyBTZWN0aW9uIDU6IFByaWNpbmcKKiAgICoqSGVhZGxpbmU6KiogIlNpbXBsZSBQbGFucyBmb3IgRXZlcnkgTGF3IFByYWN0aWNlIgoqICAgKipUb2dnbGU6KiogTW9udGhseSAvIEFubnVhbGx5IChTYXZlIDIwJSkKKiAgICoqQ2FyZCAxIChQcm8gUGxhbik6KiogJDg5Ljk5L21vLiBJZGVhbCBmb3Igc29sbyBhdHRvcm5leXMgJiBncm93aW5nIHByYWN0aWNlcy4gRmVhdHVyZXM6IENvbXBsZXRlIENhc2UgJiBEb2NrZXQgTWFuYWdlbWVudCwgT2ZmbGluZSBDb3VydHJvb20gRG9jdW1lbnQgU3luYywgSW50ZWdyYXRlZCBUaW1lIFRyYWNraW5nICYgQ2xpZW50IEJpbGxpbmcuIEJ1dHRvbjogR2V0IFBybyBQbGFuLgoqICAgKipDYXJkIDIgKFByZW1pdW0gUGxhbik6KiogJDE2OS45OS9tby4gRm9yIGZ1bGwtc2VydmljZSBmaXJtcy4gRmVhdHVyZXM6IEV2ZXJ5dGhpbmcgaW4gUHJvLCBwbHVzIEFJIExlZ2FsIFJlc2VhcmNoICYgTW90aW9uIERyYWZ0aW5nLCBVbmxpbWl0ZWQgQXV0b21hdGVkIExlZ2FsIFRlbXBsYXRlcywgUHJpb3JpdHkgMjQvNyBUZWNoIFN1cHBvcnQsIEFkdmFuY2VkIEZpcm0gRmluYW5jaWFsIEFuYWx5dGljcy4gQnV0dG9uOiBHZXQgUHJlbWl1bSBQbGFuLgoKIyMjIFNlY3Rpb24gNjogVGVzdGltb25pYWwKKiAgICoqUXVvdGU6KiogIkxhd3llcnMgTGVnYWwgQmVlZiBjdXQgb3VyIGZpcm0ncyBhZG1pbmlzdHJhdGl2ZSBvdmVyaGVhZCBpbiBoYWxmLiBIYXZpbmcgb2ZmbGluZSBjb3VydHJvb20gUFdBIGFjY2VzcywgQUkgcmVzZWFyY2gsIGFuZCBiaWxsaW5nIGluIG9uZSBwbGF0Zm9ybSBpcyBpcnJlcGxhY2VhYmxlLiIKKiAgICoqQXV0aG9yOioqIE1hcmN1cyBWYW5jZSwgRXNxLiAoU2VuaW9yIExpdGlnYXRpb24gUGFydG5lciwgVmFuY2UgJiBQYXJ0bmVycykuIEluY2x1ZGUgYSBzbWFsbCBhdmF0YXIgcGxhY2Vob2xkZXIuCgojIyMgU2VjdGlvbiA3OiBDb250ZW50IEZlZWQKKiAgICoqSGVhZGxpbmU6KiogIkxlZ2FsIFRlY2ggJiBQV0EgUHJhY3RpY2UgSW5zaWdodHMiCiogICAqKkdyaWQgb2YgNCBBcnRpY2xlczoqKgogICAgMS4gQ291cnRyb29tIFBXQSBQbGF5Ym9vawogICAgMi4gQUkgUmVzZWFyY2ggQWNjZWxlcmF0aW9uCiAgICAzLiBVbmlmaWVkIExlZ2FsIEJpbGxpbmcKICAgIDQuIEF1dG9tYXRlZCBEb2N1bWVudCBEcmFmdGluZwoKIyMjIFNlY3Rpb24gODogRkFRICYgTmV3c2xldHRlcgoqICAgKipOZXdzbGV0dGVyOioqICJTdXBlcmNoYXJnZSB5b3VyIHByb2R1Y3QgZXhwZXJpZW5jZS4gTGF1bmNoIGZhc3RlciB3aXRoIHplcm8gcmlzay4iIChJbmNsdWRlIEVtYWlsIGlucHV0IGFuZCBTdWJtaXQgYnV0dG9uKS4KKiAgICoqRkFRIExpc3Q6KiogCiAgICAqICAgV2hhdCBpcyBMYXd5ZXJzIExlZ2FsIEJlZWY/CiAgICAqICAgSG93IGRvZXMgdGhlIFByb2dyZXNzaXZlIFdlYiBBcHAgKFBXQSkgYmVuZWZpdCBteSBmaXJtPwogICAgKiAgIElzIGNsaWVudCBhbmQgY2FzZSBkYXRhIHNlY3VyZT8KICAgICogICBDYW4gSSBhY2Nlc3MgY2FzZSBmaWxlcyB3aGlsZSBvZmZsaW5lIGluIGNvdXJ0PwoKIyMjIFNlY3Rpb24gOTogQ29udGFjdCAmIEZvb3RlcgoqICAgKipDb250YWN0IEFyZWE6KiogRm9ybSBmb3IgTmFtZSBhbmQgRW1haWwuIFJpZ2h0IHNpZGUgc2hvdWxkIGZlYXR1cmUgYW4gaW5mbyBjYXJkIGZvciAiQWR2YW5jZWQgQ3JlYXRpb24gU3R1ZGlvIiB3aXRoIENocmlzIEdyaXNjb25pcyAoRm91bmRlciAmIE93bmVyIHwgOTgwLTk4MC05NDQ5KS4KKiAgICoqRm9vdGVyIEJvdHRvbSAoRGFyayBCYWNrZ3JvdW5kICMyODFEMUEpOioqICJJbnRlcmVzdGVkIGluIHBhcnRuZXJpbmcgd2l0aCB1cz8gY29udGFjdEBoYWxjeW9ubGVnYWwuY29tIi4gR3JpZCBvZiBzdGFuZGFyZCBmb290ZXIgbGlua3MgKE92ZXJ2aWV3LCBTZXJ2aWNlcywgSW5zaWdodHMsIENhc2Ugc3R1ZGllcywgUHJhY3RpY2UgYXJlYXMsIGV0Yy4pIGFuZCBTb2NpYWwgTGlua3Mu
+Please completely rebuild `index.html` and `style.css` to recreate my full landing page. The previous update stripped away too much. I need a complete, responsive, single-page layout with the exact sections and copy provided below. 
+
+### Design System & Global Styles
+*   **Background:** Warm beige (`#F6F4E8`) for most sections.
+*   **Text Colors:** Dark espresso brown (`#332B26`) for primary text and headings.
+*   **Buttons & Accents:** Rust/dark brown (`#723C2A`) for primary buttons and CTAs.
+*   **Typography:** Modern sans-serif. Use oversized, brutalist typography for main section headings.
+*   **Images:** Use inline placeholders for all images to prevent broken links in preview (e.g., `https://via.placeholder.com/...`). Add subtle border-radius to images.
+
+### Section 1: Navigation
+*   **Logo:** ✦ L.L.B
+*   **Links:** Solutions ⌄, About, Blog, Support ⌄
+*   **Button:** Get started
+
+### Section 2: Hero Section (Split Layout)
+*   **Left Column:**
+    *   **Headline:** "Lawyer<br>s Legal<br>Beef" (Use tight line-height and massive font size).
+    *   **Subtext:** "The all-in-one Progressive Web App (PWA) built specifically for lawyers and legal teams. Streamline case management, legal research, document drafting, client billing, and trial prep in one unified platform."
+    *   **Form:** Email input and a "Submit" button. Add "Get updates" text below.
+*   **Right Column:** Placeholder image of a professional lawyer sitting at a desk.
+
+### Section 3: Trusted By
+*   **Text:** "TRUSTED BY 2.5M+ ORGANIZATIONS"
+*   **Headline:** "Trusted by 500+ Top Law Firms & Legal Teams"
+*   **Layout:** Place this above a grid of placeholder logos.
+
+### Section 4: Features
+*   **Headline:** "One App That Does It All for Law Practices"
+*   **Subtext:** "Lawyers Legal Beef replaces disconnected legal software with a single Progressive Web App (PWA). Work seamlessly online or offline from courtroom to desktop."
+*   **Content Grid:** Include a feature image on one side, and a list of features on the other:
+    1.  **Courtroom & Offline PWA Sync:** Access case files, evidence binders, and schedules offline. Changes sync automatically when reconnected.
+    2.  **AI Legal Research & Briefs:** Summarize precedents, research case law, and draft filings in seconds using built-in legal AI assistance.
+    3.  **Automated Legal Document Drafting:** Generate pleadings, contracts, and discovery demands rapidly with smart customizable legal templates.
+    4.  **Time Tracking & Client Billing:** Log billable hours, manage trust accounts, and send invoices directly through the unified PWA portal.
+
+### Section 5: Pricing
+*   **Headline:** "Simple Plans for Every Law Practice"
+*   **Toggle:** Monthly / Annually (Save 20%)
+*   **Card 1 (Pro Plan):** $89.99/mo. Ideal for solo attorneys & growing practices. Features: Complete Case & Docket Management, Offline Courtroom Document Sync, Integrated Time Tracking & Client Billing. Button: Get Pro Plan.
+*   **Card 2 (Premium Plan):** $169.99/mo. For full-service firms. Features: Everything in Pro, plus AI Legal Research & Motion Drafting, Unlimited Automated Legal Templates, Priority 24/7 Tech Support, Advanced Firm Financial Analytics. Button: Get Premium Plan.
+
+### Section 6: Testimonial
+*   **Quote:** "Lawyers Legal Beef cut our firm's administrative overhead in half. Having offline courtroom PWA access, AI research, and billing in one platform is irreplaceable."
+*   **Author:** Marcus Vance, Esq. (Senior Litigation Partner, Vance & Partners). Include a small avatar placeholder.
+
+### Section 7: Content Feed
+*   **Headline:** "Legal Tech & PWA Practice Insights"
+*   **Grid of 4 Articles:**
+    1. Courtroom PWA Playbook
+    2. AI Research Acceleration
+    3. Unified Legal Billing
+    4. Automated Document Drafting
+
+### Section 8: FAQ & Newsletter
+*   **Newsletter:** "Supercharge your product experience. Launch faster with zero risk." (Include Email input and Submit button).
+*   **FAQ List:** 
+    *   What is Lawyers Legal Beef?
+    *   How does the Progressive Web App (PWA) benefit my firm?
+    *   Is client and case data secure?
+    *   Can I access case files while offline in court?
+
+### Section 9: Contact & Footer
+*   **Contact Area:** Form for Name and Email. Right side should feature an info card for "Advanced Creation Studio" with Chris Grisconis (Founder & Owner | 980-980-9449).
+*   **Footer Bottom (Dark Background #281D1A):** "Interested in partnering with us? contact@halcyonlegal.com". Grid of standard footer links (Overview, Services, Insights, Case studies, Practice areas, etc.) and Social Links.

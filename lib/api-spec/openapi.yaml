@@ -1,1 +1,87 @@
-b3BlbmFwaTogMy4xLjAKaW5mbzoKICAjIERvIG5vdCBjaGFuZ2UgdGhlIHRpdGxlLCBpZiB0aGUgdGl0bGUgY2hhbmdlcywgdGhlIGltcG9ydCBwYXRocyB3aWxsIGJlIGJyb2tlbgogIHRpdGxlOiBBcGkKICB2ZXJzaW9uOiAwLjEuMAogIGRlc2NyaXB0aW9uOiBBUEkgc3BlY2lmaWNhdGlvbgpzZXJ2ZXJzOgogIC0gdXJsOiAvYXBpCiAgICBkZXNjcmlwdGlvbjogQmFzZSBBUEkgcGF0aAp0YWdzOgogIC0gbmFtZTogaGVhbHRoCiAgICBkZXNjcmlwdGlvbjogSGVhbHRoIG9wZXJhdGlvbnMKICAtIG5hbWU6IHdvcmtzcGFjZQogICAgZGVzY3JpcHRpb246IExlZ2FsIHRlYW0gd29ya3NwYWNlIG9wZXJhdGlvbnMKcGF0aHM6CiAgL2hlYWx0aHo6CiAgICBnZXQ6CiAgICAgIG9wZXJhdGlvbklkOiBoZWFsdGhDaGVjawogICAgICB0YWdzOiBbaGVhbHRoXQogICAgICBzdW1tYXJ5OiBIZWFsdGggY2hlY2sKICAgICAgZGVzY3JpcHRpb246IFJldHVybnMgc2VydmVyIGhlYWx0aCBzdGF0dXMKICAgICAgcmVzcG9uc2VzOgogICAgICAgICIyMDAiOgogICAgICAgICAgZGVzY3JpcHRpb246IEhlYWx0aHkKICAgICAgICAgIGNvbnRlbnQ6CiAgICAgICAgICAgIGFwcGxpY2F0aW9uL2pzb246CiAgICAgICAgICAgICAgc2NoZW1hOgogICAgICAgICAgICAgICAgJHJlZjogIiMvY29tcG9uZW50cy9zY2hlbWFzL0hlYWx0aFN0YXR1cyIKICAvd29ya3NwYWNlOgogICAgZ2V0OgogICAgICBvcGVyYXRpb25JZDogZ2V0V29ya3NwYWNlCiAgICAgIHRhZ3M6IFt3b3Jrc3BhY2VdCiAgICAgIHN1bW1hcnk6IEdldCB0aGUgc2lnbmVkLWluIHRlYW0ncyB3b3Jrc3BhY2UKICAgICAgcmVzcG9uc2VzOgogICAgICAgICIyMDAiOiB7IGRlc2NyaXB0aW9uOiBXb3Jrc3BhY2UgYW5kIGFjdGl2ZSBjYXNlcyB9CiAgICAgICAgIjQwMSI6IHsgZGVzY3JpcHRpb246IE5vdCBzaWduZWQgaW4gfQogICAgcG9zdDoKICAgICAgb3BlcmF0aW9uSWQ6IGNyZWF0ZVdvcmtzcGFjZQogICAgICB0YWdzOiBbd29ya3NwYWNlXQogICAgICBzdW1tYXJ5OiBDcmVhdGUgb3IgcmVvcGVuIGEgbGVnYWwgdGVhbSB3b3Jrc3BhY2UKICAgICAgcmVxdWVzdEJvZHk6CiAgICAgICAgcmVxdWlyZWQ6IHRydWUKICAgICAgICBjb250ZW50OgogICAgICAgICAgYXBwbGljYXRpb24vanNvbjoKICAgICAgICAgICAgc2NoZW1hOgogICAgICAgICAgICAgICRyZWY6ICIjL2NvbXBvbmVudHMvc2NoZW1hcy9DcmVhdGVXb3Jrc3BhY2VSZXF1ZXN0IgogICAgICByZXNwb25zZXM6CiAgICAgICAgIjIwMSI6IHsgZGVzY3JpcHRpb246IFdvcmtzcGFjZSBjcmVhdGVkIH0KICAgICAgICAiMjAwIjogeyBkZXNjcmlwdGlvbjogRXhpc3Rpbmcgd29ya3NwYWNlIHJlb3BlbmVkIH0KICAgICAgICAiNDAwIjogeyBkZXNjcmlwdGlvbjogSW52YWxpZCBvbmJvYXJkaW5nIGRldGFpbHMgfQogIC93b3Jrc3BhY2UvY2FzZXM6CiAgICBwb3N0OgogICAgICBvcGVyYXRpb25JZDogY3JlYXRlQ2FzZQogICAgICB0YWdzOiBbd29ya3NwYWNlXQogICAgICBzdW1tYXJ5OiBBZGQgYSBjYXNlIHRvIHRoZSBzaWduZWQtaW4gd29ya3NwYWNlCiAgICAgIHJlcXVlc3RCb2R5OgogICAgICAgIHJlcXVpcmVkOiB0cnVlCiAgICAgICAgY29udGVudDoKICAgICAgICAgIGFwcGxpY2F0aW9uL2pzb246CiAgICAgICAgICAgIHNjaGVtYToKICAgICAgICAgICAgICAkcmVmOiAiIy9jb21wb25lbnRzL3NjaGVtYXMvQ3JlYXRlQ2FzZVJlcXVlc3QiCiAgICAgIHJlc3BvbnNlczoKICAgICAgICAiMjAxIjogeyBkZXNjcmlwdGlvbjogQ2FzZSBjcmVhdGVkIH0KICAgICAgICAiNDAxIjogeyBkZXNjcmlwdGlvbjogTm90IHNpZ25lZCBpbiB9CmNvbXBvbmVudHM6CiAgc2NoZW1hczoKICAgIEhlYWx0aFN0YXR1czoKICAgICAgdHlwZTogb2JqZWN0CiAgICAgIHByb3BlcnRpZXM6CiAgICAgICAgc3RhdHVzOgogICAgICAgICAgdHlwZTogc3RyaW5nCiAgICAgIHJlcXVpcmVkOgogICAgICAgIC0gc3RhdHVzCiAgICBDcmVhdGVXb3Jrc3BhY2VSZXF1ZXN0OgogICAgICB0eXBlOiBvYmplY3QKICAgICAgcmVxdWlyZWQ6IFtuYW1lLCBlbWFpbCwgd29ya3NwYWNlTmFtZV0KICAgICAgcHJvcGVydGllczoKICAgICAgICBuYW1lOiB7IHR5cGU6IHN0cmluZywgbWluTGVuZ3RoOiAxIH0KICAgICAgICBlbWFpbDogeyB0eXBlOiBzdHJpbmcsIGZvcm1hdDogZW1haWwgfQogICAgICAgIHdvcmtzcGFjZU5hbWU6IHsgdHlwZTogc3RyaW5nLCBtaW5MZW5ndGg6IDEgfQogICAgQ3JlYXRlQ2FzZVJlcXVlc3Q6CiAgICAgIHR5cGU6IG9iamVjdAogICAgICByZXF1aXJlZDogW3RpdGxlLCBjbGllbnRdCiAgICAgIHByb3BlcnRpZXM6CiAgICAgICAgdGl0bGU6IHsgdHlwZTogc3RyaW5nLCBtaW5MZW5ndGg6IDEgfQogICAgICAgIGNsaWVudDogeyB0eXBlOiBzdHJpbmcsIG1pbkxlbmd0aDogMSB9Cgo=
+openapi: 3.1.0
+info:
+  # Do not change the title, if the title changes, the import paths will be broken
+  title: Api
+  version: 0.1.0
+  description: API specification
+servers:
+  - url: /api
+    description: Base API path
+tags:
+  - name: health
+    description: Health operations
+  - name: workspace
+    description: Legal team workspace operations
+paths:
+  /healthz:
+    get:
+      operationId: healthCheck
+      tags: [health]
+      summary: Health check
+      description: Returns server health status
+      responses:
+        "200":
+          description: Healthy
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+  /workspace:
+    get:
+      operationId: getWorkspace
+      tags: [workspace]
+      summary: Get the signed-in team's workspace
+      responses:
+        "200": { description: Workspace and active cases }
+        "401": { description: Not signed in }
+    post:
+      operationId: createWorkspace
+      tags: [workspace]
+      summary: Create or reopen a legal team workspace
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CreateWorkspaceRequest"
+      responses:
+        "201": { description: Workspace created }
+        "200": { description: Existing workspace reopened }
+        "400": { description: Invalid onboarding details }
+  /workspace/cases:
+    post:
+      operationId: createCase
+      tags: [workspace]
+      summary: Add a case to the signed-in workspace
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CreateCaseRequest"
+      responses:
+        "201": { description: Case created }
+        "401": { description: Not signed in }
+components:
+  schemas:
+    HealthStatus:
+      type: object
+      properties:
+        status:
+          type: string
+      required:
+        - status
+    CreateWorkspaceRequest:
+      type: object
+      required: [name, email, workspaceName]
+      properties:
+        name: { type: string, minLength: 1 }
+        email: { type: string, format: email }
+        workspaceName: { type: string, minLength: 1 }
+    CreateCaseRequest:
+      type: object
+      required: [title, client]
+      properties:
+        title: { type: string, minLength: 1 }
+        client: { type: string, minLength: 1 }
+
